@@ -37,7 +37,7 @@ The answer keys are only offered through IBM Aspera, which needs port 33001. Our
 command-line client and its HTTP and WebSocket fallbacks; TCIA does not serve those. In the end the keys were downloaded
 on a mobile hotspot and uploaded to the server, which took several hours.
 
-The root disk of the server was full, so everything (environments, caches, data) lives on `/home`.
+The system disk of the machine was nearly full, so environments, caches and data are kept on the larger data disk.
 
 ## The scorer and the validator
 

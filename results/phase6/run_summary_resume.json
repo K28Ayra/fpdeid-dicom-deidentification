@@ -1,7 +1,7 @@
 {
-  "input": "/home/ayra2/ayra_data/midi_b/validation/images",
-  "output": "/home/ayra2/ayra_data/outputs/phase6/resume",
-  "policy": "/home/ayra2/configs/policy.yaml",
+  "input": "data/midi_b/validation/images",
+  "output": "data/outputs/phase6/resume",
+  "policy": "configs/policy.yaml",
   "code_version": "unknown",
   "started": "2026-10-27T21:22:19",
   "workers": 16,

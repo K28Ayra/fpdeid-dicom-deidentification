@@ -5,7 +5,7 @@ import os
 # the project folder is found from this file (src/fpdeid/paths.py), so the code runs from any location
 PROJECT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # data and large outputs can live elsewhere (e.g. a bigger disk): export FPDEID_DATA=/path/to/data
-DATA = os.environ.get("FPDEID_DATA", os.path.join(PROJECT, "ayra_data"))
+DATA = os.environ.get("FPDEID_DATA", os.path.join(PROJECT, "data"))
 MIDI_B = os.path.join(DATA, "midi_b")
 
 VALIDATION_IMAGES = os.path.join(MIDI_B, "validation", "images")

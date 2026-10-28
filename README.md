@@ -37,13 +37,13 @@ If the disk with your home folder is small, create the environments somewhere el
 ## 2. Data
 
 The data is **not** in this repository: the MIDI-B data is about 19 GB plus 6 GB of answer keys, far above what GitHub
-(also with Git LFS) can store. Everything goes into `ayra_data/` (or `$FPDEID_DATA`). Git LFS is not used: without the
+(also with Git LFS) can store. Everything goes into `data/` (or `$FPDEID_DATA`). Git LFS is not used: without the
 data, the largest file in the repository is a 1.6 MB figure.
 
 ```bash
 # MIDI-B images (public TCIA API, no login): validation 7.6 GB, test 11.1 GB
-python scripts/download_midi_b.py MIDI-B-Synthetic-Validation ayra_data/midi_b/validation/images
-python scripts/download_midi_b.py MIDI-B-Synthetic-Test       ayra_data/midi_b/test/images
+python scripts/download_midi_b.py MIDI-B-Synthetic-Validation data/midi_b/validation/images
+python scripts/download_midi_b.py MIDI-B-Synthetic-Test       data/midi_b/test/images
 
 # IXI head MRI for the defacing phase (30 scans, 230 MB)
 bash scripts/download_ixi.sh
@@ -53,9 +53,9 @@ Two parts must be downloaded by hand from the [MIDI-B collection page](https://w
 
 | File | Put it in |
 |---|---|
-| `MIDI-B-Patient-Mapping-Validation.csv`, `MIDI-B-UID-Mapping-Validation.csv` (and the `-Test` versions) | `ayra_data/midi_b/` |
-| Answer key `MIDI-B-Answer-Key-Validation.db` (IBM Aspera download, needs port 33001) | `ayra_data/midi_b/validation/answer_key/` |
-| Answer key `MIDI-B-Answer-Key-Test.db` | `ayra_data/midi_b/test/answer_key/` |
+| `MIDI-B-Patient-Mapping-Validation.csv`, `MIDI-B-UID-Mapping-Validation.csv` (and the `-Test` versions) | `data/midi_b/` |
+| Answer key `MIDI-B-Answer-Key-Validation.db` (IBM Aspera download, needs port 33001) | `data/midi_b/validation/answer_key/` |
+| Answer key `MIDI-B-Answer-Key-Test.db` | `data/midi_b/test/answer_key/` |
 
 Details and licences (MIDI-B: CC BY 4.0, IXI: CC BY-SA 3.0): [docs/DATA.md](docs/DATA.md).
 
@@ -149,7 +149,7 @@ test patients from age, weight, scanner and scan gaps alone.
 | 6. One command, tests, lineage, speed | [phase6](docs/phase6_engineering.md) | `06_engineering` |
 | 7. Defacing head MRI (optional) | [phase7](docs/phase7_defacing.md) | `07_defacing` |
 
-The original plan with all metrics and targets is in [docs/PLAN.md](docs/PLAN.md). Some targets were missed; each phase
+Some of the targets I set at the start were missed; each phase
 doc says which and why.
 
 ## 7. Repository layout
@@ -165,5 +165,5 @@ doc says which and why.
 ├── tests/           unit and integration tests (tests/data: 3 tiny synthetic DICOM files)
 ├── results/         result tables and figures, one folder per phase
 ├── tools/           external tools (made by scripts/setup_tools.sh, not in git)
-└── ayra_data/       data and large outputs (not in git)
+└── data/       data and large outputs (not in git)
 ```

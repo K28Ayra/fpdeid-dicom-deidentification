@@ -1,7 +1,7 @@
 """Download a MIDI-B collection from the public TCIA (NBIA) REST API.
 
 Usage:
-    python scripts/download_midi_b.py MIDI-B-Synthetic-Validation ayra_data/midi_b/validation/images
+    python scripts/download_midi_b.py MIDI-B-Synthetic-Validation data/midi_b/validation/images
 """
 
 import io

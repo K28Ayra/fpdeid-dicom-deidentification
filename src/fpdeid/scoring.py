@@ -32,7 +32,7 @@ def run_official_scorer(run_name, deid_folder, answer_db, uid_map, patient_map, 
     with open(config_path, "w") as f:
         json.dump(config, f, indent=2)
 
-    # keep the scorer's downloads (NLTK words, EasyOCR model) on /home, and use CPU only
+    # keep the scorer's downloads (NLTK words, EasyOCR model) inside tools/, and use CPU only
     env = dict(os.environ)
     env["NLTK_DATA"] = os.path.join(paths.PROJECT, "tools", "nltk_data")
     env["EASYOCR_MODULE_PATH"] = os.path.join(paths.PROJECT, "tools", "easyocr")

@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Downloads 30 T1 head MRI scans of the IXI data set (CC BY-SA 3.0) into ayra_data/ixi/t1 (Phase 7).
+# Downloads 30 T1 head MRI scans of the IXI data set (CC BY-SA 3.0) into data/ixi/t1 (Phase 7).
 # IXI only offers one 4.8 GB archive of all T1 scans. It is a plain tar file, so the first 240 MB already contain
 # about 30 complete scans: only that part is downloaded (16 parallel range requests), and broken last files are removed.
 set -e
 cd "$(dirname "$0")/.."
 URL=https://biomedic.doc.ic.ac.uk/brain-development/downloads/IXI/IXI-T1.tar
-OUT=ayra_data/ixi
+OUT=data/ixi
 mkdir -p $OUT/parts $OUT/t1
 CHUNK=15000000
 for i in $(seq 0 15); do

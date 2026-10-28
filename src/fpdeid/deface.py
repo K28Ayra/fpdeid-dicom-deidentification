@@ -16,7 +16,7 @@ SYNTHSTRIP = os.path.join(paths.PROJECT, "tools", "synthstrip", "mri_synthstrip"
 SYNTHSTRIP_WEIGHTS = os.path.join(paths.PROJECT, "tools", "synthstrip", "synthstrip.1.pt")
 YUNET = os.path.join(paths.PROJECT, "tools", "face", "face_detection_yunet_2023mar.onnx")
 ULTRALIGHT = os.path.join(paths.PROJECT, "tools", "face", "version-RFB-320.onnx")
-TEMP = os.path.join(paths.DATA, "tmp")          # temporary files on /home (the root disk is nearly full)
+TEMP = os.path.join(paths.DATA, "tmp")          # temporary files next to the data, not in the system temp folder
 
 
 # Reading and writing volumes

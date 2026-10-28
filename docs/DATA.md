@@ -1,6 +1,6 @@
 # Data
 
-No data is stored in this repository. Everything lives in `ayra_data/` (git-ignored).
+No data is stored in this repository. Everything lives in `data/` (git-ignored).
 
 ## MIDI-B (main dataset)
 
@@ -11,7 +11,7 @@ No data is stored in this repository. Everything lives in `ayra_data/` (git-igno
 
 | Part | Size | How we download it |
 |---|---|---|
-| MIDI-B-Synthetic-Validation images (216 subjects, 280 series, 23,921 images) | 7.63 GB | `python scripts/download_midi_b.py MIDI-B-Synthetic-Validation ayra_data/midi_b/validation/images` (public TCIA REST API, no login) |
+| MIDI-B-Synthetic-Validation images (216 subjects, 280 series, 23,921 images) | 7.63 GB | `python scripts/download_midi_b.py MIDI-B-Synthetic-Validation data/midi_b/validation/images` (public TCIA REST API, no login) |
 | MIDI-B-Synthetic-Test images (322 subjects, 29,660 images) | 11.09 GB | same script with `MIDI-B-Synthetic-Test` |
 | Validation answer key (SQLite `.db` in a `.zip`) | 169 MB zip | IBM Aspera (Faspex package 1043), see note below |
 | Test answer key | 221 MB zip | IBM Aspera (Faspex package 1042) |
@@ -20,13 +20,13 @@ No data is stored in this repository. Everything lives in `ayra_data/` (git-igno
 
 Answer key note: Aspera needs TCP/UDP port 33001. On our server this port is blocked, so the answer keys
 were downloaded in a browser (with IBM Aspera Connect) on a laptop and copied to
-`ayra_data/midi_b/validation/answer_key/` and `ayra_data/midi_b/test/answer_key/`.
+`data/midi_b/validation/answer_key/` and `data/midi_b/test/answer_key/`.
 The page labels are easy to mix up: check the package title says *Validation* or *Test*.
 
 ## Folder layout
 
 ```
-ayra_data/
+data/
 ├── midi_b/
 │   ├── MIDI-B-Patient-Mapping-Validation.csv
 │   ├── MIDI-B-UID-Mapping-Validation.csv
@@ -42,7 +42,7 @@ ayra_data/
 ## Optional: IXI (Phase 7, defacing)
 
 - https://brain-development.org/ixi-dataset/, licence CC BY-SA 3.0.
-- 30 T1 scans (230 MB): `bash scripts/download_ixi.sh` puts them in `ayra_data/ixi/t1/`.
+- 30 T1 scans (230 MB): `bash scripts/download_ixi.sh` puts them in `data/ixi/t1/`.
 
 ## Citation
 
