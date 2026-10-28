@@ -1,23 +1,9 @@
 # %% [markdown]
-# # Phase 4: Burned-in text in the pixels
+# # Phase 4: burned-in text
 #
-# **Goal:** hide text that identifies a patient when it is written into the image itself, and keep harmless text
-# (side markers, views, scale, window values) readable. Nothing outside the hidden boxes may change.
-#
-# **Method (FP-DeID):** OCR (EasyOCR on GPU 0) reads three views of the image (normal, bright-text window,
-# dark-text window; small images are upscaled) and joins the pieces into text lines. Each line is checked with the
-# same **PHI fingerprint** as in Phase 3 (exact or fuzzy, to allow OCR mistakes), plus label words (DOB, ID, ...) and
-# dates. On X-rays, short codes that look like initials are hidden unless they appear in the images of many patients
-# (then they are screen/device words). Known radiology markers are kept.
-#
-# **Compared with:** (a) hide all text the OCR finds, (b) hide fixed bands at the top and bottom (common practice).
-#
-# **Data:** the MIDI-B key has only 35 burned-in text checks, so we also build a **synthetic benchmark**: real images
-# with text we write ourselves, so we know every box exactly. 70% of the patients are used to tune, 30% to test.
-#
-# Pass criteria (docs/PLAN.md): PHI box recall 100% (each miss shown); 0 readable PHI words after hiding;
-# harmless text kept ≥ 90%; hidden area smaller than the other methods; 0 pixels changed outside boxes;
-# MIDI-B pixel checks pass; 100% valid DICOM; screening ≥ 5× faster with 0 PHI missed; GPU memory ≤ 8 GB.
+# OCR (EasyOCR, GPU 0) on X-ray, mammography and ultrasound images and screened CT/MR/PET slices; only lines that match
+# the fingerprint, a label word, a date or (on X-rays) initials are hidden. Tested on a synthetic benchmark with known
+# boxes and on the 35 burned-in checks of MIDI-B.
 
 # %%
 import os

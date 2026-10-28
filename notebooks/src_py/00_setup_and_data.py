@@ -1,18 +1,8 @@
 # %% [markdown]
-# # Phase 0: Setup and data check
+# # Phase 0: data and tools
 #
-# **Goal:** make sure the environment works and the MIDI-B validation data is complete and readable.
-#
-# What this notebook does:
-# 1. Shows the package versions (for reproducibility).
-# 2. Compares what TCIA says it has with what we downloaded.
-# 3. Opens every DICOM file once (header only) to check it is readable.
-# 4. Checks the mapping files (old ID -> new ID) that the scorer needs.
-# 5. Checks the answer key (if it is already downloaded).
-# 6. Picks a small "dev-mini" subset (20 patients) for fast experiments.
-#
-# Pass criteria (from `docs/PLAN.md`): 100% of files present, 100% readable,
-# 100% of answer-key rows linked to a file, scorer runs.
+# Checks that the MIDI-B validation download is complete and readable, that every answer-key row matches a file,
+# that the mapping tables cover all patients and UIDs, and picks the 20-patient dev-mini subset.
 
 # %%
 import os
@@ -44,7 +34,7 @@ print("numpy   :", np.__version__)
 print("CPUs    :", os.cpu_count())
 
 # %% [markdown]
-# ## 2. What TCIA says vs what we downloaded
+# ## 2. What TCIA says vs what I downloaded
 
 # %%
 with open(paths.VALIDATION_SERIES_LIST) as f:
@@ -104,7 +94,7 @@ inventory
 # %% [markdown]
 # ## 3. Open every file (header only) to check it is readable
 #
-# We read files in parallel (16 processes). Only the header is read, so memory use stays small.
+# I read files in parallel (16 processes). Only the header is read, so memory use stays small.
 
 # %%
 file_table = dicom_io.index_folder(paths.VALIDATION_IMAGES, workers=16)
@@ -160,8 +150,8 @@ pd.Series(facts)
 # %% [markdown]
 # ## 4. Mapping files (old ID -> new ID)
 #
-# The scorer finds the answer for an output file by mapping its **new** UID back to the original one.
-# So our pipeline must give each UID exactly the new value in this table, and each patient the new
+# The scorer finds the answer for an output file by mapping its new UID back to the original one.
+# So my pipeline must give each UID exactly the new value in this table, and each patient the new
 # Patient ID (e.g. `MIDI_1_1_001`). In a hospital this table would be the pseudonymisation key held by the data custodian.
 
 # %%

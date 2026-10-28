@@ -1,19 +1,8 @@
 # %% [markdown]
-# # Phase 1: Data exploration and baselines
+# # Phase 1: where the PHI is, and baselines
 #
-# **Goal:** understand where patient information (PHI) hides in the MIDI-B validation data,
-# and measure what standard de-identification gets. Every later phase must beat these numbers.
-#
-# Parts:
-# 1. Tag census: which tags exist (standard, private, inside sequences).
-# 2. Where does PHI appear outside its "home" tag? (motivation for the PHI fingerprint)
-# 3. Free text and burned-in text.
-# 4. The answer key: which actions are required.
-# 5. Three baselines, scored with the official MIDI-B script:
-#    - **B0 ids-only**: replace UIDs and Patient ID only (floor)
-#    - **BA basic**: DICOM PS3.15 Basic Profile
-#    - **BB basic+**: Basic Profile + Retain Dates (shifted) + Retain Patient Characteristics + Retain Device Identity
-# 6. Error analysis of the best baseline.
+# Tag census, search for each patient's name/ID outside its own field, answer-key statistics,
+# and the B0 / BA / BB baselines scored with the official scorer.
 
 # %%
 import os
@@ -48,7 +37,7 @@ print("files:", len(all_files))
 # %% [markdown]
 # ## 1. Tag census
 #
-# We open every file (header only) and record every tag path, e.g. `(0008,1140)>(0008,1155)` for a tag inside a sequence.
+# I open every file (header only) and record every tag path, e.g. `(0008,1140)>(0008,1155)` for a tag inside a sequence.
 
 # %%
 start = time.time()
@@ -85,7 +74,7 @@ creator_counts.head(20)
 # %% [markdown]
 # ## 2. Where does PHI appear outside its home tag?
 #
-# For each file we take its Patient Name (parts), Patient ID, Birth Date, Accession Number and Other Patient IDs,
+# For each file I take its Patient Name (parts), Patient ID, Birth Date, Accession Number and Other Patient IDs,
 # and look for these values inside every *other* text tag of the same file.
 
 # %%

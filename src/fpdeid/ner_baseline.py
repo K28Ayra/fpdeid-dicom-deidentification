@@ -1,12 +1,4 @@
-"""Comparison method for the ablation study: clean text with a named-entity recogniser (NER) instead of the fingerprint.
-
-This is how many existing tools clean free text: a language model guesses which words are names,
-organisations, places or dates, and removes them. To make the comparison fair it also uses the same
-generic patterns (SSN, phone, e-mail, dates, "Dr. X", site codes) as the fingerprint.
-
-It has the same .clean(text) -> (clean_text, matches) interface as fingerprint.Fingerprint,
-so the engine can use it without any change.
-"""
+"""Comparison method for the ablation study: clean text with a named-entity recogniser (NER) instead of the fingerprint."""
 
 import re
 

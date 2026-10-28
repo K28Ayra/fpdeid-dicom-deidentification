@@ -6,7 +6,7 @@ No data is stored in this repository. Everything lives in `ayra_data/` (git-igno
 
 - Collection page: https://www.cancerimagingarchive.net/collection/MIDI-B-Test-MIDI-B-Validation/
 - DOI: https://doi.org/10.7937/cf2p-aw56
-- Licence: **CC BY 4.0** (all MIDI-B collections). Synthetic patient identifiers, no real PHI.
+- Licence: CC BY 4.0 (all MIDI-B collections). Synthetic patient identifiers, no real PHI.
 - Data usage: TCIA Data Usage Policy.
 
 | Part | Size | How we download it |
@@ -18,7 +18,7 @@ No data is stored in this repository. Everything lives in `ayra_data/` (git-igno
 | Patient / UID mapping CSVs | 3 MB | direct links on the collection page (`MIDI-B-Patient-Mapping-*.csv`, `MIDI-B-UID-Mapping-*.csv`) |
 | Scoring script | - | https://github.com/CBIIT/MIDI_validation_script (cloned to `tools/` by `scripts/setup_tools.sh`) |
 
-**Answer key note:** Aspera needs TCP/UDP port 33001. On our server this port is blocked, so the answer keys
+Answer key note: Aspera needs TCP/UDP port 33001. On our server this port is blocked, so the answer keys
 were downloaded in a browser (with IBM Aspera Connect) on a laptop and copied to
 `ayra_data/midi_b/validation/answer_key/` and `ayra_data/midi_b/test/answer_key/`.
 The page labels are easy to mix up: check the package title says *Validation* or *Test*.

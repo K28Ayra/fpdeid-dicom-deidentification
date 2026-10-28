@@ -1,21 +1,8 @@
 # %% [markdown]
-# # Phase 2: Policy-driven rules engine and audit log
+# # Phase 2: rules engine
 #
-# **Goal:** turn a written policy (`configs/policy.yaml`) into exact actions for every field,
-# apply them consistently per patient, and log every change with its reason, the PS3.15 option
-# it implements and the GDPR idea it serves.
-#
-# What is new compared with the Phase 1 baselines:
-# 1. **Private tags decided by value type**, numbers and codes are kept, text is removed (for now), dates shifted, UIDs remapped.
-# 2. **Every known UID is remapped**, wherever it is (also deep inside sequences and private tags).
-# 3. **Value check**: a number that is really a date (e.g. Series Number = 20160807) is shifted like a date.
-# 4. **Sequences are kept and cleaned inside** instead of deleted (references, structured report content).
-# 5. **Device identifiers removed** (serial number, station name, AE titles), manufacturer/model kept.
-# 6. **IOD repairs**: required attributes missing in the input are added (empty, or with the value implied by the SOP Class).
-# 7. **Audit log** for every change.
-#
-# Pass criteria (docs/PLAN.md): score ≥ 97% and better than the best baseline; keep-accuracy ≥ 99.5%;
-# research fields 100% kept; 100% valid DICOM; 100% hierarchy, dates and UID consistency; 100% audit coverage; deterministic.
+# Runs the policy engine (`configs/policy_phase2.yaml`) on the validation set, scores it, and checks validity, audit
+# coverage, research fields, date intervals, UIDs and repeatability independently of the scorer.
 
 # %%
 import os

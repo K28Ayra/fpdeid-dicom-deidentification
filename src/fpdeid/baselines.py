@@ -1,13 +1,4 @@
-"""Baseline de-identifiers for Phase 1.
-
-B0 "ids only"  : only replace UIDs and Patient ID with the mapping (so the scorer can find the files).
-                 Nothing else is changed. This is the floor: what you get for doing nothing.
-BA "basic"     : DICOM PS3.15 Basic Application Level Confidentiality Profile.
-                 All private tags removed, no date shifting.
-BB "basic+"    : Basic Profile + Retain Longitudinal Temporal Information with Modified Dates
-                 + Retain Patient Characteristics + Retain Device Identity.
-                 (what a careful standard tool would do)
-"""
+"""Baseline de-identifiers for Phase 1."""
 
 import datetime
 import hashlib
@@ -40,9 +31,7 @@ METHOD_CODES = {
 }
 
 
-# ---------------------------------------------------------------
 # Pseudonyms: UIDs, patient IDs, date shift
-# ---------------------------------------------------------------
 
 class Mappings:
     """Holds the old->new tables. Unknown UIDs get a stable hash-based UID."""
@@ -102,9 +91,7 @@ def shift_date_text(value, offset_days):
     return new_date.strftime("%Y%m%d") + value[8:]
 
 
-# ---------------------------------------------------------------
 # Actions on one element
-# ---------------------------------------------------------------
 
 def dummy_value(element, mappings, patient_id):
     vr = element.VR
@@ -236,9 +223,7 @@ def mark_deidentified(ds, baseline_name):
         ds.DeidentificationMethodCodeSequence = Sequence(sequence)
 
 
-# ---------------------------------------------------------------
 # One file and a whole folder
-# ---------------------------------------------------------------
 
 # each worker process keeps its own copy of these (set once by start_worker)
 WORKER = {}

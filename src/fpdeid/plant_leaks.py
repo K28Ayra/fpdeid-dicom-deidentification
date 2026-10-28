@@ -1,9 +1,4 @@
-"""Phase 5: test the auditor with leaks that we plant ourselves (so we know the right answer).
-
-We take clean output files, copy them, and put ONE real identifier of that patient back into each copy,
-in a different place and a different written form each time. A good auditor must find all of them.
-The values are read straight from the original file here (not with the auditor's code).
-"""
+"""Phase 5: test the auditor with leaks that we plant ourselves (so we know the right answer)."""
 
 import os
 import random

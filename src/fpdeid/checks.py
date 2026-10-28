@@ -1,13 +1,4 @@
-"""Independent checks of a de-identification run (Phase 2 evaluation).
-
-They do NOT use the engine's code: they only read the input file, the output file and the audit log,
-and compare them. One function (check_pair) reads both headers once and measures:
-
-- audit coverage   : every element that changed / disappeared / appeared has an audit entry
-- utility          : research-critical fields kept with the same value
-- date intervals   : the gaps between dates of the same file are the same before and after
-- UID safety       : no original UID is left anywhere, and all UIDs are valid
-"""
+"""Independent checks of a de-identification run (Phase 2 evaluation)."""
 
 import datetime
 import re
@@ -158,9 +149,7 @@ def run_checks(jobs, input_uids, workers=16):
     return rows
 
 
-# ---------------------------------------------------------------
 # Residual fingerprint hits: is any of the patient's identity still in the output?
-# ---------------------------------------------------------------
 
 TEXT_LIKE_VRS = ["LO", "SH", "ST", "LT", "UT", "UC", "PN", "CS", "AE", "UN", "OB"]
 

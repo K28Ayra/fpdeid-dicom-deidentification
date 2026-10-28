@@ -1,22 +1,4 @@
-"""Phase 4: find and hide burned-in text in the pixels.
-
-Steps for one image:
-1. make three 8-bit views of the image (normal, bright-text window, dark-text window), upscaled if the image is small
-2. OCR (EasyOCR on the GPU) on every view, merge the boxes, and join boxes on the same line into text lines
-3. decide for each line: does it identify someone?
-   - it matches the patient's fingerprint (exact, or fuzzy to allow OCR mistakes)     -> hide
-   - it has a label word (DOB, ID, MRN, NAME, ...) or a date                            -> hide
-   - on an X-ray: it is a short code that looks like a person's initials (e.g. "JKR")
-     and it is not a word that appears in the images of many patients (UI/device words) -> hide
-   - a known radiology marker (L, R, AP, PORTABLE, 5 mm, W:400 L:40 ...) or anything else -> keep
-4. hide = fill the line box (plus a margin that grows with the text height) in the REAL pixel data.
-   Nothing outside the hidden boxes changes.
-
-Methods compared in the notebook:
-    "fpdeid"   : the decision above (value-aware)
-    "all_text" : hide every line the OCR finds
-    "bands"    : hide fixed bands at the top and bottom of the image (a common simple practice)
-"""
+"""Phase 4: find and hide burned-in text in the pixels."""
 
 import json
 import os
@@ -58,9 +40,7 @@ def get_reader():
     return READER["reader"]
 
 
-# ---------------------------------------------------------------
 # 1. Views of the image for reading
-# ---------------------------------------------------------------
 
 def to_gray(pixels):
     if pixels.ndim == 3:
@@ -87,9 +67,7 @@ def make_views(pixels):
     return [normal, bright, dark]
 
 
-# ---------------------------------------------------------------
 # 2. OCR and text lines
-# ---------------------------------------------------------------
 
 def read_view(image8, min_confidence):
     reader = get_reader()
@@ -163,9 +141,7 @@ def group_lines(found):
     return lines
 
 
-# ---------------------------------------------------------------
 # 3. Decide per line
-# ---------------------------------------------------------------
 
 def is_marker(text):
     words = re.findall(r"[A-Za-z]+", text.upper())
@@ -221,9 +197,7 @@ def decide(text, fingerprint, modality="", common_codes=None, confidence=1.0):
     return False, "no identifier found"
 
 
-# ---------------------------------------------------------------
 # 4. Hide
-# ---------------------------------------------------------------
 
 def hide_boxes(pixels, boxes, photometric, margin=None):
     """Fill the boxes in the real pixel array with the 'black' value of the image."""
@@ -278,9 +252,7 @@ def common_codes_from(ocr_by_file, patient_of_file, min_patients=3):
     return set(code for code, patients in patients_per_code.items() if len(patients) >= min_patients)
 
 
-# ---------------------------------------------------------------
 # Apply to the output files of the engine
-# ---------------------------------------------------------------
 
 ALWAYS_READ = ["CR", "DX", "MG", "US", "SC", "OT", "XA", "RF", "IO", "PX", "DG", "ES", "XC"]
 

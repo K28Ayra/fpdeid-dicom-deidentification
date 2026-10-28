@@ -1,8 +1,4 @@
-"""The whole FP-DeID pipeline for one data split (Phase 5): fingerprints -> headers -> pixels.
-
-The rules are frozen: configs/policy.yaml, the same code as Phase 4. Only the pseudonym key changes
-(each split has its own patient and UID mapping tables).
-"""
+"""The whole FP-DeID pipeline for one data split (Phase 5): fingerprints -> headers -> pixels."""
 
 import json
 import os

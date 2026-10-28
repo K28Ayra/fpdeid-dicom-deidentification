@@ -1,11 +1,4 @@
-"""Phase 4: a synthetic burned-in text benchmark (we know exactly where every piece of text is).
-
-The MIDI-B answer key checks only 35 burned-in text regions, which is too few to measure a method.
-So we take real images from the validation set and write text into the pixels ourselves:
-- PHI text built from the patient's own identity (name, ID, date of birth in different formats, hospital acronym)
-- harmless text that must stay (side markers, views, scale, window values)
-For every piece of text we save its box and whether it is PHI. Then any redaction method can be scored exactly.
-"""
+"""Phase 4: a synthetic burned-in text benchmark (we know exactly where every piece of text is)."""
 
 import json
 import os

@@ -1,16 +1,4 @@
-"""Phase 3: the PHI fingerprint.
-
-Idea: the best detector of a patient's leaked identity is the patient's own identity.
-
-1. collect()  : read the identifying values from the fields where identity is KNOWN to live
-                (names, IDs, dates, addresses, phone numbers, institution, devices).
-2. Fingerprint: turn every value into all the ways it can be written in free text
-                ("WILSON^AMY" -> "Amy Wilson", "Wilson, Amy", "WILSON", "AMY";
-                 "19811129" -> "11/29/1981", "29.11.1981", "Nov 29, 1981", ...;
-                 "Compton, Holmes and Jones Hospital" -> its acronym "CHAJH").
-3. clean()    : find these variants (plus a few generic PHI patterns) in any text and remove only them.
-                Every removed piece is linked to the fingerprint entry it matched (explainable).
-"""
+"""Phase 3: the PHI fingerprint."""
 
 import datetime
 import re
@@ -18,9 +6,7 @@ from multiprocessing import Pool
 
 import pydicom
 
-# ---------------------------------------------------------------
 # Where identity is known to live ("home" fields)
-# ---------------------------------------------------------------
 
 ID_KEYWORDS = ["PatientID", "OtherPatientIDs", "AccessionNumber", "StudyID", "IssuerOfPatientID",
                "MedicalRecordLocator", "ClinicalTrialSubjectID", "ClinicalTrialSubjectReadingID",
@@ -108,9 +94,7 @@ def collect(ds, found=None):
     return found
 
 
-# ---------------------------------------------------------------
 # Variants: all the ways a value can be written in text
-# ---------------------------------------------------------------
 
 def name_variants(raw):
     """'WILSON^AMY^J' -> full name in several orders + the single parts."""
@@ -218,9 +202,7 @@ def phone_variants(raw):
     return variants
 
 
-# ---------------------------------------------------------------
 # Generic PHI patterns (backup for PHI that is not in any home field)
-# ---------------------------------------------------------------
 
 # context patterns run BEFORE the fingerprint, so the context word goes together with the name
 CONTEXT_PATTERNS = [
@@ -242,9 +224,7 @@ GENERIC_PATTERNS = [
 ]
 
 
-# ---------------------------------------------------------------
 # The fingerprint of one patient
-# ---------------------------------------------------------------
 
 def to_regex(variant):
     """Letters/digits must match exactly; any run of spaces/^/,/./- in between may vary."""
@@ -404,9 +384,7 @@ def tidy(text):
     return text.strip(" ,;-^_")
 
 
-# ---------------------------------------------------------------
 # Build the fingerprints for a whole data set (one pass over the headers)
-# ---------------------------------------------------------------
 
 TEXT_VRS = ["LO", "SH", "ST", "LT", "UT", "UC"]
 

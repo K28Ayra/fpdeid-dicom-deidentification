@@ -1,8 +1,4 @@
-"""Run the official MIDI-B validation script and read its results.
-
-The official script lives in tools/MIDI_validation_script and runs in its own
-virtual environment (tools/scorer_venv), because it pins old package versions.
-"""
+"""Run the official MIDI-B validation script and read its results."""
 
 import json
 import os
@@ -120,9 +116,7 @@ def summarise(table):
     return summary
 
 
-# ---------------------------------------------------------------
 # Our own view of the checks: privacy vs utility vs consistency
-# ---------------------------------------------------------------
 
 # a failed privacy check = an identifier left in the output (a leak)
 PRIVACY_ACTIONS = ["<text_removed>", "<date_shifted>", "<uid_changed>", "<pixels_hidden>"]
@@ -190,9 +184,7 @@ def make_answer_subset(answer_db, sop_uids, subset_db):
     return subset_db
 
 
-# ---------------------------------------------------------------
 # Why did a check fail? (one cause per failed check, used in Phases 3 and 5)
-# ---------------------------------------------------------------
 
 ICON_TAGS = ["<Rows>", "<Columns>", "<Bits Stored>", "<Bits Allocated>", "<High Bit>", "<Samples per Pixel>",
              "<Pixel Representation>", "<Photometric Interpretation>", "<Smallest Image Pixel Value>",

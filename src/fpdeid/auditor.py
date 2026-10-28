@@ -1,17 +1,4 @@
-"""Phase 5: an INDEPENDENT auditor of de-identified files.
-
-It does not import any code of the cleaner (engine, fingerprint, pixels). It has its own, simple idea of
-"who is this patient":
-
-1. From the ORIGINAL files of a patient it collects the identity: every name (all PN fields), the IDs,
-   the accession numbers, the original dates and times of birth/study, addresses, phone numbers,
-   institution and station names, device serial numbers, and every original UID.
-2. In every OUTPUT file it reads every value (also inside sequences and private tags, also bytes that
-   are readable text) and looks for that identity, in several written forms.
-3. On images where text is likely to be written into the pixels it runs its own OCR and does the same.
-
-The result is a list of hits: file, tag, what kind of identifier was found, and the matched text.
-"""
+"""Phase 5: an INDEPENDENT auditor of de-identified files."""
 
 import json
 import re
@@ -49,9 +36,7 @@ TEXT_VRS = ["AE", "AS", "CS", "DA", "DS", "DT", "IS", "LO", "LT", "PN", "SH", "S
             "OB"]
 
 
-# ---------------------------------------------------------------
 # 1. The identity of a patient, from the original files
-# ---------------------------------------------------------------
 
 def element_texts(element):
     """All values of an element as a list of strings (bytes are decoded if they are readable)."""
@@ -175,9 +160,7 @@ def build_matchers(identity):
     return matchers
 
 
-# ---------------------------------------------------------------
 # 2. Scan the text of an output file
-# ---------------------------------------------------------------
 
 def find_in_text(text, matchers):
     """[(kind, matched text)] for one piece of text."""
@@ -226,9 +209,7 @@ def scan_header(output_path, matchers, original_uids):
     return hits, len(elements)
 
 
-# ---------------------------------------------------------------
 # 3. Text in the pixels (its own OCR)
-# ---------------------------------------------------------------
 
 def get_reader():
     if "reader" not in WORKER:
@@ -313,9 +294,7 @@ def scan_pixels(output_path, matchers, identity):
     return hits, texts
 
 
-# ---------------------------------------------------------------
 # 4. A whole run: many patients, many files (header part in parallel, CPU only)
-# ---------------------------------------------------------------
 
 def audit_patient(job):
     """job = (original file paths, output file paths) of one patient -> (hits, elements read)."""
@@ -364,9 +343,7 @@ def audit_pixel_files(jobs):
     return hits, texts_by_file
 
 
-# ---------------------------------------------------------------
 # 5. Closed loop: fix what the auditor found (header hits), and log every fix
-# ---------------------------------------------------------------
 
 def elements_at(ds, tag_path):
     """All elements at a tag path like '(0040,A730)>(0040,A160)' (every item of the sequences)."""

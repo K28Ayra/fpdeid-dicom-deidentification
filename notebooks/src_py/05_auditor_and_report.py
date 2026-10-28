@@ -1,26 +1,9 @@
 # %% [markdown]
-# # Phase 5: Independent auditor, GDPR re-identification tests, and the held-out test set
+# # Phase 5: auditor, re-identification tests, test set
 #
-# **Goal:** prove the result with numbers a reviewer can trust.
-#
-# 1. **Independent auditor.** A separate module (`fpdeid/auditor.py`) that does *not* use any code of the cleaner.
-#    It rebuilds each patient's identity from the **original** files and searches every **output** file for it
-#    (all header values, sequences, private tags, readable bytes, and its own OCR of the pixels).
-#    It is tested with **planted leaks** (we put real identifiers back into copies of clean files).
-#    In the pipeline it closes the loop: every header hit is removed and logged.
-# 2. **GDPR re-identification tests** on what is left: singling out (k-anonymity), linkability (top-1 / top-5)
-#    and inference, for the **pseudonymised** output (our normal output, the key is kept by the hospital) and an
-#    **anonymised** release (no key, generalised and suppressed quasi-identifiers).
-# 3. **The MIDI-B test set, once** (322 patients, 29,660 files), with the rules frozen before the run.
-# 4. **Privacy vs utility** plot, the **ablation table** of all phases, and the **error analysis** of the test run.
-#
-# The pipeline itself runs with `scripts/run_split.py` (headers → pixels → auditor → official scorer); this
-# notebook reads its outputs. If they are missing, the first cells run it.
-#
-# Pass criteria (docs/PLAN.md): test score ≥ 99%, all misses explained; leaks in text and pixels 0 or each listed;
-# auditor finds 100% of planted leaks; auditor false alarms reported per 10,000 elements; singling out,
-# linkability (vs random) and inference (vs majority) reported; research-field retention and DICOM validity
-# on the test set 100%.
+# Reads the outputs of `scripts/run_split.py` (and runs it if they are missing). Planted-leak test of the auditor,
+# singling out / linkability / inference on pseudonymised and k-anonymised releases, the one-time test-set run,
+# privacy vs utility plot and the ablation over all phases.
 
 # %%
 import os
@@ -165,11 +148,11 @@ print("pixel hits:", len(validation_pixel_hits))
 pd.DataFrame(validation_pixel_hits)
 
 # %% [markdown]
-# ### 2.3 Planted leaks: does the auditor find identifiers that we put back on purpose?
+# ### 2.3 Planted leaks: does the auditor find identifiers that I put back on purpose?
 # 100 copies of clean output files get one real identifier of their own patient each (name in another order,
 # surname, ID, accession number, birth or study date in 5 written forms, doctor, hospital, an original UID),
 # in 6 different places (comments, appended to a description, private text tag, private bytes, inside a
-# sequence, patient comments). 20 more copies get the patient's name or ID **written into the pixels**.
+# sequence, patient comments). 20 more copies get the patient's name or ID written into the pixels.
 
 # %%
 random.seed(5)
@@ -281,8 +264,8 @@ validation_leaks.groupby(["tag_name", "auditor sees it"]).size().unstack(fill_va
 # %% [markdown]
 # ## 3. GDPR re-identification tests (validation)
 #
-# One row per patient. The attacker's **background knowledge** = the original hospital records of all patients
-# (the strongest realistic attacker: an insider, or a leak of the hospital system). A weaker **public** attacker
+# One row per patient. The attacker's background knowledge = the original hospital records of all patients
+# (the strongest realistic attacker: an insider, or a leak of the hospital system). A weaker public attacker
 # only knows sex, age and the year of the scan (e.g. from social media).
 
 # %%

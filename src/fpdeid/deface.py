@@ -1,21 +1,4 @@
-"""Phase 7 (optional): brain-protected defacing of head MRI.
-
-A 3D head scan can be rendered into a face that people (and face-recognition software) recognise, even when every
-header field is clean. Defacing removes the face from the image itself.
-
-FP-DeID's method ("brain-protected defacing"):
-1. brain mask   : SynthStrip (a published deep-learning skull-stripper) finds the brain.
-2. protection   : the brain mask is made larger by a safety margin (in mm). Protected voxels are NEVER changed.
-3. face region  : everything in front of the middle of the brain, between chin level and eyebrow level
-                  (both found from the brain itself: the front-most point of the frontal lobe +/- an offset in mm).
-4. defacing     : face region minus protected voxels is set to the background value (the image minimum).
-
-Because step 4 never touches the protected voxels, "brain voxels changed = 0" is guaranteed by construction, not hoped.
-
-Also here: two methods to compare with (a fixed box, and quickshear), the 3D render used for the face check,
-two face detectors (YuNet and Ultra-Light-Fast, both run in OpenCV), and a simple tissue segmentation for the utility check.
-Volumes are handled in RAS orientation: axis 0 = left->right, axis 1 = back->front, axis 2 = down->up.
-"""
+"""Phase 7 (optional): brain-protected defacing of head MRI."""
 
 import os
 import subprocess
@@ -36,9 +19,7 @@ ULTRALIGHT = os.path.join(paths.PROJECT, "tools", "face", "version-RFB-320.onnx"
 TEMP = os.path.join(paths.DATA, "tmp")          # temporary files on /home (the root disk is nearly full)
 
 
-# ---------------------------------------------------------------
 # Reading and writing volumes
-# ---------------------------------------------------------------
 
 def load_ras(path):
     """NIfTI -> (volume as float32 in RAS orientation, affine, voxel size in mm)."""
@@ -52,9 +33,7 @@ def save_nifti(volume, affine, path):
     nib.save(nib.Nifti1Image(volume.astype(np.float32), affine), path)
 
 
-# ---------------------------------------------------------------
 # 1. Brain mask (SynthStrip) and head mask
-# ---------------------------------------------------------------
 
 def brain_mask(volume, affine, use_gpu=False):
     """Run SynthStrip on a volume. Returns a boolean mask with the same shape.
@@ -98,9 +77,7 @@ def ball(radius_mm, zooms):
     return inside
 
 
-# ---------------------------------------------------------------
 # 2-4. FP-DeID brain-protected defacing
-# ---------------------------------------------------------------
 
 def face_region(brain, zooms, above_frontal_pole_mm=15.0, below_frontal_pole_mm=None):
     """Voxels in front of the middle of the brain, between chin level and eyebrow level.
@@ -131,9 +108,7 @@ def deface_fpdeid(volume, brain, zooms, margin_mm=10.0, above_frontal_pole_mm=15
     return defaced, remove
 
 
-# ---------------------------------------------------------------
 # Methods to compare with
-# ---------------------------------------------------------------
 
 def deface_box(volume, front_share=0.45, low_share=0.45):
     """The simplest idea: zero a fixed box (front 45% x lower 45% of the field of view). Knows nothing about the brain."""
@@ -156,9 +131,7 @@ def deface_quickshear(volume, brain, buffer_voxels=10):
     return defaced, remove
 
 
-# ---------------------------------------------------------------
 # Face check: render the head surface and run face detectors
-# ---------------------------------------------------------------
 
 def isotropic(mask, zooms, size_mm=1.0):
     factors = zooms / size_mm
@@ -265,9 +238,7 @@ def face_check(head_iso, detectors, views=None):
     return rows
 
 
-# ---------------------------------------------------------------
 # Utility check: a simple tissue segmentation (3 classes inside the brain mask)
-# ---------------------------------------------------------------
 
 def tissue_classes(volume, brain, iterations=20):
     """k-means with 3 classes (CSF, grey matter, white matter on T1) on the brain voxels. 0 = outside the brain."""
@@ -294,9 +265,7 @@ def dice(a, b):
     return float(2 * (a & b).sum() / total)
 
 
-# ---------------------------------------------------------------
 # All the checks for one defaced volume
-# ---------------------------------------------------------------
 
 def evaluate(volume, affine, zooms, brain, head, defaced, removed, detectors, check_utility=True):
     """Face check + damage + utility of one defaced volume, compared with the original."""
@@ -323,9 +292,7 @@ def evaluate(volume, affine, zooms, brain, head, defaced, removed, detectors, ch
     return result
 
 
-# ---------------------------------------------------------------
 # DICOM: deface a whole series (head MR/CT)
-# ---------------------------------------------------------------
 
 HEAD_WORDS = ["HEAD", "BRAIN", "SKULL", "NEURO"]
 

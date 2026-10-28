@@ -1,10 +1,4 @@
-"""DICOM PS3.15 Table E.1-1: which action each attribute gets.
-
-Action codes from the standard:
-    X = remove,  Z = empty value,  D = dummy value,  K = keep,
-    C = clean (we use it for date shifting / cleaning),  U = new UID.
-Combined codes like "X/Z" mean "X or Z depending on the IOD"; we pick one (see pick_one).
-"""
+"""DICOM PS3.15 Table E.1-1: which action each attribute gets."""
 
 import os
 

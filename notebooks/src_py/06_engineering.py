@@ -1,22 +1,8 @@
 # %% [markdown]
-# # Phase 6: Engineering: one command, tests, logging, lineage, speed
+# # Phase 6: one command, tests, speed
 #
-# **Goal:** a tool someone else can run, trust and reproduce.
-#
-# - **One command:** `python -m fpdeid.run --input DIR --output DIR [--uid-map CSV --patient-map CSV]`
-#   (fingerprints → headers → pixels → auditor → lineage), with logging to the console and to `run.log`,
-#   and a per-run summary (`run_summary.json`).
-# - **Resumable:** a stopped run can be started again; files that are done are not cleaned again, and OCR results
-#   are reused from `ocr_cache.jsonl`.
-# - **Data lineage:** `lineage.jsonl` links every output file to its input (SHA-256 of both), the policy (SHA-256),
-#   the code version, the run time and its audit entries.
-# - **Tests:** unit + integration tests on 3 tiny synthetic DICOM files (`tests/data/input`), run by GitHub Actions on
-#   every push.
-#
-# This notebook measures all of it on the real validation set (23,921 files).
-#
-# Pass criteria (docs/PLAN.md): tests 100% pass, ≥ 40 tests; coverage ≥ 80%; throughput with 1/4/8/16 workers;
-# peak RAM ≤ 4 GB with 8 workers; identical outputs across runs; 100% lineage; resume gives the same output.
+# Tests and coverage, throughput with 1/4/8/16 workers, peak memory, determinism, lineage, resume after a kill,
+# and the full command compared byte for byte with the scored Phase 5 output.
 
 # %%
 import os

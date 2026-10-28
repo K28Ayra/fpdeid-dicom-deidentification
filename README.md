@@ -105,118 +105,52 @@ The notebooks are also stored as plain Python files in `notebooks/src_py/`. Afte
 
 ## 4. The idea
 
-Standard tools clean a DICOM file one field at a time with fixed rules ("delete Patient Name, keep Series Description").
-But in MIDI-B, **98.8% of files contain the patient's own name or ID inside some other field**, for example a Series
-Description like *"PET-CT SERIES for Peggy Peters"*. A fixed rule can only keep that field (a leak) or delete it (losing
-useful information). FP-DeID first builds a **fingerprint** of each patient from the fields where identity is known to
-live (name, ID, birth date, ...), then searches for it everywhere else (free text, private tags, sequences and text read
-from the pixels) and removes only the matching words. An independent **auditor** re-checks every output file, and GDPR
-re-identification tests measure what is left.
+Standard tools clean a DICOM file field by field with fixed rules. In MIDI-B, 98.8% of the files also have the patient's
+name or ID in some other field, for example *"PET-CT SERIES for Peggy Peters"* in Series Description, and a fixed rule can
+only keep that field or delete it. FP-DeID reads each patient's identity from the header first, writes it out in the forms
+it takes in text (name orders, date formats, ID variants, hospital acronyms) and removes only those words, in free text,
+private tags, sequences and OCR'd pixel text. A separate auditor, which shares no code with the cleaner, checks the output.
 
 ## 5. Results
 
-All rows except the last are on the MIDI-B **validation** set (216 patients, 23,921 files, 6,173,204 required checks); the
-last row is the held-out **test** set, cleaned once with the rules frozen. Official MIDI-B scorer (70% HIPAA, 20% DICOM,
-10% TCIA best practice). Most failed checks are vendor private values that TCIA removes but that hold no PHI; the real
-leaks are listed in each phase document.
+Validation set: 216 patients, 23,921 files, 6,173,204 checks. Test set: 322 patients, 29,660 files, run once with the
+rules frozen. Scores from the official MIDI-B scorer (70% HIPAA, 20% DICOM, 10% TCIA best practice).
 
 | Method | Weighted score | Privacy checks failed | Utility checks failed | Valid DICOM |
 |---|---|---|---|---|
 | B0: replace IDs only | 61.51% | 454,324 | 55,371 | 100% |
-| BA: DICOM PS3.15 Basic Profile | 95.31% | 21,358 | 1,670,457 | 99.8% |
-| BB: Basic Profile + standard options | 95.87% | 31,131 | 1,458,139 | 99.5% |
-| Phase 2: policy rules engine | 99.15% | 4,577 | 302,210 | 100% |
-| Comparison: rules + NER (spaCy) for free text | 98.80% | 11,119 | 163,270 | - |
-| Phase 3: rules + PHI fingerprint | 99.828% | 5,198 | 55,003 | 100% |
-| Phase 4: + burned-in text in pixels | 99.831% | 5,177 | 55,004 | 100% |
-| **Phase 5: + closed-loop independent auditor** | **99.831%** | **5,177** | **55,004** | **100%** |
-| **Held-out test set (322 patients, 29,660 files), run once** | **99.805%** | 13,765 | 65,778 | **100%** |
+| BA: PS3.15 Basic Profile | 95.31% | 21,358 | 1,670,457 | 99.8% |
+| BB: Basic Profile + options | 95.87% | 31,131 | 1,458,139 | 99.5% |
+| Rules engine (phase 2) | 99.15% | 4,577 | 302,210 | 100% |
+| Rules + spaCy NER for text | 98.80% | 11,119 | 163,270 | - |
+| Rules + fingerprint (phase 3) | 99.828% | 5,198 | 55,003 | 100% |
+| + pixel text (phase 4) | 99.831% | 5,177 | 55,004 | 100% |
+| + auditor (phase 5) | 99.831% | 5,177 | 55,004 | 100% |
+| Test set, final pipeline | 99.805% | 13,765 | 65,778 | 100% |
 
-For reference, the ten teams that finished the MIDI-B challenge (MICCAI 2024) scored 97.91-99.93% on the test set.
+Most of the failed privacy checks are private values that TCIA removes but that hold no PHI. On the test set, 921 real
+leaks remain (mostly hospital names that are not in the patient's own header, and 10-digit phone numbers); they are listed
+in [phase 5](docs/phase5_auditor_and_report.md). The ten finishing teams of the MIDI-B challenge (MICCAI 2024) scored
+97.91-99.93% on the same test set.
+
+The normal output is pseudonymised, not anonymous: an attacker with the hospital's original records links 98.4% of the
+test patients from age, weight, scanner and scan gaps alone.
 
 ## 6. Phases
 
-| Phase | What it does | Doc |
+| | Doc | Notebook |
 |---|---|---|
-| 0. Setup and data | Download the MIDI-B data, answer key and scorer; check that everything is complete | [phase0_setup_and_data.md](docs/phase0_setup_and_data.md) |
-| 1. Exploration and baselines | Find where PHI hides; score three standard baselines | [phase1_exploration_and_baselines.md](docs/phase1_exploration_and_baselines.md) |
-| 2. Policy rules engine + audit log | Written policy to rules; consistent pseudonyms and date shifts; audit log mapped to PS3.15 and GDPR | [phase2_rules_engine.md](docs/phase2_rules_engine.md) |
-| 3. PHI fingerprint | Find each patient's identifiers in free text and private tags; keep useful data | [phase3_fingerprint.md](docs/phase3_fingerprint.md) |
-| 4. Burned-in pixel text | OCR on images; hide only text that identifies the patient | [phase4_burned_in_text.md](docs/phase4_burned_in_text.md) |
-| 5. Auditor + privacy/utility report | Independent re-check; GDPR re-identification tests; final test-set score | [phase5_auditor_and_report.md](docs/phase5_auditor_and_report.md) |
-| 6. Engineering | One-command pipeline, tests, logging, data lineage, speed | [phase6_engineering.md](docs/phase6_engineering.md) |
-| 7. Defacing (optional) | Remove faces from head MRI without touching the brain | [phase7_defacing.md](docs/phase7_defacing.md) |
+| 0. Data, scorer, validator | [phase0](docs/phase0_setup_and_data.md) | `00_setup_and_data` |
+| 1. Where PHI is; three baselines | [phase1](docs/phase1_exploration_and_baselines.md) | `01_exploration_and_baseline` |
+| 2. Policy rules engine and audit log | [phase2](docs/phase2_rules_engine.md) | `02_rules_engine` |
+| 3. PHI fingerprint for text and private tags | [phase3](docs/phase3_fingerprint.md) | `03_fingerprint_text_private` |
+| 4. Burned-in text in pixels | [phase4](docs/phase4_burned_in_text.md) | `04_burned_in_text` |
+| 5. Auditor, GDPR tests, test set | [phase5](docs/phase5_auditor_and_report.md) | `05_auditor_and_report` |
+| 6. One command, tests, lineage, speed | [phase6](docs/phase6_engineering.md) | `06_engineering` |
+| 7. Defacing head MRI (optional) | [phase7](docs/phase7_defacing.md) | `07_defacing` |
 
-The plan with every metric and pass criterion is in [docs/PLAN.md](docs/PLAN.md).
-
-### Phase 0: Setup and data
-
-I downloaded all 23,921 validation files (7.6 GB) through TCIA's public API with a parallel downloader, plus the
-2.8 GB answer key and the official scorer. 100% of the files are present and readable, and every answer-key row matches a
-file. The scorer runs in its own environment, and the Linux DICOM validator (`dciodvfy`) is unpacked locally. A 20-patient
-*dev-mini* subset is used for fast experiments. No file flags burned-in text, so the pixels have to be checked directly.
-
-### Phase 1: Exploration and baselines
-
-All 1,444 tag paths (621 private) are catalogued. The patient's name or ID appears outside its home field in 98.8% of
-files, and *Series Number* often holds a date. The official PS3.15 rule table (parsed from the NEMA standard) is
-implemented as three baselines. The best one scores **95.87%**: it removes almost all identifiers (99.99% of HIPAA checks)
-but deletes about a third of the useful data (private PET parameters, study and series descriptions).
-
-### Phase 2: Policy rules engine and audit log
-
-The de-identification policy is a readable YAML file, and a rules engine applies it to every field, including fields
-inside sequences and vendor private tags. Private tags are decided by **value type** (numbers and codes kept, text
-cleaned), **every UID in the pseudonym key is replaced wherever it appears**, and a **value check** catches dates hidden in
-number fields (Series Number, Unix time stamps). Every change goes to an audit log with its reason, PS3.15 option and
-GDPR concept, without storing any original value. Score: **99.15%**, with 100% valid DICOM, 100% research fields kept,
-100% date intervals and UID consistency, 100% audit coverage and byte-identical repeat runs, at about 1,350 files per second.
-
-### Phase 3: The PHI fingerprint
-
-Each patient's identity is expanded into all the ways it can be written (name orders, 19 date formats, IDs with and
-without dashes, hospital acronyms such as *"CHAJH"* for *"Compton, Holmes and Jones Hospital"*), plus a few checked backup
-patterns (SSN, phone, *"Dr. X"*, staff initials, postal addresses, site codes). Descriptions and private text are
-**cleaned word by word** instead of deleted, and a data-driven guard protects ordinary words. Compared with a standard NER
-cleaner using the same rules and patterns, FP-DeID leaks **53% less** and removes **66% less useful data**.
-Score: **99.83%**, with 0 residual fingerprint hits, 100% of removals explained and 100% valid DICOM.
-
-### Phase 4: Burned-in text in the pixels
-
-OCR (EasyOCR on GPU) reads each image in three views (normal, bright text, dark text), joins the pieces into lines and
-checks every line with the same fingerprint (fuzzy, to allow OCR mistakes), label words and dates. Technologist initials
-on X-rays are hidden; radiology markers (L/R, PORTABLE, scale, window) are kept, and only the boxes of identifying lines
-change. On a synthetic benchmark of 400 real images with 1,647 known texts, only **2 of 540** PHI words stay readable,
-while **6x more useful text** is kept than with blacking out all text. On MIDI-B, **27 of 35** burned-in checks pass (from 6),
-and series screening keeps the OCR to 3% of the files.
-
-### Phase 5: Independent auditor, GDPR tests and the test set
-
-The **auditor** shares no code with the cleaner: it rebuilds each patient's identity from the original files and searches
-every output value (sequences, private tags, readable bytes, and its own OCR of the pixels). It finds **all 120**
-identifiers planted back into copies of clean files, and in the pipeline it removes every hit (0 on validation, 55 on test).
-**GDPR re-identification tests** show that the normal output is *pseudonymised*, not anonymous: an insider holding the
-hospital records links **98%** of patients (random: 0.3%) through age, weight, scanner and scan gaps, while the date shift
-stops the true scan year from being guessed. A k-anonymised release (k = 5) cuts linking to 7% but keeps only about a
-quarter of the quasi-identifier information. On the **held-out test set**, run once, FP-DeID scores **99.805%** with 100%
-valid DICOM, research fields and audit coverage. The 921 remaining text leaks (0.1% of privacy checks) are listed by cause.
-
-### Phase 6: Engineering
-
-One command (`python -m fpdeid.run`) runs fingerprints, headers, pixels, the auditor and the lineage, with logging and a run
-summary. A stopped run resumes to byte-identical files, and `lineage.jsonl` links every output file to its input, the
-policy and the code version by SHA-256. 69 tests (83% coverage) run on GitHub Actions on every push. The header part cleans
-**610 files/s (about 22,000 studies per hour)** with 16 workers and uses 1.15 GB of memory with 8 workers; the full tool
-with OCR takes 30 minutes for the validation set, and its output is byte-identical to the scored Phase 5 output.
-
-### Phase 7: Brain-protected defacing (optional)
-
-SynthStrip finds the brain, a 10 mm margin protects it, and only the region in front of the brain between chin and eyebrow
-level is removed, so **0 brain voxels are changed by construction**. The same code defaces a DICOM head series with
-identical results and unchanged headers. On 20 IXI test scans rendered from 8 directions and checked by two face
-detectors, 7 of 160 views are still flagged (quickshear: 36), and none of them shows a face when checked by eye. A
-skull-stripper run on the defaced image finds a brain 0.7% different (quickshear 0.42%), so brain masks should be made
-before defacing.
+The original plan with all metrics and targets is in [docs/PLAN.md](docs/PLAN.md). Some targets were missed; each phase
+doc says which and why.
 
 ## 7. Repository layout
 

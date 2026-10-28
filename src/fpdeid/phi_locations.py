@@ -1,10 +1,4 @@
-"""Where does a patient's PHI appear OUTSIDE its home tag?
-
-For every file we take the values of a few "home" tags (name, ID, birth date, accession number)
-and look for them inside every other text value of the same file (also private tags and sequences).
-If they are found elsewhere, a tag-by-tag rule system that keeps that other tag would leak them.
-This is the motivation for the PHI fingerprint (Phase 3).
-"""
+"""Where does a patient's PHI appear OUTSIDE its home tag?"""
 
 from multiprocessing import Pool
 

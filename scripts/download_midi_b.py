@@ -2,9 +2,6 @@
 
 Usage:
     python scripts/download_midi_b.py MIDI-B-Synthetic-Validation ayra_data/midi_b/validation/images
-
-Each series is downloaded as a zip, unpacked to <out>/<PatientID>/<SeriesUID>/,
-and the zip is deleted. Series that are already complete are skipped (so the script can be re-run).
 """
 
 import io

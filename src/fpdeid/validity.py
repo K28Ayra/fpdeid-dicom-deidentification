@@ -1,9 +1,4 @@
-"""DICOM validity check with dciodvfy (dicom3tools).
-
-We count "Error" lines for the input file and for the output file.
-A file is valid for us if the output has NO NEW error compared with its input
-(some synthetic input files already have errors, we should not be blamed for them).
-"""
+"""DICOM validity check with dciodvfy (dicom3tools)."""
 
 import os
 import re

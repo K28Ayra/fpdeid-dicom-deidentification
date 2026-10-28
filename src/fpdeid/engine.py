@@ -1,15 +1,4 @@
-"""Phase 2: policy-driven rules engine with an audit log.
-
-For every element of a DICOM file the engine decides ONE action, applies it, and writes
-an audit entry that says what was done, why, which PS3.15 option it implements and which
-GDPR idea it serves.
-
-Action codes (one letter each, used in the audit log):
-    X = remove                  Z = empty value             D = dummy value
-    P = pseudonym (from key)    S = date shift              T = time stamp shift (Unix seconds)
-    K = keep (no audit entry)
-    R = keep the sequence and apply the rules inside it     A = attribute added
-"""
+"""Phase 2: policy-driven rules engine with an audit log."""
 
 import csv
 import datetime
@@ -41,9 +30,7 @@ DEID_CODES = {
 }
 
 
-# ---------------------------------------------------------------
 # Loading the policy
-# ---------------------------------------------------------------
 
 def load_safe_private():
     """Read PS3.15 Table E.3.10-1 into a set of (group, creator, last two hex digits)."""
@@ -137,9 +124,7 @@ class Policy:
         return self.empty_fingerprint
 
 
-# ---------------------------------------------------------------
 # Small helpers
-# ---------------------------------------------------------------
 
 def looks_like_date(value):
     """True for 8-digit numbers like 20160807 (years 1900-2099, valid month and day)."""
@@ -229,9 +214,7 @@ def private_key(element):
     return (element.tag.group, creator, last_two)
 
 
-# ---------------------------------------------------------------
 # Decide the action for one element
-# ---------------------------------------------------------------
 
 def decide(element, policy):
     """Return (action, reason, ps315_option)."""
@@ -314,9 +297,7 @@ def action_from_code(code, element, use_fingerprint=False):
     return code
 
 
-# ---------------------------------------------------------------
 # Apply one action
-# ---------------------------------------------------------------
 
 def dummy_for(element):
     vr = element.VR
@@ -434,9 +415,7 @@ def clean_text_element(element, policy, patient_id):
     return old_hash, str(element.value), matches
 
 
-# ---------------------------------------------------------------
 # Walk a dataset (recursively) and write the audit log
-# ---------------------------------------------------------------
 
 def clean_dataset(ds, policy, patient_id, offset_days, audit, path):
     used_blocks_before = private_blocks_in_use(ds)
@@ -622,9 +601,7 @@ def mark_deidentified(ds, policy, audit):
     ds.DeidentificationMethodCodeSequence = Sequence(items)
 
 
-# ---------------------------------------------------------------
 # One file, and a whole list of files
-# ---------------------------------------------------------------
 
 WORKER = {}
 

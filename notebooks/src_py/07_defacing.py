@@ -1,30 +1,9 @@
 # %% [markdown]
-# # Phase 7 (optional): Brain-protected defacing of head MRI
+# # Phase 7: defacing head MRI
 #
-# **Goal:** a 3D head scan can be rendered into a recognisable face. Remove the face from the image, without
-# changing a single brain voxel.
-#
-# **Method (FP-DeID):** SynthStrip finds the brain; the brain mask grows by a safety margin; everything in front of
-# the middle of the brain and below eyebrow level (found from the brain's frontal pole) is set to background,
-# except the protected voxels. "0 brain voxels changed" is guaranteed by construction.
-#
-# **Compared with:** quickshear (a published defacer that cuts along a plane next to the brain) and a fixed box
-# (zero the lower front part of the field of view, knows nothing about the anatomy).
-#
-# **Data:** 30 T1 head MRI of the IXI data set (CC BY-SA 3.0). 10 are used to choose the two settings
-# (margin, cut height), the other 20 to test.
-#
-# **Face check:** each head is rendered as a 3D surface from 8 directions, and two independent face detectors
-# (YuNet and Ultra-Light-Fast) look for a face, before and after. A face counts as found when **both** detectors find it
-# (each one alone also reacts to some round, face-like shapes). Their thresholds are set on the original scans only:
-# front views of real faces must be found, views of the back of the head must not. Both were trained on photos and sometimes fire on
-# shapes that are not faces, so their thresholds are calibrated on views of the back of the head (certainly no face),
-# and a face only counts when **both** detectors agree. Every remaining detection is shown and checked by eye.
-# **Utility check:** SynthStrip is run again on the defaced image (does a skull-stripper still find the same brain?),
-# and a simple 3-class tissue segmentation (CSF, grey matter, white matter) is compared before/after.
-#
-# Pass criteria (docs/PLAN.md): faces found after defacing 0% (all 8 views); brain voxels changed 0;
-# segmentation Dice ≥ 0.99; brain volume change < 0.5%; removed volume and runtime reported.
+# 30 IXI T1 scans: 10 to choose margin and cut heights, 20 to test against quickshear and a fixed box. Faces are checked
+# on 8 renders per head with YuNet and Ultra-Light-Fast (a face counts only if both fire; thresholds from back-of-head
+# views of the originals). Utility: SynthStrip again after defacing, and a 3-class tissue segmentation.
 
 # %%
 import os
@@ -99,9 +78,9 @@ before = before[~before["view"].isin(["yaw 180, pitch 0", "yaw 150, pitch 0", "y
 before_by_view
 
 # %% [markdown]
-# ## 3. Choose the two settings on the 10 tune scans
-# Margin around the brain (mm) and cut height above the frontal pole (mm). The best setting has the **fewest views
-# where both detectors find a face**, and then removes the **least tissue**.
+# ## 3. Choose the settings on the 10 tune scans
+# Margin around the brain, cut height above the frontal pole, and an optional chin limit. The chosen setting has the
+# fewest views where both detectors find a face, and then removes the least tissue.
 
 # %%
 def run_method(item, method, margin=10.0, above=15.0, below=None):

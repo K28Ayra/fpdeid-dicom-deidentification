@@ -1,30 +1,9 @@
 # %% [markdown]
-# # Phase 3: PHI fingerprint for free text and private tags
+# # Phase 3: PHI fingerprint
 #
-# **Goal:** keep the useful text (descriptions, protocol names, vendor text tags) and remove only the parts that
-# identify the patient.
-#
-# **Idea (the novel part):** the best detector of a patient's leaked identity is the patient's own identity.
-# Before cleaning, we read each patient's identifiers from the fields where identity is known to live (name, IDs,
-# dates, address, phone, institution, devices), expand them into all the ways they can be written, and search for
-# them in every text value. (Optional site level: also the full names, addresses, phones and long IDs of all other
-# patients of the same data; tested in the ablation, off by default.) A small set of generic patterns (SSN, phone, e-mail, dates, "Dr. X", site codes) is the backup.
-# A data-driven guard stops ordinary words from being removed: a word that appears in the text of many other
-# patients is not an identifier.
-#
-# **Ablation study:** we compare, on the full validation set with the official scorer,
-# 1. rules only (Phase 2),
-# 2. rules + generic patterns,
-# 3. rules + NER (spaCy, as many existing tools do) + the same patterns,
-# 4. rules + fingerprint with exact values only,
-# 5. rules + fingerprint with variants, no patterns,
-# 6. **FP-DeID: fingerprint + variants + patterns + guard** (final),
-# 7. FP-DeID without the common-word guard,
-# 8. FP-DeID **with** site-level entries (names/addresses/IDs of all other patients), an option that is off by default.
-#
-# Pass criteria (docs/PLAN.md): score ≥ 99% on validation; 0 residual fingerprint hits; free-text and private-tag
-# leaks listed with causes; fingerprint ≥ NER on both privacy and utility; 100% of redactions explainable;
-# extra time ≤ 20 ms per file.
+# Free text and private text are cleaned word by word using each patient's own identifiers. The ablation compares rules
+# only, patterns only, spaCy NER, the fingerprint with and without variants, the word guard and a site-level option,
+# each as a full scored run on validation.
 
 # %%
 import os

@@ -1,24 +1,4 @@
-"""FP-DeID in one command (Phase 6).
-
-    python -m fpdeid.run --input DIR --output DIR [--policy configs/policy.yaml]
-                         [--uid-map CSV] [--patient-map CSV] [--workers 16] [--no-pixels] [--no-auditor]
-
-Steps (each one is logged, and the run can be stopped and started again):
-  1. fingerprints : read every input header once and build each patient's PHI fingerprint
-  2. headers      : clean every file (rules + fingerprint). Files already in audit.jsonl are skipped (resume).
-  3. pixels       : OCR on images that may have burned-in text; hide only identifying lines (needs a GPU to be fast).
-                    OCR results are saved in ocr_cache.jsonl, so a stopped run does not read the same image twice.
-  4. auditor      : the independent auditor checks every output header and removes what it finds.
-  5. lineage      : lineage.jsonl, one line per file: input SHA-256 -> output SHA-256, policy hash, code version, time,
-                    and where its audit entries are.
-
-Files written in --output:
-  <new patient>/<new series>/<new SOP UID>.dcm, audit.jsonl, audit_pixels.jsonl, audit_auditor_fixes.jsonl,
-  ocr_cache.jsonl, lineage.jsonl, run_summary.json, run.log
-
-The pseudonym key (the mapping tables, or the secret in FPDEID_SECRET) stays with the hospital; it is never written
-to --output.
-"""
+"""FP-DeID in one command (Phase 6)."""
 
 import argparse
 import datetime
@@ -41,9 +21,7 @@ from fpdeid import paths
 LOG = logging.getLogger("fpdeid")
 
 
-# ---------------------------------------------------------------
 # Small helpers
-# ---------------------------------------------------------------
 
 def setup_logging(output_folder):
     LOG.setLevel(logging.INFO)
@@ -170,9 +148,7 @@ def read_jsonl(path):
     return rows
 
 
-# ---------------------------------------------------------------
 # Steps
-# ---------------------------------------------------------------
 
 def patient_of_files(input_files, workers):
     with Pool(workers) as pool:
@@ -307,9 +283,7 @@ def write_lineage(output_folder, policy_path, version, started, workers):
     return len(lines)
 
 
-# ---------------------------------------------------------------
 # The whole run
-# ---------------------------------------------------------------
 
 def run(input_folder, output_folder, policy_path, uid_map=None, patient_map=None, workers=16, do_pixels=True,
         do_auditor=True):

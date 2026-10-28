@@ -1,16 +1,4 @@
-"""Phase 5: GDPR re-identification tests on the de-identified data (patient level).
-
-An attacker sees what is left in the shared data (the quasi-identifiers, QIs): sex, age, weight, height,
-the (shifted) study dates, modalities, scanner make and model, body parts. Three questions (the three
-risks named by the EU Article 29 Working Party, Opinion 05/2014):
-
-- singling out : is a patient the only one with his/her combination of QIs?  (k-anonymity)
-- linkability  : with the original hospital records in hand, can the attacker find which record
-                 belongs to a shared patient?  (top-1 / top-5 linking accuracy vs. random guessing)
-- inference    : can the attacker learn a hidden fact (true study year, true birth year, hospital)?
-
-All tables are one row per patient. Headers are read from one file per series (enough for these fields).
-"""
+"""Phase 5: GDPR re-identification tests on the de-identified data (patient level)."""
 
 import datetime
 from multiprocessing import Pool
@@ -23,9 +11,7 @@ QI_COLUMNS = ["sex", "age", "weight", "height", "modalities", "manufacturers", "
               "n_studies", "study_gaps", "study_year"]
 
 
-# ---------------------------------------------------------------
 # 1. Patient tables
-# ---------------------------------------------------------------
 
 def age_in_years(text):
     """'037Y' -> 37, '006M' -> 0, '' -> None."""
@@ -132,9 +118,7 @@ def patient_table(series_paths, workers=16):
     return pd.DataFrame(patients)
 
 
-# ---------------------------------------------------------------
 # 2. The "anonymised" release: generalise the QIs further
-# ---------------------------------------------------------------
 
 def generalise(table):
     """Coarser QIs, the same for every patient.
@@ -212,9 +196,7 @@ def anonymise(table, k=5):
     return out, round(100 * suppressed, 1)
 
 
-# ---------------------------------------------------------------
 # 3. Singling out (k-anonymity)
-# ---------------------------------------------------------------
 
 def k_values(table, columns):
     """For each patient: how many patients share exactly the same values in `columns` (k)."""
@@ -235,9 +217,7 @@ def singling_out(table, columns):
     return result
 
 
-# ---------------------------------------------------------------
 # 4. Linkability: match each shared patient to the attacker's original records
-# ---------------------------------------------------------------
 
 def same(a, b):
     """1 if both values are known and equal, else 0."""
@@ -304,9 +284,7 @@ def linkability(shared_table, original_table, link, columns, prepare=None):
     return result
 
 
-# ---------------------------------------------------------------
 # 5. Inference: guess a hidden fact
-# ---------------------------------------------------------------
 
 def accuracy(guesses, truths):
     pairs = [(g, t) for g, t in zip(guesses, truths) if t is not None and t == t and t != ""]

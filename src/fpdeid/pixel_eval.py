@@ -1,14 +1,4 @@
-"""Phase 4: score pixel-redaction methods on the synthetic burned-in text benchmark.
-
-For every image we know the exact box of every piece of text and whether it is PHI.
-
-Metrics (per method):
-- PHI recall        : PHI boxes that are at least 90% covered by hidden area / all PHI boxes
-- harmless kept     : harmless boxes that are less than 10% covered / all harmless boxes
-- box precision     : hidden boxes that overlap a PHI box / all hidden boxes
-- hidden area       : % of image pixels changed
-- leaked PHI (OCR)  : after hiding, OCR reads the PHI box again; a leak = any word of 3+ characters still readable
-"""
+"""Phase 4: score pixel-redaction methods on the synthetic burned-in text benchmark."""
 
 import re
 

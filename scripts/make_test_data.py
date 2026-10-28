@@ -1,8 +1,5 @@
 """Make the 3 tiny synthetic DICOM files used by the integration test (tests/data/).
 
-Everything in them is invented. Patient A has two CT files, patient B one MR file. Their identity is also hidden in
-places a simple tool misses: a description, a comment, a private tag, a date-like Series Number.
-
 Usage:  python scripts/make_test_data.py
 """
 

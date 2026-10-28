@@ -2,11 +2,6 @@
 
 Usage:
     python scripts/parse_ps315_table.py tools/dicom_standard/part15.xml configs/ps315_table_e1_1.csv
-
-Also writes configs/ps315_safe_private.csv (Table E.3.10-1, Safe Private Attributes).
-
-The CSV has one row per attribute and one column per profile/option, e.g.
-name, tag, basic_profile, retain_device_id, retain_long_modified_dates, clean_descriptors, ...
 """
 
 import csv
