@@ -1,0 +1,8 @@
+what is left,checks
+hospital name that is not in the patient's header,497
+phone number written as 10 digits without separators,135
+Unix time written as a decimal number (private start time),90
+"other (e.g. a name not in the header, removed only partly)",76
+file name made of numbers (Referenced File ID),64
+street address that is not in the patient's header,45
+2-3 letter initials in a structured report,14

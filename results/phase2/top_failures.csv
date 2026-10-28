@@ -1,0 +1,88 @@
+score_cat,action,tag_name,failures
+tcia,<text_retained>,<Private Creator>,47613
+tcia,<text_retained>,<[PET compatible_version]>,34128
+tcia,<text_retained>,<[PET software_version]>,28440
+tcia,<text_retained>,<Study Description>,23661
+tcia,<text_retained>,<Series Description>,23412
+tcia,<text_retained>,<Private tag data>,14202
+tcia,<text_retained>,<[PET landmark_name]>,8392
+tcia,<text_retained>,<[PET landmark_abbrev]>,8392
+tcia,<text_retained>,<[PET tracer_name]>,8392
+tcia,<text_retained>,<[PET radionuclide_name]>,8392
+tcia,<text_retained>,<[PET ir_loop_filt_parm]>,8226
+tcia,<text_retained>,<[PET ir_num_iterations]>,6016
+tcia,<text_retained>,<[PET ir_num_subsets]>,6016
+tcia,<text_retained>,<[PET post_filter]>,6016
+tcia,<text_retained>,<[PET ir_loop_filter]>,6016
+tcia,<text_retained>,<[GE Advance Patient.software_version]>,5688
+tcia,<text_retained>,<[PET scanner_desc]>,5688
+tcia,<text_retained>,<[GE Discovery PET Implementation Version Name]>,5688
+tcia,<text_retained>,<[PET manufacturer]>,5688
+tcia,<text_retained>,<Protocol Name>,5407
+tcia,<text_retained>,<[PET scan_description]>,4935
+tcia,<text_retained>,<Requested Procedure Description>,3201
+tcia,<text_retained>,<Performed Procedure Step Description>,2620
+tcia,<text_retained>,<[PET acq_bin_dur_percent]>,2538
+tcia,<text_retained>,<[PET seg_qc_parm]>,2538
+tcia,<text_retained>,<[Product id]>,1855
+tcia,<text_retained>,<[Last scan ras]>,1847
+tcia,<text_retained>,<[First scan ras]>,1847
+tcia,<text_removed>,<[Series from which prescribed]>,1685
+tcia,<text_retained>,<Derivation Description>,1637
+tcia,<text_retained>,<Contrast/Bolus Agent>,1564
+tcia,<text_retained>,<Image Comments>,1489
+tcia,<text_removed>,<[Series from which Prescribed]>,1405
+tcia,<text_retained>,<Additional Patient History>,1065
+tcia,<text_removed>,<[Slop_int_10...slop_int_17]>,1065
+tcia,<text_retained>,<[Pulse Sequence Name]>,1056
+tcia,<text_retained>,<[RAS letter of image location]>,1051
+tcia,<text_retained>,<Requested Procedure Comments>,353
+tcia,<text_retained>,<[Image Filtering Parameters]>,348
+tcia,<text_retained>,<[PET ir_regularize]>,328
+tcia,<text_retained>,<[PET radial_filter_3d]>,328
+tcia,<text_retained>,<[PET scatter_num_iter]>,328
+tcia,<text_retained>,<[PET ir_corr_model]>,328
+tcia,<text_retained>,<[PET ac_img_smooth]>,328
+tcia,<text_retained>,<[PET ac_bp_filter]>,328
+tcia,<text_retained>,<[Full fidelity]>,321
+tcia,<text_removed>,<[Img is original or unoriginal]>,300
+tcia,<text_retained>,<[Additional Asset Data]>,231
+tcia,<text_retained>,<[GE Coil Name]>,231
+tcia,<text_retained>,<[SAR Definition]>,231
+tcia,<text_retained>,"<[Governing Body, dB/dt, and SAR definition]>",231
+tcia,<text_retained>,<Scheduled Procedure Step Description>,229
+tcia,<text_retained>,<Reason for Study>,207
+tcia,<text_retained>,<[FlowCompensation]>,195
+tcia,<text_retained>,<[Series Workflow Status]>,195
+tcia,<text_retained>,<[GradientMode]>,195
+tcia,<text_retained>,<[System Configuration Information]>,163
+tcia,<text_retained>,<Pixel Representation>,148
+tcia,<text_retained>,<Rows>,148
+tcia,<text_retained>,<Photometric Interpretation>,148
+tcia,<text_retained>,<Samples per Pixel>,148
+tcia,<text_retained>,<Green Palette Color Lookup Table Descriptor>,148
+tcia,<text_retained>,<Red Palette Color Lookup Table Descriptor>,148
+tcia,<text_retained>,<Bits Allocated>,148
+tcia,<text_retained>,<Bits Stored>,148
+tcia,<text_retained>,<Blue Palette Color Lookup Table Descriptor>,148
+tcia,<text_retained>,<High Bit>,148
+tcia,<text_retained>,<Columns>,148
+tcia,<text_retained>,<Secondary Capture Device ID>,143
+tcia,<text_retained>,<Smallest Image Pixel Value>,135
+tcia,<text_retained>,<Admitting Diagnoses Description>,128
+tcia,<text_retained>,<[Filter Mode (String slop field 1 in legacy GE MR]>,84
+tcia,<text_retained>,<Occupation>,78
+tcia,<text_retained>,<[Prescan Reuse String]>,68
+tcia,<text_removed>,<[PMTF Information 4]>,64
+tcia,<text_retained>,<Referenced SOP Class UID>,45
+tcia,<text_retained>,<Patient Comments>,40
+tcia,<text_removed>,<Text Value>,25
+tcia,<text_retained>,<Acquisition Device Processing Description>,15
+tcia,<text_retained>,<Length to End>,13
+tcia,<text_retained>,<Comments on Radiation Dose>,8
+hipaa,<text_removed>,<Text Value>,4
+tcia,<text_retained>,<[STX buffer]>,4
+tcia,<text_retained>,<Text Value>,2
+tcia,<text_retained>,<Numeric Value>,2
+tcia,<text_retained>,<Reason for the Requested Procedure>,2
+dicom,<tag_retained>,<View Position>,1

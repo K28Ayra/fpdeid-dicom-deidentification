@@ -1,0 +1,85 @@
+# FP-DeID de-identification policy (Phase 2)
+#
+# This is the "written policy" of the project: which fields to remove, shift, pseudonymise or keep.
+# The rules engine (src/fpdeid/engine.py) reads this file. Every action it takes is written to the
+# audit log together with the PS3.15 option it implements and the GDPR idea it serves.
+
+name: FP-DeID policy v2.0 (rules only)
+
+# 1. Start from the official DICOM PS3.15 Table E.1-1 (configs/ps315_table_e1_1.csv)
+base_profile: basic_profile
+options:
+  - retain_patient_chars          # keep age, sex, size, weight (needed for research, low risk)
+  - retain_long_modified_dates    # keep dates, but shifted per patient (time intervals stay correct)
+# not used: retain_device_id — it keeps serial numbers, station names and AE titles, which identify a site
+# not used: clean_descriptors — needs the PHI fingerprint (Phase 3); until then these fields are removed
+
+# 2. Pseudonymisation key (held by the data custodian, never shared with the data)
+pseudonym_key:
+  patient_ids: MIDI-B-Patient-Mapping-Validation.csv
+  uids: MIDI-B-UID-Mapping-Validation.csv
+  # any UID that appears in the key table is replaced, whatever field it is in
+  remap_every_known_uid: true
+
+# 3. Private (vendor) tags — decided by value type (VR), so it works for any vendor
+private_tags:
+  keep_vrs: [DS, IS, FL, FD, SL, SS, UL, US, SV, UV, CS, TM, AT]   # numbers and codes cannot hold a name
+  shift_vrs: [DA, DT]                                             # dates: shifted like standard dates
+  remap_vrs: [UI]                                                 # UIDs: pseudonymised with the key
+  default: remove                                                 # text (LO, SH, LT, ST, UT, PN ...) and binary (OB, OW, UN)
+  keep_safe_private_table: true                                   # PS3.15 Table E.3.10-1 entries are always kept
+  keep_private_creators: true                                     # a block label stays if any tag of its block stays
+
+# 4. Value checks (the standard warns that "even a DS or IS string could be misused")
+value_checks:
+  numbers_that_look_like_dates: shift   # e.g. Series Number = 20160807 -> treated as a date and shifted
+  # also: integers in fields named "...time/date/stamp..." holding a Unix time (1990-2030) are shifted by the same days
+
+# 5. Sequences that are kept, with the rules applied to the fields inside them
+keep_and_clean_sequences:
+  - ReferencedStudySequence
+  - ReferencedPerformedProcedureStepSequence
+  - ReferencedImageSequence
+  - SourceImageSequence
+  - ReferencedSeriesSequence
+  - AcquisitionContextSequence
+  - ContentSequence
+  - ContentTemplateSequence
+
+# 6. Overrides of the base table (each one with a reason)
+overrides:
+  - keyword: PatientID
+    action: D
+    reason: Patient ID is replaced by its pseudonym from the key (never emptied, research needs it)
+  - keyword: ClinicalTrialSponsorName
+    action: K
+    reason: The sponsor is an organisation, not the patient; needed to know where data comes from
+
+# 7. Type 2 attributes that the IOD requires to be present (empty is allowed)
+add_if_missing:
+  CT: [KVP, AcquisitionNumber, PositionReferenceIndicator]
+  MR: [AcquisitionNumber, PositionReferenceIndicator]
+  PT: [AcquisitionNumber, PositionReferenceIndicator]
+
+# 7b. Type 1 attributes whose value follows from the SOP Class (filled only if missing or empty in the input)
+fill_if_missing:
+  "1.2.840.10008.5.1.4.1.1.1.1":        # Digital X-Ray Image - For Presentation
+    PresentationIntentType: FOR PRESENTATION
+    ImageLaterality: U                       # Type 1; "U" = unpaired / not known
+    PresentationLUTShape: from_photometric   # IDENTITY for MONOCHROME2, INVERSE for MONOCHROME1
+    DetectorType: ""                         # Type 2: present, may be empty
+  "1.2.840.10008.5.1.4.1.1.1.2":        # Digital Mammography X-Ray Image - For Presentation
+    PresentationIntentType: FOR PRESENTATION
+    PresentationLUTShape: from_photometric
+    DetectorType: ""
+
+# 8. GDPR concept served by each kind of action (written into the audit log)
+gdpr:
+  X: "Data minimisation (Art. 5(1)(c)): identifying or unneeded value removed"
+  Z: "Data minimisation (Art. 5(1)(c)): value emptied, field kept for valid DICOM"
+  D: "Data minimisation (Art. 5(1)(c)): value replaced by a dummy"
+  P: "Pseudonymisation (Art. 4(5)): replaced via a key held separately; output is still personal data (Recital 26)"
+  S: "Pseudonymisation (Art. 4(5)): date shifted per patient, intervals kept; still personal data (Recital 26)"
+  T: "Pseudonymisation (Art. 4(5)): time stamp shifted by the same days as the dates; still personal data (Recital 26)"
+  A: "Data quality (Art. 5(1)(d)): required empty attribute added for a valid file"
+  K: "Purpose limitation (Art. 5(1)(b)): kept because it is needed for research and does not identify the patient"

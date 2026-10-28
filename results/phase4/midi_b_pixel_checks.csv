@@ -1,0 +1,36 @@
+check_passed,modality,action_text,file_value
+1,<DX>,"<{""text"": ""JAMES RUSSELL [M] 12.13.2018\nDOB: 10.21.1947"", ""top_left"": [25, 2600], ""bottom_right"": [925, 2750], ""font"": {""size"": 60}}>",
+1,<CR>,"<{""text"": ""JONES ERIN [F] 01.12.2019\nDOB: 11.12.1937"", ""top_left"": [2600, 100], ""bottom_right"": [3575, 300], ""font"": {""size"": 75}}>",
+1,<DX>,"<{""text"": ""JOHNSON LARRY [M] 03.09.2019\nDOB: 01.30.1968"", ""top_left"": [1700, 2650], ""bottom_right"": [2660, 2800], ""font"": {""size"": 60}}>",
+1,<DX>,"<{""text"": ""JGR"", ""top_left"": [203, 385], ""bottom_right"": [306, 465]}>",
+1,<DX>,"<{""text"": ""TJN"", ""top_left"": [206, 366], ""bottom_right"": [383, 451]}>",
+1,<DX>,"<{""text"": ""MSS"", ""top_left"": [244, 299], ""bottom_right"": [375, 365]}>",
+1,<CR>,"<{""text"": ""GARCIA MEAGAN [F] 03.30.2013\nDOB: 02.24.1967"", ""top_left"": [5, 5], ""bottom_right"": [1100, 200], ""font"": {""size"": 70}}>",
+1,<DX>,"<{""text"": ""JKR"", ""top_left"": [2946, 228], ""bottom_right"": [3068, 283]}>",
+1,<CR>,"<{""text"": ""MHS"", ""top_left"": [70, 205], ""bottom_right"": [228, 276]}>",
+1,<CR>,"<{""text"": ""MARTIN ERIC [M] 09.20.2010\nDOB: 07.28.1938"", ""top_left"": [5, 5], ""bottom_right"": [725, 125], ""font"": {""size"": 50}}>",
+1,<DX>,"<{""text"": ""MOODY BRENT [M] 08.06.2010\nDOB: 06.01.1922"", ""top_left"": [25, 5], ""bottom_right"": [800, 150], ""font"": {""size"": 50}}>",
+1,<DX>,"<{""text"": ""SANCHEZ TIMOTHY [M] 08.05.2018\nDOB: 07.01.1972"", ""top_left"": [25, 5], ""bottom_right"": [875, 150], ""font"": {""size"": 50}}>",
+1,<CR>,"<{""text"": ""SWU"", ""top_left"": [2230, 192], ""bottom_right"": [2350, 253]}>",
+0,<CR>,"<{""text"": ""LEITO"", ""top_left"": [721, 857], ""bottom_right"": [1048, 962]}>",LEITO
+1,<CR>,"<{""text"": ""NKF"", ""top_left"": [1806, 207], ""bottom_right"": [1877, 246]}>",Thm
+1,<CR>,"<{""text"": ""NKF"", ""top_left"": [1766, 93], ""bottom_right"": [1841, 132]}>",IXM
+0,<MG>,"<{""text"": ""LM"", ""top_left"": [1825, 250], ""bottom_right"": [2000, 354]}>",K H LM
+1,<CR>,"<{""text"": ""HAYES JESSICA [F] 01.03.2012\nDOB: 12.15.1986"", ""top_left"": [1600, 2450], ""bottom_right"": [2450, 2600], ""font"": {""size"": 60}}>",
+1,<DX>,"<{""text"": ""JT"", ""top_left"": [2290, 265], ""bottom_right"": [2390, 340]}>",
+0,<DX>,"<{""text"": ""ICG"", ""top_left"": [2582, 340], ""bottom_right"": [2687, 400]}>",Icg
+0,<DX>,"<{""text"": ""ICG"", ""top_left"": [2585, 338], ""bottom_right"": [2686, 402]}>",IcG
+1,<CR>,"<{""text"": ""ACO"", ""top_left"": [2615, 268], ""bottom_right"": [2718, 348]}>",
+1,<DX>,"<{""text"": ""mwf"", ""top_left"": [3012, 526], ""bottom_right"": [3128, 582]}>",rrwwwf
+1,<DX>,"<{""text"": ""TJN"", ""top_left"": [2460, 171], ""bottom_right"": [2577, 228]}>",
+1,<CR>,"<{""text"": ""CEF"", ""top_left"": [2233, 336], ""bottom_right"": [2335, 390]}>",
+1,<DX>,"<{""text"": ""JKR"", ""top_left"": [2933, 281], ""bottom_right"": [3089, 349]}>",
+1,<CR>,"<{""text"": ""CMS"", ""top_left"": [1851, 186], ""bottom_right"": [1922, 221]}>",
+1,<CR>,"<{""text"": ""CMS"", ""top_left"": [1847, 185], ""bottom_right"": [1924, 224]}>",Zhj
+1,<MG>,"<{""text"": ""ADAMS LAURA [U] 10.14.2010\nDOB: 08.31.1952"", ""top_left"": [25, 4325], ""bottom_right"": [1350, 4550], ""font"": {""size"": 90}}>",
+0,<DX>,"<{""text"": ""YH"", ""top_left"": [2818, 214], ""bottom_right"": [2921, 288]}>",YH
+0,<CR>,"<{""text"": ""LEITO"", ""top_left"": [971, 1073], ""bottom_right"": [1238, 1168]}>",LEITO
+1,<DX>,"<{""text"": ""JT"", ""top_left"": [2740, 270], ""bottom_right"": [2822, 326]}>",
+0,<DX>,"<{""text"": ""ROC"", ""top_left"": [1732, 123], ""bottom_right"": [1902, 214]}>",ROC
+0,<DX>,"<{""text"": ""ROC"", ""top_left"": [1734, 123], ""bottom_right"": [1905, 214]}>",ROC
+1,<MG>,"<{""text"": ""BELL AUSTIN [U] 02.29.2012\nDOB: 01.24.1964"", ""top_left"": [100, 5], ""bottom_right"": [1475, 250], ""font"": {""size"": 100}}>",

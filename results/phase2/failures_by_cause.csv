@@ -1,0 +1,7 @@
+cause,dicom,hipaa,tcia
+burned-in text (Phase 4),0,29,0
+"free text that must be cleaned, not removed (Phase 3)",0,4,63292
+icon image removed on purpose (may show burned-in text),0,0,1763
+other,1,0,2054
+private text tag (Phase 3),0,0,235125
+private value removed by TCIA's vendor knowledge base (not PHI),0,0,4519

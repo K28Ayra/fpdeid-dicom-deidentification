@@ -1,0 +1,7 @@
+release,hidden fact,attacker accuracy %,majority-guess accuracy %,patients with this fact
+pseudonymised,study year,9.3,12.0,216
+pseudonymised,birth year,8.3,3.2,216
+pseudonymised,hospital,1.5,1.5,68
+"anonymised, k=5",study year,12.0,12.0,216
+"anonymised, k=5",birth year,3.2,3.2,216
+"anonymised, k=5",hospital,1.5,1.5,68

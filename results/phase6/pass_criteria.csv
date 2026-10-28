@@ -1,0 +1,10 @@
+check,target,result
+tests pass,"100%, ≥ 40 tests","62 passed, 0 failed, 0 skipped"
+code coverage of src/fpdeid,≥ 80%,83%
+"throughput, headers only, 16 workers",reported,"610.2 files/s, 22133 studies/hour"
+"throughput, headers + OCR + auditor, 16 workers",reported,"13.4 files/s, 485 studies/hour"
+peak RAM with 8 workers,≤ 4 GB,1.15 GB
+"identical output, 8 vs 16 workers",100%,100.0%
+lineage correct and complete,100%,100.0%
+resume after kill gives the same output,100%,"100.0%, 0 extra files"
+one-command output = scored Phase 5 output,100%,100.0% of 23921 files

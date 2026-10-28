@@ -1,0 +1,19 @@
+,0
+name (PatientName),41073
+pattern:doctor (generic),38994
+pattern:id (generic),25773
+date (InstanceCreationDate),21498
+institution (InstitutionName),20248
+pattern:initials (generic),14561
+id (OtherPatientIDs),14517
+pattern:phone (generic),13203
+address (PatientAddress),13106
+pattern:ssn (generic),10472
+date (StudyDate),8219
+pattern:date (generic),7770
+pattern:site (generic),5454
+pattern:address (generic),2369
+name (ReferringPhysicianName),767
+institution (ClinicalTrialSiteName),60
+id (ClinicalTrialSubjectReadingID),6
+id (PatientID),2

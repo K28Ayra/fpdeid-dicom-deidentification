@@ -1,0 +1,9 @@
+cause,dicom,hipaa,tcia,total
+private value empty in the input,0,0,39338,39338
+private tag inside a private sequence: the scorer cannot read it (also fails for unchanged files),0,0,13686,13686
+private value removed by TCIA's vendor knowledge base (not PHI),0,0,5130,5130
+icon image removed on purpose (may show burned-in text),0,0,1763,1763
+other,1,0,207,208
+LEAK: identifier not found by fingerprint or patterns,0,17,22,39
+burned-in text in pixels (Phase 4),0,29,0,29
+over-cleaning in free text,0,0,8,8

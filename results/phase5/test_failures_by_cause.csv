@@ -1,0 +1,15 @@
+cause,dicom,hipaa,tcia,total
+private value empty in the input,0,0,43917,43917
+private tag inside a private sequence: the scorer cannot read it (also fails for unchanged files),0,0,14914,14914
+private value removed by TCIA's vendor knowledge base (not PHI),0,0,12842,12842
+icon image removed on purpose (may show burned-in text),0,0,6097,6097
+LEAK: identifier not found by fingerprint or patterns,0,256,575,831
+label of a private block whose content was binary and removed,0,0,409,409
+other: <text_retained>,0,0,136,136
+other: <text_notnull>,110,0,0,110
+over-cleaning in free text,0,0,95,95
+LEAK: date shifted check failed,0,90,0,90
+over-cleaning in private text,0,0,82,82
+other: <tag_retained>,9,0,0,9
+pixels changed although no PHI there,0,0,9,9
+burned-in text in pixels not hidden,0,2,0,2

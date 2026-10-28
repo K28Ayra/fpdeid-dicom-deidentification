@@ -1,0 +1,11 @@
+action,checks,passed,failed,accuracy_%
+<date_shifted>,139774,139774.0,0.0,100.0
+<patid_consistent>,23921,23921.0,0.0,100.0
+<pixels_hidden>,35,27.0,8.0,77.143
+<pixels_retained>,23886,23885.0,1.0,99.996
+<tag_retained>,1101091,1101090.0,1.0,100.0
+<text_notnull>,618539,618539.0,0.0,100.0
+<text_removed>,343583,338414.0,5169.0,98.496
+<text_retained>,3453539,3398537.0,55002.0,98.407
+<uid_changed>,234418,234418.0,0.0,100.0
+<uid_consistent>,234418,234418.0,0.0,100.0

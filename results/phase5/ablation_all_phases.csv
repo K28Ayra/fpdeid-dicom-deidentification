@@ -1,0 +1,12 @@
+configuration,weighted score %,HIPAA %,privacy checks failed,utility checks failed
+Baseline A: PS3.15 Basic Profile,95.311,99.989,21358.0,1670457.0
+"Baseline B: + options (dates, clean descriptors)",95.87,99.988,31131.0,1458139.0
+Phase 2: policy engine,99.15,99.994,4577.0,302210.0
+Phase 3: rules + generic patterns,97.406,96.534,25428.0,54997.0
+Phase 3: rules + NER + patterns,98.799,98.948,11119.0,163270.0
+Phase 3: rules + fingerprint (exact values),96.651,95.52,47854.0,54999.0
+"Phase 3: rules + fingerprint (variants, no patterns)",99.077,98.953,19764.0,54999.0
+Phase 3: FP-DeID (fingerprint + patterns + guard),99.828,99.992,5198.0,55003.0
+"Phase 4: + pixel OCR, value-aware",99.831,99.996,5177.0,55004.0
+Phase 5: + closed-loop auditor,99.831,99.996,5177.0,55004.0
+TEST SET (once): full FP-DeID,99.805,99.95,13765.0,65778.0

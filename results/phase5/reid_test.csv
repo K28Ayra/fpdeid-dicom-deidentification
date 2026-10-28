@@ -1,0 +1,7 @@
+release,unique patients %,patients with k < 5 %,min k,link top-1 % (insider),link top-5 % (insider),link top-1 % (public),link top-5 % (public),random top-1 %,QI information kept %
+pseudonymised (FP-DeID output),99.4,100.0,1,98.4,100.0,28.4,70.8,0.31,94.7
+generalised only,81.1,100.0,1,88.5,100.0,12.7,51.9,0.31,60.2
+"anonymised, k=2",0.0,73.6,2,31.2,79.1,7.3,32.8,0.31,38.9
+"anonymised, k=3",0.0,42.5,3,16.3,62.4,4.5,22.1,0.31,30.6
+"anonymised, k=5",0.0,0.0,5,7.3,36.7,1.7,8.5,0.31,23.4
+"anonymised, k=10",0.0,0.0,10,4.3,21.5,0.9,4.7,0.31,19.6

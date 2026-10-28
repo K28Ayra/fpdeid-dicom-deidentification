@@ -1,0 +1,52 @@
+# Research-critical fields: they must survive de-identification UNCHANGED (utility check).
+# Chosen because image analysis, segmentation and reconstruction depend on them.
+
+geometry:
+  - Rows
+  - Columns
+  - PixelSpacing
+  - SliceThickness
+  - SpacingBetweenSlices
+  - ImagePositionPatient
+  - ImageOrientationPatient
+  - SliceLocation
+pixel_encoding:
+  - BitsAllocated
+  - BitsStored
+  - HighBit
+  - PixelRepresentation
+  - PhotometricInterpretation
+  - SamplesPerPixel
+  - RescaleSlope
+  - RescaleIntercept
+  - WindowCenter
+  - WindowWidth
+acquisition_ct_xray:
+  - KVP
+  - XRayTubeCurrent
+  - ExposureTime
+  - Exposure
+  - ConvolutionKernel
+acquisition_mr:
+  - RepetitionTime
+  - EchoTime
+  - InversionTime
+  - FlipAngle
+  - MagneticFieldStrength
+  - ScanningSequence
+  - SequenceVariant
+  - SequenceName
+acquisition_pet:
+  - Units
+  - DecayCorrection
+  - CorrectedImage
+equipment:
+  - Modality
+  - Manufacturer
+  - ManufacturerModelName
+  - BodyPartExamined
+patient_characteristics:
+  - PatientSex
+  - PatientAge
+  - PatientWeight
+  - PatientSize

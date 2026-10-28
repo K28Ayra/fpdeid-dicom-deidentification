@@ -1,0 +1,23 @@
+module,statements,missed,coverage %
+__init__.py,3,0,100
+auditor.py,303,72,76
+baselines.py,195,31,84
+burnin.py,129,22,83
+census.py,66,8,88
+checks.py,147,37,75
+dicom_io.py,49,8,84
+engine.py,448,87,81
+fingerprint.py,344,36,90
+ner_baseline.py,51,2,96
+paths.py,19,0,100
+phi_locations.py,61,10,84
+pipeline.py,74,1,99
+pixel_eval.py,58,18,69
+pixels.py,310,73,76
+plant_leaks.py,110,5,95
+ps315.py,57,5,91
+reid_attack.py,231,26,89
+run.py,267,37,86
+scoring.py,167,43,74
+validity.py,31,18,42
+TOTAL,3120,539,83

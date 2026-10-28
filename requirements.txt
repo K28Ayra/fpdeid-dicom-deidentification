@@ -1,0 +1,40 @@
+# Main environment (conda env "fpdeid", see environment.yml). Versions are the ones used for all results.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+pydicom==3.0.2
+PyYAML==6.0.3
+RapidFuzz==3.14.5
+psutil==7.2.2
+requests==2.34.2
+tqdm==4.70.1
+openpyxl==3.1.5
+matplotlib==3.10.9
+
+# notebooks
+ipykernel==7.3.0
+jupytext==1.19.6
+nbconvert==7.17.2
+nbformat==5.11.1
+nbclient==0.11.0
+
+# tests
+pytest==9.1.1
+pytest-cov==7.1.0
+
+# Phase 3: NER comparison (these pins avoid a tokenizer crash in newer preshed/cymem)
+spacy==3.8.7
+preshed==3.0.9
+cymem==2.0.8
+click==8.5.0
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+# Phase 4: OCR (torch is installed from the PyTorch index, see environment.yml)
+easyocr==1.7.2
+opencv-python-headless==5.0.0.93
+
+# Phase 7: defacing
+nibabel==5.4.2
+scikit-image==0.25.2
+surfa==0.6.3
+quickshear==1.2.0

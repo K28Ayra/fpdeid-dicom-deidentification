@@ -1,0 +1,26 @@
+action,tag_name,failures
+<text_retained>,<Private Creator>,79548
+<text_retained>,<[PET compatible_version]>,34128
+<text_retained>,<[PET software_version]>,28440
+<text_retained>,<Study Description>,23661
+<text_retained>,<Series Description>,23412
+<text_removed>,<Series Number>,21268
+<text_retained>,<Private tag data>,16628
+<text_retained>,<[PET archived]>,11376
+<text_retained>,<[PET axial_fov]>,8392
+<text_retained>,<[PET bp_center_x]>,8392
+<text_retained>,<[PET event_separation]>,8392
+<text_retained>,<[PET delayed_events]>,8392
+<text_retained>,<[PET derived]>,8392
+<text_retained>,<[PET delayed_bias]>,8392
+<text_retained>,<[PET emission_present]>,8392
+<text_retained>,<[PET recon_method]>,8392
+<text_retained>,<[PET cac_edge_threshold]>,8392
+<text_retained>,<[PET coinc_delay_offset]>,8392
+<text_retained>,<[PET cac_skull_offset]>,8392
+<text_retained>,<[PET collect_countrate]>,8392
+<text_retained>,<[PET collect_deadtime]>,8392
+<text_retained>,<[PET collect_singles]>,8392
+<text_retained>,<[PET coinc_output_mode]>,8392
+<text_retained>,<[PET collimation]>,8392
+<text_retained>,<[PET acq_delay]>,8392

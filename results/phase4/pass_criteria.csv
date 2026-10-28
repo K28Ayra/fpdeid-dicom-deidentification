@@ -1,0 +1,12 @@
+check,target,result
+PHI box recall (synthetic test split),100%,62.96
+readable PHI words after hiding,0,2
+harmless text kept,≥ 90%,79.23
+hidden area vs. all_text / bands,smaller,14.72 vs 30.702 / 29.214
+pixels changed outside hidden boxes,0,0
+MIDI-B pixel checks passed,35 / 35,27
+MIDI-B images that must stay unchanged (pixels_retained),100%,99.996
+valid DICOM (files with hidden text),100%,100.0
+share of files read by OCR (screening),small,2.97
+peak GPU memory,≤ 8 GB,5.16
+MIDI-B weighted score,≥ Phase 3 (99.828%),99.831

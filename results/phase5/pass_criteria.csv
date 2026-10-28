@@ -1,0 +1,17 @@
+check,target,result
+"MIDI-B weighted score, TEST set",≥ 99%,99.805
+"MIDI-B weighted score, validation (same rules)",= Phase 4 or better,99.831
+text leaks on the test set (scorer),"0, or each listed",921
+burned-in text checks passed (test),"all, or each listed",25 / 27
+auditor: planted header leaks found,100%,100 / 100
+auditor: planted pixel leaks found,100%,20 / 20
+"auditor hits per 10,000 elements (validation / test)",reported,0.0 / 0.082
+auditor hits left after the closed loop (test),0,0
+"singling out, pseudonymised (test): unique %",reported,99.4
+"singling out, anonymised k=5 (test): min k",≥ 5,5.0
+"linkability top-1, pseudonymised / anonymised k=5 / random (test)",reported vs 1/N,98.4 / 7.3 / 0.31
+inference of the true study year (test) vs majority guess,≤ majority,13.7 vs 12.4
+research-field retention (test),100%,100.0
+"DICOM validity (test, all files)",100%,100.0
+audit coverage (test),100%,100.0
+original UIDs left (test),0,0

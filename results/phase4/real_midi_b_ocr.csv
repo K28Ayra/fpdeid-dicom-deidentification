@@ -1,0 +1,117 @@
+modality,key text,ocr line,confidence,hide,reason
+DX,JT,PORTABLE,1.0,False,radiology marker / numbers
+DX,JT,L,1.0,False,radiology marker / numbers
+DX,JT,UPRIGHT,0.826,False,radiology marker / numbers
+DX,JT,JT,0.995,True,short code that looks like initials
+CR,JONES ERIN [F] 01.12.2019 / DOB: 11.12.1937,JONES ERIN [F] 01.12.2019,0.977,True,name (PatientName)
+CR,JONES ERIN [F] 01.12.2019 / DOB: 11.12.1937,D,1.0,False,no identifier found
+CR,JONES ERIN [F] 01.12.2019 / DOB: 11.12.1937,DOB: 11.12.1937,0.822,True,date (PatientBirthDate)
+MG,BELL AUSTIN [U] 02.29.2012 / DOB: 01.24.1964,ELL AUSTIN [U] 02.29.2012,0.981,True,name (PatientName)
+MG,BELL AUSTIN [U] 02.29.2012 / DOB: 01.24.1964,DOB: 01.24.1964,0.898,True,date (PatientBirthDate)
+MG,BELL AUSTIN [U] 02.29.2012 / DOB: 01.24.1964,8 2 9,0.175,False,radiology marker / numbers
+CR,SWU,L,0.999,False,radiology marker / numbers
+CR,SWU,SWU,0.982,True,short code that looks like initials
+CR,SWU,SEMI-ERECT,1.0,False,radiology marker / numbers
+CR,SWU,PORTABLE,1.0,False,radiology marker / numbers
+DX,JKR,PORTABLE SEMI-ERECT ERECT,0.713,False,radiology marker / numbers
+DX,JKR,Jkr,0.766,True,short code that looks like initials
+DX,JKR,PORTABLE #6 Jo1S,0.03,False,no identifier found
+DX,JT,UPRIGHT,0.864,False,radiology marker / numbers
+DX,JT,L,1.0,False,radiology marker / numbers
+DX,JT,PORTABLE,1.0,False,radiology marker / numbers
+DX,JT,JT,0.995,True,short code that looks like initials
+DX,mwf,SEMI-ERECT,0.997,False,radiology marker / numbers
+DX,mwf,[mwf,0.45,False,no identifier found
+DX,mwf,PORTABLE,0.984,False,radiology marker / numbers
+CR,GARCIA MEAGAN [F] 03.30.2013 / DOB: 02.24.1967,GARCIA MEAGAN [F] 03.30.2013 GARCIA MB,0.695,True,name (PatientName)
+CR,GARCIA MEAGAN [F] 03.30.2013 / DOB: 02.24.1967,DOB: 02.24.1967,0.982,True,date (PatientBirthDate)
+CR,GARCIA MEAGAN [F] 03.30.2013 / DOB: 02.24.1967,D,0.999,False,no identifier found
+DX,ICG,L,1.0,False,radiology marker / numbers
+DX,ICG,Icg,0.316,False,no identifier found
+DX,ICG,PORTABLE,0.97,False,radiology marker / numbers
+DX,ICG,INTRA OP,1.0,False,no identifier found
+DX,ICG,SUPINE,1.0,False,radiology marker / numbers
+DX,ICG,B209,0.018,False,no identifier found
+DX,ICG,PORTABLE #6,0.999,False,radiology marker / numbers
+DX,ICG,L,1.0,False,radiology marker / numbers
+DX,ICG,Icg,0.316,False,no identifier found
+DX,ICG,PORTABLE,0.97,False,radiology marker / numbers
+DX,ICG,INTRA OP,1.0,False,no identifier found
+DX,ICG,SUPINE,1.0,False,radiology marker / numbers
+DX,ICG,B209,0.018,False,no identifier found
+DX,ICG,PORTABLE #6,0.999,False,radiology marker / numbers
+CR,NKF,7XM,0.283,False,no identifier found
+CR,NKF,7XM,0.428,False,no identifier found
+CR,NKF,1,0.074,False,radiology marker / numbers
+DX,SANCHEZ TIMOTHY [M] 08.05.2018 / DOB: 07.01.1972,SANCHEZ TIMOTHY [M] 08.05.2018,0.929,True,name (PatientName)
+DX,SANCHEZ TIMOTHY [M] 08.05.2018 / DOB: 07.01.1972,DOB: 07.01.1972 DC,0.987,True,date (PatientBirthDate)
+DX,SANCHEZ TIMOTHY [M] 08.05.2018 / DOB: 07.01.1972,SEMI-UPRIGHHT,0.547,False,no identifier found
+DX,SANCHEZ TIMOTHY [M] 08.05.2018 / DOB: 07.01.1972,PORTABLE,1.0,False,radiology marker / numbers
+DX,YH,V,0.598,False,no identifier found
+DX,YH,SPORERBGT SEMI-ERECT PORTABLE,0.254,False,no identifier found
+DX,TJN,L,1.0,False,radiology marker / numbers
+DX,TJN,TJN,1.0,True,short code that looks like initials
+DX,TJN,PORTABLE,1.0,False,radiology marker / numbers
+DX,TJN,SEMI-ERECT,0.998,False,radiology marker / numbers
+CR,LEITO,D,1.0,False,no identifier found
+CR,LEITO,LEITO,0.996,False,no identifier found
+CR,HAYES JESSICA [F] 01.03.2012 / DOB: 12.15.1986,4 3,0.077,False,radiology marker / numbers
+CR,HAYES JESSICA [F] 01.03.2012 / DOB: 12.15.1986,HAYES JESSICA [F] 01.03.2012,0.992,True,name (PatientName)
+CR,HAYES JESSICA [F] 01.03.2012 / DOB: 12.15.1986,DOB: 12.15.1986,0.995,True,date (PatientBirthDate)
+DX,JOHNSON LARRY [M] 03.09.2019 / DOB: 01.30.1968,00 |,0.305,False,radiology marker / numbers
+DX,JOHNSON LARRY [M] 03.09.2019 / DOB: 01.30.1968,JOHNSON LARRY [M] 03.09.2019 03.09.2019,0.705,True,name (PatientName)
+DX,JOHNSON LARRY [M] 03.09.2019 / DOB: 01.30.1968,DOB: 01.30.1968 .,0.018,True,date (PatientBirthDate)
+CR,ACO,SEMI-ERECT,1.0,False,radiology marker / numbers
+CR,ACO,PORTABLE,1.0,False,radiology marker / numbers
+CR,ACO,L,0.991,False,radiology marker / numbers
+CR,ACO,AcO,0.542,True,short code that looks like initials
+CR,CEF,PORTABLE,1.0,False,radiology marker / numbers
+CR,CEF,L,0.994,False,radiology marker / numbers
+CR,CEF,CEF,0.94,True,short code that looks like initials
+CR,CEF,UPRIGHT,1.0,False,radiology marker / numbers
+CR,CMS,2m],0.424,False,no identifier found
+CR,CMS,J,0.405,False,no identifier found
+CR,CMS,2va,0.596,True,short code that looks like initials
+MG,ADAMS LAURA [U] 10.14.2010 / DOB: 08.31.1952,84,0.983,False,radiology marker / numbers
+MG,ADAMS LAURA [U] 10.14.2010 / DOB: 08.31.1952,2,0.643,False,radiology marker / numbers
+MG,ADAMS LAURA [U] 10.14.2010 / DOB: 08.31.1952,ADAMS LAURA [U] 10.14.2010,0.946,True,name (PatientName)
+MG,ADAMS LAURA [U] 10.14.2010 / DOB: 08.31.1952,DOB: 08.31.1952,0.953,True,date (PatientBirthDate)
+DX,JGR,SEMI-ERECT,0.977,False,radiology marker / numbers
+DX,JGR,R,0.981,False,radiology marker / numbers
+DX,JGR,PORTABLE,1.0,False,radiology marker / numbers
+DX,JGR,JGR,0.923,True,short code that looks like initials
+DX,MSS,R,0.999,False,radiology marker / numbers
+DX,MSS,SEMI-ERECT,1.0,False,radiology marker / numbers
+DX,MSS,MSS,0.998,True,short code that looks like initials
+DX,MSS,PORTABLE,0.968,False,radiology marker / numbers
+DX,TJN,PORTABLE SEMI-ERECT,0.929,False,radiology marker / numbers
+DX,TJN,2/2,1.0,False,radiology marker / numbers
+DX,TJN,R J,0.628,False,no identifier found
+DX,TJN,TJn,0.798,True,short code that looks like initials
+DX,TJN,0,0.996,False,radiology marker / numbers
+DX,TJN,2,0.912,False,radiology marker / numbers
+DX,TJN,PORTABLE #6,0.92,False,radiology marker / numbers
+DX,MOODY BRENT [M] 08.06.2010 / DOB: 06.01.1922,MOODY BRENT [M] 08.06.2010,0.874,True,name (PatientName)
+DX,MOODY BRENT [M] 08.06.2010 / DOB: 06.01.1922,DOB: 06.01.1922,0.998,True,date (PatientBirthDate)
+CR,MARTIN ERIC [M] 09.20.2010 / DOB: 07.28.1938,MARTIN ERIC [M] 09.20.2010,0.992,True,name (PatientName)
+CR,MARTIN ERIC [M] 09.20.2010 / DOB: 07.28.1938,DOB: 07.28.1938 DOB: 0,0.946,True,date (PatientBirthDate)
+CR,MARTIN ERIC [M] 09.20.2010 / DOB: 07.28.1938,Rw,0.822,True,short code that looks like initials
+CR,MARTIN ERIC [M] 09.20.2010 / DOB: 07.28.1938,2,0.58,False,radiology marker / numbers
+CR,MARTIN ERIC [M] 09.20.2010 / DOB: 07.28.1938,2,0.109,False,radiology marker / numbers
+CR,MHS,R,1.0,False,radiology marker / numbers
+CR,MHS,MHS,0.571,True,short code that looks like initials
+CR,MHS,0 0 0,0.597,False,radiology marker / numbers
+CR,MHS,A9,0.19,False,no identifier found
+DX,ROC,Roc,0.122,False,no identifier found
+DX,ROC,RQF RCc,0.305,False,no identifier found
+MG,LM,K H LM,0.984,False,no identifier found
+CR,LEITO,D,1.0,False,no identifier found
+CR,LEITO,LEITO,0.997,False,no identifier found
+DX,JAMES RUSSELL [M] 12.13.2018 / DOB: 10.21.1947,R,0.997,False,radiology marker / numbers
+DX,JAMES RUSSELL [M] 12.13.2018 / DOB: 10.21.1947,Ach,0.643,True,short code that looks like initials
+DX,JAMES RUSSELL [M] 12.13.2018 / DOB: 10.21.1947,JAMES RUSSELL [M] 12.13.2018,0.786,True,name (PatientName)
+DX,JAMES RUSSELL [M] 12.13.2018 / DOB: 10.21.1947,DOB: 10.21.1947,0.848,True,date (PatientBirthDate)
+DX,JAMES RUSSELL [M] 12.13.2018 / DOB: 10.21.1947,PORTABLE #6,0.93,False,radiology marker / numbers
+DX,JKR,PORTABLE SEMI-ERECT,0.976,False,radiology marker / numbers
+DX,JKR,JKR,0.995,True,short code that looks like initials
+DX,JKR,PORTABLE #6 RTA 9,0.175,False,no identifier found

@@ -1,0 +1,4 @@
+tag_name,modality,checks
+<Image Comments>,<CT>,1
+<Patient Comments>,<MR>,16
+<Text Value>,<SR>,22

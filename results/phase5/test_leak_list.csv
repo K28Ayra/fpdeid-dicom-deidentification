@@ -1,0 +1,11 @@
+tag_name,modality,auditor sees it,checks
+<Additional Patient History>,<CT>,False,75
+<Additional Patient History>,<DX>,False,1
+<Additional Patient History>,<MR>,False,555
+<Image Comments>,<CT>,False,7
+<Image Comments>,<MR>,False,3
+<Patient Comments>,<DX>,False,1
+<Referenced File ID>,<MR>,False,64
+<Study Comments>,<CT>,False,111
+<Text Value>,<SR>,False,14
+<[Start time(secs) in first axial]>,<CT>,False,90

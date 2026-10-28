@@ -1,0 +1,7 @@
+step,files,seconds,files/s,studies/hour,files read by OCR,peak RAM GB
+"whole run, headers + OCR + auditor (16 workers, GPU 0)",23921.0,1787.4,13.4,485.0,710.0,3.78
+  fingerprints,,15.8,,,,
+  headers,,18.7,,,,
+  pixels,,1682.5,,,,
+  auditor,,64.5,,,,
+  lineage,,3.8,,,,

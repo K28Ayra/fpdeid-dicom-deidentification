@@ -1,0 +1,11 @@
+check,target,result
+MIDI-B weighted score (validation),≥ 99%,99.828
+residual fingerprint hits in output,0,0.0
+leaks in free text / private text,"0, or each listed with a cause",5169.0
+fingerprint vs NER: text leaks,≤ NER (11090),5169.0
+fingerprint vs NER: useful text removed,≤ NER (126512),53032.0
+removals explained by an entry/pattern,100%,100.0
+extra time per file,≤ 20 ms,7.88
+valid DICOM,100%,100.0
+audit coverage,100%,100.0
+research fields kept,100%,100.0

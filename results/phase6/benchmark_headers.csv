@@ -1,0 +1,5 @@
+workers,files,header step s,files/s (header step),whole run s,files/s (whole run),studies/hour (whole run),peak RAM GB
+1,23921,285.2,83.9,425.3,56.2,2040.0,0.7
+4,23921,66.9,357.6,111.2,215.1,7802.0,0.98
+8,23921,34.4,695.4,63.4,377.3,13685.0,1.15
+16,23921,18.5,1293.0,39.2,610.2,22133.0,1.68

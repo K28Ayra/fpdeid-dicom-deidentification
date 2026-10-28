@@ -1,0 +1,7 @@
+modality,image size,count,recall %
+CR,large,13,92.3
+CT,large,27,85.2
+DX,large,31,96.8
+MR,large,5,100.0
+MR,small (<512 px),7,42.9
+PT,small (<512 px),187,51.9

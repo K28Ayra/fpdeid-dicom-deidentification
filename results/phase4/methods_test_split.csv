@@ -1,0 +1,4 @@
+,PHI recall %,harmless kept %,box precision %,hidden area %
+fpdeid,62.96,79.23,96.92,14.72
+all_text,74.44,13.53,41.11,30.702
+bands,50.37,4.83,69.11,29.214

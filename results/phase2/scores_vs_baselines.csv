@@ -1,0 +1,19 @@
+,BA,BB,Phase 2
+checks,6173204.0,6173204.0,6173204.0
+plain_accuracy_%,72.594,75.875,95.03
+hipaa_checks,567859.0,567859.0,567859.0
+hipaa_accuracy_%,99.989,99.988,99.994
+dicom_checks,1977969.0,1977969.0,1977969.0
+dicom_accuracy_%,99.885,99.885,100.0
+tcia_checks,3627376.0,3627376.0,3627376.0
+tcia_accuracy_%,53.424,59.007,91.543
+weighted_score_%,95.311,95.87,99.15
+privacy_checks,717810.0,717810.0,717810.0
+privacy_failed,21358.0,31131.0,4577.0
+privacy_pass_%,97.025,95.663,99.362
+utility_checks,5197055.0,5197055.0,5197055.0
+utility_failed,1670457.0,1458139.0,302210.0
+utility_pass_%,67.858,71.943,94.185
+consistency_checks,258339.0,258339.0,258339.0
+consistency_failed,32.0,32.0,0.0
+consistency_pass_%,99.988,99.988,100.0

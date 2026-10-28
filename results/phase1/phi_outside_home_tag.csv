@@ -1,0 +1,50 @@
+home_tag,found_in_name,hits,files,private
+PatientName,Series Description,18338,9236,False
+PatientID,Series Description,7455,7455,False
+PatientName,Additional Patient History,13963,7004,False
+PatientID,Protocol Name,6975,6975,False
+PatientName,Study Comments,11509,5815,False
+PatientName,Requested Procedure Description,11310,5655,False
+PatientName,Study Description,10336,5168,False
+PatientName,Protocol Name,7828,3929,False
+PatientName,Person Name,6792,3396,False
+PatientID,Additional Patient History,2993,2993,False
+PatientID,Clinical Trial Subject ID,1578,1578,False
+OtherPatientIDs,Patient Comments,1561,1561,False
+PatientName,Patient Comments,3066,1533,False
+PatientID,Study Description,1531,1531,False
+PatientID,Study Comments,1506,1506,False
+OtherPatientIDs,Requested Procedure Description,1450,1450,False
+PatientName,Medical Alerts,2501,1347,False
+PatientID,Requested Procedure Description,1268,1268,False
+OtherPatientIDs,Study Comments,1206,1206,False
+PatientID,Private tag data,1098,1098,True
+PatientID,Scheduled Procedure Step Description,915,915,False
+PatientName,Scheduled Procedure Step Description,1682,841,False
+PatientID,Requested Procedure Comments,793,793,False
+OtherPatientIDs,Medical Alerts,590,590,False
+OtherPatientIDs,Study Description,578,578,False
+PatientID,Patient Comments,462,462,False
+PatientID,Acquisition Comments,449,449,False
+OtherPatientIDs,Series Description,382,382,False
+PatientName,Requested Procedure Comments,718,359,False
+PatientID,Medical Alerts,314,314,False
+PatientName,Private tag data,620,310,True
+OtherPatientIDs,Protocol Name,303,303,False
+PatientName,Referring Physician's Name,253,253,False
+OtherPatientIDs,Additional Patient History,204,204,False
+PatientName,Physician(s) of Record,200,200,False
+PatientName,Acquisition Comments,364,182,False
+PatientName,Operators' Name,121,121,False
+PatientName,Image Comments,164,84,False
+PatientID,Image Comments,58,58,False
+PatientName,Performing Physician's Name,50,50,False
+OtherPatientIDs,Image Comments,36,36,False
+PatientName,Image Type,26,26,False
+PatientName,Content Creator's Name,10,10,False
+PatientName,Comments on Radiation Dose,6,3,False
+PatientID,Admitting Diagnoses Description,2,2,False
+PatientID,Text Value,2,2,False
+PatientID,Comments on Radiation Dose,1,1,False
+PatientID,Imaging Service Request Comments,1,1,False
+PatientName,Verifying Observer Name,1,1,False

@@ -1,0 +1,8 @@
+,BB,Phase 2,Phase 3
+weighted_score_%,95.87,99.15,99.828
+hipaa_accuracy_%,99.988,99.994,99.992
+dicom_accuracy_%,99.885,100.0,100.0
+tcia_accuracy_%,59.007,91.543,98.342
+privacy_failed,31131.0,4577.0,5198.0
+utility_failed,1458139.0,302210.0,55003.0
+consistency_failed,32.0,0.0,0.0

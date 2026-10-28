@@ -1,0 +1,38 @@
+# data never goes to GitHub (patient-like data + very large)
+ayra_data/
+*.dcm
+*.nii
+*.nii.gz
+*.tcia
+*.zip
+*.tar
+*.tar.gz
+
+# environments, external tools and caches
+venv/
+.venv/
+envs/
+tools/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.cache/
+
+# large pipeline outputs (small summary tables in results/ are kept)
+outputs/
+results/**/*.dcm
+results/**/audit_full/
+logs/
+*.log
+
+# editor / OS
+.vscode/
+.DS_Store
+
+# tiny synthetic test files (made by scripts/make_test_data.py) are part of the code
+!tests/data/input/*.dcm
+
+# test coverage files
+.coverage
+.coverage.*

@@ -1,0 +1,5 @@
+method,views with a face (of 160),views with a face (yunet),views with a face (ultralight),brain voxels changed,removed tissue ml,skull-strip Dice,|brain volume change| %,"tissue Dice (mean of CSF, GM, WM)",deface seconds (without SynthStrip)
+fpdeid,7.0,58.0,18.0,0.0,917.79,0.9941,0.6986,0.9859,22.2705
+quickshear,36.0,82.0,48.0,0.0,272.215,0.9955,0.4179,0.9904,0.0855
+box,11.0,50.0,24.0,502124.0,886.71,0.988,1.8892,0.9767,0.0195
+original (no defacing),88.0,129.0,90.0,0.0,0.0,1.0,0.0,1.0,0.0

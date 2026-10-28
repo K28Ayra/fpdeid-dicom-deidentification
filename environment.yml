@@ -1,0 +1,16 @@
+# Main environment: pipeline, notebooks, tests.
+#   conda env create -f environment.yml
+#   conda activate fpdeid
+# torch is built for CUDA 12.6 (works with NVIDIA drivers >= 560); on a machine without a GPU it runs on the CPU.
+name: fpdeid
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.7.1
+      - torchvision==0.22.1
+      - -r requirements.txt
+      - -e .

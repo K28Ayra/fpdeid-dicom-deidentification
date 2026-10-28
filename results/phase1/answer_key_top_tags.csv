@@ -1,0 +1,1115 @@
+action,tag_name,checks
+text_retained,Coding Scheme Designator,108285
+text_retained,Code Meaning,107645
+text_retained,Code Value,102766
+text_retained,Private Creator,79548
+text_retained,[PET compatible_version],34128
+text_removed,Accession Number,31569
+uid_consistent,Series Instance UID,30151
+uid_changed,Series Instance UID,30151
+uid_changed,Study Instance UID,30141
+uid_consistent,Study Instance UID,30141
+text_retained,[PET software_version],28440
+text_retained,Image Orientation (Patient),24923
+text_retained,Image Position (Patient),24923
+text_retained,Pixel Representation,24047
+text_retained,Photometric Interpretation,24047
+text_retained,Samples per Pixel,24047
+text_retained,High Bit,24047
+text_retained,Columns,24047
+text_retained,Bits Stored,24047
+text_retained,Bits Allocated,24047
+text_retained,Rows,24047
+text_retained,Manufacturer's Model Name,23977
+text_removed,Patient's Name,23921
+text_notnull,Study Instance UID,23921
+text_removed,Referring Physician's Name,23921
+text_removed,Patient's Birth Date,23921
+tag_retained,Patient's Name,23921
+tag_retained,Patient ID,23921
+text_retained,SOP Class UID,23921
+text_notnull,SOP Instance UID,23921
+text_notnull,SOP Class UID,23921
+text_retained,Study Time,23921
+tag_retained,Series Number,23921
+tag_retained,Series Instance UID,23921
+tag_retained,Instance Number,23921
+date_shifted,Study Date,23921
+patid_consistent,Patient ID,23921
+uid_consistent,SOP Instance UID,23921
+uid_changed,SOP Instance UID,23921
+tag_retained,SOP Class UID,23921
+tag_retained,Modality,23921
+tag_retained,Patient's Birth Date,23921
+tag_retained,Study Instance UID,23921
+text_retained,Instance Number,23921
+text_notnull,Series Instance UID,23921
+text_notnull,Modality,23921
+tag_retained,Referring Physician's Name,23921
+tag_retained,SOP Instance UID,23921
+tag_retained,Study Time,23921
+tag_retained,Study Date,23921
+tag_retained,Accession Number,23921
+tag_retained,Study ID,23921
+text_retained,Patient's Sex,23921
+text_retained,Modality,23921
+tag_retained,Patient's Sex,23921
+text_removed,Patient ID,23921
+text_retained,Manufacturer,23908
+text_notnull,Samples per Pixel,23899
+tag_retained,Photometric Interpretation,23899
+tag_retained,Samples per Pixel,23899
+text_notnull,Photometric Interpretation,23899
+text_notnull,Rows,23899
+text_notnull,Bits Allocated,23899
+tag_retained,Pixel Representation,23899
+tag_retained,Bits Stored,23899
+text_notnull,Pixel Representation,23899
+text_notnull,Columns,23899
+tag_retained,High Bit,23899
+tag_retained,Bits Allocated,23899
+tag_retained,Columns,23899
+text_notnull,Bits Stored,23899
+tag_retained,Rows,23899
+text_notnull,High Bit,23899
+text_retained,Image Type,23897
+pixels_retained,,23886
+date_shifted,Content Date,23774
+text_retained,Content Time,23773
+text_retained,Pixel Spacing,23688
+tag_retained,Manufacturer,23686
+uid_changed,Frame of Reference UID,23668
+uid_consistent,Frame of Reference UID,23668
+text_retained,Study Description,23661
+text_retained,Slice Thickness,23646
+text_retained,Patient Position,23642
+tag_retained,Image Type,23638
+text_notnull,Image Type,23614
+tag_retained,Position Reference Indicator,23571
+text_notnull,Frame of Reference UID,23571
+tag_retained,Frame of Reference UID,23571
+text_notnull,Pixel Spacing,23551
+tag_retained,Slice Thickness,23551
+text_notnull,Image Position (Patient),23551
+tag_retained,Image Orientation (Patient),23551
+tag_retained,Image Position (Patient),23551
+tag_retained,Pixel Spacing,23551
+text_notnull,Image Orientation (Patient),23551
+text_retained,Slice Location,23526
+text_retained,Series Description,23412
+text_retained,Specific Character Set,23290
+date_shifted,Acquisition Date,22974
+text_retained,Acquisition Time,22973
+uid_changed,Referenced SOP Instance UID,22915
+uid_consistent,Referenced SOP Instance UID,22915
+text_removed,Series Description,22886
+date_shifted,Series Date,22797
+text_removed,Study Description,22484
+text_retained,Referenced SOP Class UID,22337
+text_retained,Body Part Examined,22257
+text_retained,Longitudinal Temporal Information Modified,21918
+text_retained,Reconstruction Diameter,21589
+text_removed,Series Number,21268
+text_retained,Series Time,21070
+text_removed,Protocol Name,20986
+text_retained,Rescale Slope,20916
+text_retained,Rescale Intercept,20916
+text_retained,Patient's Weight,20240
+tag_retained,Rescale Intercept,20083
+text_notnull,Rescale Slope,20083
+text_notnull,Rescale Intercept,20083
+tag_retained,Rescale Slope,20083
+text_retained,Largest Image Pixel Value,18821
+text_retained,Smallest Image Pixel Value,18821
+text_retained,Instance Creation Time,18667
+date_shifted,Instance Creation Date,18597
+text_retained,Radiopharmaceutical Start Time,17939
+text_retained,Radiopharmaceutical,17648
+text_removed,Clinical Trial Time Point ID,17645
+text_removed,Clinical Trial Time Point Description,17645
+text_removed,Study ID,17457
+uid_consistent,[PET scan_id],16784
+uid_changed,[PET scan_id],16784
+text_retained,Private tag data,16628
+text_retained,Patient's Size,16234
+text_removed,Institution Name,16222
+text_retained,Units,15814
+text_retained,Patient's Age,15776
+text_retained,Number of Slices,15748
+tag_retained,Actual Frame Duration,15724
+tag_retained,Acquisition Time,15724
+text_retained,Radionuclide Positron Fraction,15724
+tag_retained,Series Type,15724
+tag_retained,Series Date,15724
+tag_retained,Corrected Image,15724
+tag_retained,Frame Reference Time,15724
+tag_retained,Units,15724
+tag_retained,Series Time,15724
+text_retained,Image Index,15724
+tag_retained,Acquisition Date,15724
+text_notnull,Series Date,15724
+tag_retained,Number of Slices,15724
+text_notnull,Series Type,15724
+tag_retained,Patient Orientation Code Sequence,15724
+text_retained,Counts Source,15724
+tag_retained,Decay Correction,15724
+tag_retained,Image Index,15724
+text_retained,Corrected Image,15724
+tag_retained,Collimator Type,15724
+text_retained,Collimator Type,15724
+text_retained,Decay Factor,15724
+text_retained,Decay Correction,15724
+tag_retained,Counts Source,15724
+text_retained,Actual Frame Duration,15724
+text_retained,Frame Reference Time,15724
+text_retained,Series Type,15724
+text_notnull,Decay Correction,15724
+text_notnull,Series Time,15724
+text_notnull,Units,15724
+text_notnull,Number of Slices,15724
+text_retained,Randoms Correction Method,15724
+text_retained,Reconstruction Method,15724
+tag_retained,Patient Gantry Relationship Code Sequence,15724
+text_retained,Radionuclide Half Life,15724
+text_notnull,Counts Source,15724
+text_notnull,Frame Reference Time,15724
+text_notnull,Image Index,15724
+tag_retained,Radiopharmaceutical Information Sequence,15724
+text_retained,Radionuclide Total Dose,15542
+text_retained,Scatter Correction Method,15511
+text_retained,Field of View Shape,15294
+text_retained,Field of View Dimension(s),15275
+text_retained,Type of Detector Motion,15251
+text_retained,Attenuation Correction Method,15099
+text_retained,Number of Time Slices,14523
+uid_consistent,[PET exam_id],14080
+uid_changed,[PET exam_id],14080
+text_retained,Gantry/Detector Tilt,12621
+text_retained,Window Width,12147
+text_retained,Window Center,12147
+text_removed,Operators' Name,12022
+text_retained,Position Reference Indicator,11668
+text_retained,Radiopharmaceutical Volume,11438
+text_retained,[PET archived],11376
+text_retained,Lossy Image Compression,10352
+uid_consistent,Instance Creator UID,9984
+uid_changed,Instance Creator UID,9984
+text_retained,Software Versions,9755
+text_retained,Intervals Acquired,9564
+text_retained,Intervals Rejected,9564
+text_retained,Energy Window Upper Limit,9514
+text_retained,Axial Mash,9514
+text_retained,Dose Calibration Factor,9514
+text_retained,Energy Window Lower Limit,9514
+text_retained,Table Height,9268
+text_retained,Transverse Mash,9041
+text_retained,Acquisition Termination Condition Data,9041
+text_retained,Coincidence Window Width,9041
+text_retained,Acquisition Termination Condition,9041
+text_retained,Slice Sensitivity Factor,9041
+text_retained,Acquisition Start Condition Data,9041
+text_retained,Acquisition Start Condition,8936
+text_retained,Scatter Fraction Factor,8641
+uid_changed,[PET frame_id],8392
+text_retained,[PET landmark_name],8392
+text_retained,[PET landmark_abbrev],8392
+text_retained,[PET is_type],8392
+text_retained,[PET is_source],8392
+text_retained,[PET is_reference],8392
+text_retained,[PET is_contents],8392
+text_retained,[PET start_cond_data],8392
+text_retained,[PET start_condition],8392
+text_retained,[PET slice_number],8392
+text_retained,[PET vqc_z_axis_roll],8392
+uid_changed,[PET normal_cal_id],8392
+text_retained,[PET tracer_name],8392
+text_retained,[PET vqc_z_axis_trans],8392
+text_retained,[PET axial_acceptance],8392
+text_retained,[PET axial_angle_3d],8392
+text_retained,[PET axial_compression],8392
+text_retained,[PET attenuation],8392
+uid_changed,[PET for_identifier],8392
+text_retained,[PET bp_center_y],8392
+text_retained,[PET bp_center_x],8392
+text_retained,[PET bp_center_p],8392
+text_retained,[PET lower_axial_acc],8392
+text_retained,[PET frame_valid],8392
+text_retained,[PET loop_filter_parm],8392
+text_retained,[PET ir_loop_filt_parm],8392
+text_retained,[PET ir_recon_fov],8392
+text_retained,[PET event_separation],8392
+text_retained,[PET gantry_tilt_angle],8392
+text_retained,[PET collimation],8392
+text_retained,[PET half_life],8392
+text_retained,[PET positron_fraction],8392
+text_retained,[PET post_filt_parm],8392
+text_retained,[PET atten_smooth],8392
+text_retained,[PET atten_coefficient],8392
+text_retained,[PET angle_smooth_param],8392
+text_retained,[PET actual_stop_cond],8392
+text_retained,[PET acq_delay],8392
+text_retained,[PET acq_duration],8392
+text_retained,[PET lower_coinc_limit],8392
+text_retained,[PET lower_energy_limit],8392
+text_retained,[PET overlap],8392
+text_retained,[PET patient_position],8392
+text_retained,[PET mask_width],8392
+text_retained,[PET multi_patient],8392
+text_retained,[PET bp_filter],8392
+text_retained,[PET atten_smooth_param],8392
+text_retained,[PET axial_fov],8392
+text_retained,[PET delayed_bias],8392
+text_retained,[PET upper_coinc_limit],8392
+text_retained,[PET upper_energy_limit],8392
+text_retained,[PET validity_info],8392
+text_retained,[PET vqc_y_axis_swivel],8392
+text_retained,[PET vqc_y_axis_trans],8392
+text_retained,[PET vqc_x_axis_tilt],8392
+text_retained,[PET vqc_x_axis_trans],8392
+text_retained,[PET table_height],8392
+text_retained,[PET delayed_events],8392
+text_retained,[PET derived],8392
+text_retained,[PET emission_present],8392
+text_retained,[PET bp_filter_order],8392
+text_retained,[PET cac_edge_threshold],8392
+text_retained,[PET cac_skull_offset],8392
+text_retained,[PET word_size],8392
+text_retained,[PET upper_axial_acc],8392
+text_retained,[PET sel_stop_cond],8392
+text_retained,[PET scan_type],8392
+text_retained,[PET scan_perspective],8392
+text_retained,[PET scan_mode],8392
+text_retained,[PET start_location],8392
+text_retained,[PET tracer_activity],8392
+text_retained,[PET theta_compression],8392
+text_retained,[PET table_z_position],8392
+text_retained,[PET scan_fov],8392
+text_retained,[PET sel_stop_cond_data],8392
+text_retained,[PET post_inj_activity],8392
+text_retained,[PET slice_count],8392
+text_retained,[PET radionuclide_name],8392
+text_retained,[PET recon_method],8392
+text_retained,[PET response_filt_parm],8392
+text_retained,[PET pre_inj_volume],8392
+text_retained,[PET countrate_period],8392
+text_retained,[PET bp_center_l],8392
+text_retained,[PET collect_singles],8392
+text_retained,[PET collect_deadtime],8392
+text_retained,[PET collect_countrate],8392
+text_retained,[PET coinc_output_mode],8392
+text_retained,[PET coinc_delay_offset],8392
+uid_consistent,[PET for_identifier],8392
+uid_consistent,[PET normal_2d_cal_id],8392
+uid_consistent,[PET norm_cal_id],8392
+uid_consistent,[PET frame_id],8392
+uid_consistent,[PET wc_cal_id],8392
+uid_consistent,[PET normal_cal_id],8392
+uid_changed,[PET wc_cal_id],8392
+uid_changed,[PET normal_2d_cal_id],8392
+uid_changed,[PET norm_cal_id],8392
+text_retained,[PET total_counts],8217
+text_retained,[PET triggers_acquired],8128
+text_retained,[PET triggers_rejected],8128
+text_retained,Acquisition Number,7273
+date_shifted,Radiopharmaceutical Start DateTime,7125
+text_retained,Value Type,6641
+text_retained,Relationship Type,6619
+text_retained,Radiopharmaceutical Route,6210
+text_retained,[PET ir_loop_filter],6182
+text_retained,[PET ir_num_iterations],6182
+text_retained,[PET post_filter],6182
+text_retained,[PET ir_num_subsets],6182
+uid_consistent,[PET trans_scan_id],5782
+uid_changed,[PET trans_scan_id],5782
+text_retained,Scan Options,5689
+text_retained,[PET flip],5688
+text_retained,[PET pan_x],5688
+text_retained,[PET manufacturer],5688
+text_retained,[PET pan_y],5688
+text_retained,[GE Discovery PET Implementation Version Name],5688
+text_retained,[PET compression],5688
+text_retained,[GE Advance Patient.software_version],5688
+text_retained,[PET rotate],5688
+text_retained,[PET zoom],5688
+text_retained,[PET uncompressed_size],5688
+text_retained,[PET scanner_desc],5688
+text_retained,Protocol Name,5407
+uid_changed,[PET trans_frame_id],5276
+uid_consistent,[PET trans_frame_id],5276
+text_retained,[PET scan_description],4935
+text_removed,Private tag data,4872
+date_shifted,Date of Secondary Capture,4467
+text_removed,Additional Patient History,4420
+text_retained,Convolution Kernel,4420
+text_retained,Trigger Time,4389
+tag_retained,KVP,4316
+tag_retained,Acquisition Number,4316
+text_retained,[Activity Concentration Scale Factor],4140
+text_retained,[SUV Scale Factor],4140
+text_removed,Retrieve AE Title,4140
+text_removed,Device Serial Number,4061
+text_retained,Primary (Prompts) Counts Accumulated,3899
+text_retained,Pixel Padding Value,3792
+text_retained,Exposure,3647
+text_retained,Exposure Time,3627
+text_retained,KVP,3627
+text_retained,X-Ray Tube Current,3619
+text_retained,Filter Type,3617
+text_retained,Data Collection Diameter,3580
+text_retained,Rotation Direction,3580
+text_retained,Echo Train Length,3511
+tag_retained,Echo Time,3511
+tag_retained,Echo Train Length,3511
+text_retained,Percent Phase Field of View,3511
+text_retained,Percent Sampling,3511
+text_retained,Flip Angle,3511
+text_retained,Echo Number(s),3511
+text_retained,Sequence Variant,3511
+text_retained,Echo Time,3511
+text_retained,Repetition Time,3511
+text_retained,Imaged Nucleus,3511
+text_retained,Scanning Sequence,3511
+text_notnull,Scanning Sequence,3511
+tag_retained,Sequence Variant,3511
+tag_retained,Scanning Sequence,3511
+text_retained,Number of Averages,3511
+text_retained,Magnetic Field Strength,3511
+text_retained,Imaging Frequency,3511
+tag_retained,MR Acquisition Type,3511
+tag_retained,Scan Options,3511
+text_notnull,Sequence Variant,3511
+text_retained,MR Acquisition Type,3477
+text_retained,Spacing Between Slices,3399
+text_retained,Pixel Bandwidth,3383
+text_retained,In-plane Phase Encoding Direction,3383
+text_retained,Acquisition Matrix,3383
+text_retained,SAR,3372
+text_retained,Secondary Counts Accumulated,3353
+text_retained,Dead Time Factor,3353
+text_retained,Detector Lines of Response Used,3353
+text_retained,Frame Time,3353
+text_retained,Distance Source to Detector,3323
+text_retained,Focal Spot(s),3322
+text_retained,Distance Source to Patient,3309
+text_retained,Generator Power,3275
+text_retained,[PET image_index_loc],3250
+text_retained,[PET frame_number],3250
+text_retained,[PET image_one_loc],3250
+text_retained,Requested Procedure Description,3201
+text_removed,Requested Procedure Description,3058
+text_retained,Heart Rate,2766
+text_retained,Receive Coil Name,2766
+text_retained,Angio Flag,2724
+text_retained,[PET superior shift],2704
+text_retained,[PET posterior shift],2704
+text_retained,[PET number_of_normals],2704
+text_retained,[PET ir_pre_filt_parm],2704
+text_retained,[PET ir_z_filter_flag],2704
+text_retained,[PET left shift],2704
+text_retained,[PET seg_qc_parm],2704
+text_retained,[PET scatter_parm],2704
+text_retained,[PET scatter_method],2704
+text_retained,[PET radial_cutoff_3d],2704
+text_retained,[PET acq_bin_dur_percent],2704
+text_retained,[PET axial_spacing],2704
+text_retained,[PET ac_bp_filt_order],2704
+text_retained,[PET ac_bp_filt_cut_off],2704
+text_retained,[PET ac_img_smooth_parm],2704
+text_retained,[PET bp_filter_cutoff],2704
+text_retained,[PET axial_start],2704
+text_retained,[PET num_of_slices],2704
+text_retained,[PET axial_angles_used],2704
+text_retained,[PET ir_z_filter_ratio],2704
+text_retained,[PET axial_cutoff_3d],2704
+text_retained,[PET axial_filter_3d],2704
+text_retained,[PET rest_stress],2704
+text_retained,[PET regularize_parm],2704
+text_retained,Performed Procedure Step Description,2620
+text_retained,Numeric Value,2607
+text_retained,Variable Flip Angle Flag,2596
+text_removed,Clinical Trial Protocol ID,2586
+text_removed,Clinical Trial Protocol Name,2575
+text_retained,[PET num_of_time_slices],2538
+text_retained,Series Number,2448
+date_shifted,Performed Procedure Step Start Date,2409
+text_retained,Performed Procedure Step Start Time,2400
+text_retained,[Window value],2074
+text_retained,[Series contrast],2074
+text_retained,[Plane Type],2074
+text_retained,[Scout Type],2074
+text_retained,Window Center & Width Explanation,1996
+text_retained,Cardiac Number of Images,1979
+text_retained,Trigger Window,1979
+text_retained,[Image from which prescribed],1932
+text_retained,[Horiz. Frame of ref.],1932
+text_retained,Mapping Resource,1932
+text_retained,Context Identifier,1892
+date_shifted,Context Group Version,1892
+text_retained,[Product id],1855
+text_retained,[Last scan ras],1847
+text_retained,[First scan ras],1847
+text_retained,Rescale Type,1809
+text_retained,Inversion Time,1740
+text_retained,[Normal A coord],1726
+text_retained,[Center R coord of plane image],1726
+text_retained,[Normal R coord],1726
+text_retained,[Normal S coord],1726
+text_retained,[Center S coord of plane image],1726
+text_retained,[Center A coord of plane image],1726
+text_removed,Institution Address,1698
+text_retained,Images in Acquisition,1692
+text_removed,[Series from which prescribed],1685
+text_removed,[Suite id],1645
+text_retained,Derivation Description,1637
+text_removed,Physician(s) of Record,1597
+text_removed,Clinical Trial Subject ID,1578
+text_retained,Clinical Trial Sponsor Name,1578
+text_retained,Contrast/Bolus Agent,1576
+text_retained,Context Group Extension Flag,1574
+text_removed,Clinical Trial Site ID,1569
+text_removed,Other Patient IDs,1566
+text_retained,Laterality,1556
+text_retained,Largest Pixel Value in Series,1525
+text_retained,Image Comments,1489
+text_removed,[Series from which Prescribed],1405
+text_retained,Transmit Coil Name,1404
+text_retained,Number of Phase Encoding Steps,1404
+text_retained,Pixel Presentation,1302
+text_retained,Volumetric Properties,1302
+text_retained,Volume Based Calculation Technique,1302
+text_retained,Frame Acquisition Number,1282
+text_retained,Frame Type,1282
+text_retained,dB/dt,1265
+text_retained,[Slop_int_6... slop_int_9],1217
+text_retained,[Diffusion direction],1217
+text_retained,"[Concatenated SAT {# DTI Diffusion Dir., release 9.0 & below}]",1217
+text_retained,Temporal Resolution,1186
+text_retained,[Second echo],1133
+text_retained,[Pulse Sequence Mode],1133
+text_retained,[SAT fat/water/bone],1133
+text_retained,[SAT thickness A/P],1133
+text_retained,[SAT location L],1133
+text_retained,[SAT location H],1133
+text_retained,[SAT location R],1133
+text_retained,[Surface Coil Type],1133
+text_retained,[Series plane],1133
+text_retained,[Slice offset on freq axis],1133
+text_retained,[Table delta],1133
+text_retained,[Swappf],1133
+text_retained,[Transmit gain],1133
+text_retained,[User data 25...User data 48 {User48=Effective Resolution for spiral}],1133
+text_retained,[Tagging Flip Angle],1133
+text_retained,[Tag Spacing],1133
+text_retained,[Transmitting Coil Type],1133
+text_retained,[Type of receiver used],1133
+text_retained,[Upper range of Pixels1],1133
+text_retained,[Tagging Orientation],1133
+text_retained,[Thickness disclaimer],1133
+text_retained,[Upper range of Pixels2],1133
+text_retained,[User_fill_map_LSW],1133
+text_retained,[Delay after trigger],1133
+text_retained,[Auto window/level beta],1133
+text_retained,[Auto Prescan Transmit Gain],1133
+text_retained,[Auto window/level level],1133
+text_retained,[Advantage comp. Overflow],1133
+text_retained,[Advantage comp. Underflow],1133
+text_retained,[Actual receive gain analog],1133
+text_retained,[Acquisition Duration],1133
+text_retained,[Last scan loc],1133
+text_retained,[Image dimension - X],1133
+text_retained,[Image dimension - Y],1133
+text_retained,[Image location],1133
+text_retained,[Images in Series],1133
+text_retained,[Landmark Counter],1133
+text_retained,[Last pseq],1133
+text_retained,[Last pulse sequence used],1133
+text_retained,[Graphically prescribed],1133
+text_retained,[Image Filtering 0.5/0.2T],1133
+text_retained,"[Image Type (real, imaginary, phase, magnitude)]",1133
+text_retained,[Gradient offset in X],1133
+text_retained,[Gradient offset in Z],1133
+text_retained,[Gradient offset in Y],1133
+text_retained,[Auto window/level window],1133
+text_retained,[Bitmap defining CVs],1133
+text_retained,[Auto Prescan Digital receiver gain],1133
+text_retained,[Bitmap of prescan options],1133
+text_retained,[Auto Prescan Analog receiver gain],1133
+text_retained,[SAT location P],1133
+text_retained,[Rotation from source y rot],1133
+text_retained,[Saturation planes],1133
+text_retained,[SAT thickness H/F],1133
+text_retained,[SAT thickness R/L],1133
+text_retained,[Number of Excitations],1133
+text_retained,[Number of echoes],1133
+text_retained,[Overlaps],1133
+text_retained,[Pause Interval],1133
+text_retained,[Projection Algorithm],1133
+text_retained,[Prescan type],1133
+text_retained,[Projection angle],1133
+text_retained,[PSD estimated limit],1133
+text_retained,[Pulse Sequence],1133
+text_retained,[Respiratory trigger point],1133
+text_retained,[RTIA_timer],1133
+text_retained,[Prescan status],1133
+text_retained,"[Respiratory rate, bpm]",1133
+text_retained,[Raw data run number],1133
+text_retained,[Rotation from source z rot],1133
+text_retained,[PSD estimated limit in tesla per second],1133
+text_retained,[Neg_scanspacing],1133
+text_retained,[Number of EPI shots],1133
+text_retained,[Num 3D slabs],1133
+text_retained,[Number of Acquisitions],1133
+text_retained,[Phase Contrast flow axis],1133
+text_retained,[Peak SAR],1133
+text_retained,[Pause Time],1133
+text_retained,[Offset Frequency],1133
+text_retained,[Lower range of Pixels1],1133
+text_retained,[Locs per 3D slab],1133
+text_retained,[Locations in acquisition],1133
+text_retained,[Lower range of Pixels2],1133
+text_retained,[Level value],1133
+text_retained,[Rotation from source x rot],1133
+text_retained,[SAT location A],1133
+text_retained,[SAT location F],1133
+text_retained,[Views per segment],1133
+text_retained,[DB/dt Peak rate of change of gradient field],1133
+text_retained,[Calibrated Field strength],1133
+text_retained,[Contiguous],1133
+text_retained,[Cardiac phase number],1133
+text_retained,[Cardiac repetition time],1133
+text_retained,[dB/dt Limits in units of percent],1133
+text_retained,[Velocity encoding],1133
+text_retained,[Fast phases],1133
+text_retained,[First scan location],1133
+text_retained,[Fps],1133
+text_retained,[Fractional echo],1133
+text_retained,[Display field of view],1133
+text_retained,[Effective echo spacing],1133
+text_retained,[Extremity Coil flag],1133
+text_retained,[Actual receive gain digital],1133
+text_retained,[Velocity Encode Scale],1133
+text_retained,[User_fill_map_MSW],1133
+text_retained,[User_usage_tag],1133
+text_retained,[Variable echoflag],1133
+text_retained,[Vas flags],1133
+text_retained,[Images per cardiac cycle],1133
+text_retained,[Imaging Mode],1133
+text_retained,[Imaging Options],1133
+text_retained,[Auto window/level alpha],1133
+text_retained,[Auto Prescan Center Frequency],1133
+text_retained,Time of Last Calibration,1129
+text_retained,Smallest Pixel Value in Series,1102
+text_retained,[User data 6],1065
+text_retained,[User data 5],1065
+text_retained,[User data 16],1065
+text_retained,[User data 3],1065
+text_retained,[User data 4],1065
+text_retained,[Scanner Table Entry (single gradient coil systems only)/Scanner Table Entry + Gradient Coil Selected],1065
+text_retained,[User data 11],1065
+text_retained,[User data 12],1065
+text_retained,[User data 0],1065
+text_retained,[User data 20],1065
+text_retained,[User data 22],1065
+text_retained,[User data 10],1065
+text_retained,[User data 13],1065
+text_retained,[User data 15],1065
+text_retained,[User data 14],1065
+text_retained,[User data 21],1065
+text_retained,[User data 17],1065
+text_retained,[User data 18],1065
+text_retained,[User data 19],1065
+text_retained,[User data 1],1065
+text_removed,[Slop_int_10...slop_int_17],1065
+text_retained,[User data 7],1065
+text_retained,[User data 9],1065
+text_retained,[User data 8],1065
+text_retained,"[User data 23 {# DTI Diffusion Dir., release 9.0 & below}]",1065
+text_retained,"[User data 24 {# DTI Diffusion Dir., release 10.0 & above}]",1065
+text_retained,[User data 2],1065
+text_retained,[Screen Format],1065
+text_retained,Additional Patient History,1065
+text_retained,[Vas collapse flag],1065
+text_retained,[GE image integrity],1056
+text_retained,[Pulse Sequence Name],1056
+text_retained,[Version of the hdr struct],1056
+text_retained,Pregnancy Status,1052
+text_retained,Contrast/Bolus Route,1052
+text_retained,[RAS letter of image location],1051
+text_retained,[Internal Pulse Sequence Name],1005
+text_retained,[DAS type],941
+text_retained,[Degree of rotation],941
+text_retained,[Sigma Mode],941
+text_retained,[Segment Number],941
+text_retained,[Mid Scan Time [sec]],941
+text_retained,[DAS trigger source],941
+text_retained,[Cell number at Theta],941
+text_retained,[Delta Start Time [msec]],941
+text_retained,[Z tracking Flag],941
+text_retained,[Z tracking Error],941
+text_retained,[DAS cal mode],941
+text_retained,[DAS fpa gain],941
+text_retained,[X-ray chain],941
+text_retained,[Z smoothing Factor],941
+text_retained,[Duration of X-ray on],941
+text_retained,[Corrected after glow terms],941
+text_retained,[DAS ad input],941
+text_retained,[Angle of first view],941
+text_retained,[Minimum DAS value],941
+text_retained,[Mid scan flag],941
+text_retained,[Mean Z error],941
+text_retained,[Tube Azimuth [degree]],941
+text_retained,[Start View 2A],941
+text_retained,[Trigger on position],941
+text_retained,[TemporalResolution],941
+text_retained,[Trigger frequency],941
+text_retained,[Start scan to X-ray on delay],941
+text_retained,[Smart scan ON/OFF flag],941
+text_retained,[Start View 1A],941
+text_retained,[Start View 2B],941
+text_retained,[Table Direction],941
+text_retained,[Total Segments Required],941
+text_retained,[Vma mod],941
+text_retained,[Table Speed [mm/rotation]],941
+text_retained,[Recon Center Coordinates],941
+text_retained,[Recon post proc. Flag],941
+text_retained,[Number of Views 1B],941
+text_retained,[Reference channels],941
+text_retained,[Number of Views 2A],941
+text_retained,[Number of Views shifted],941
+text_retained,[Number of Views 1A],941
+text_retained,[Rotation Speed [msec]],941
+text_retained,[Number of Macro Rows in Detector],941
+text_retained,[Number Views 2B],941
+text_retained,[Vma clip],941
+text_retained,[Vma mamp],941
+text_retained,[View Weighting Mode],941
+text_retained,[View compression factor],941
+text_retained,[Number of triggers],941
+text_retained,[Number of overranges],941
+text_retained,[Iterbone Flag],941
+text_retained,[SFOV Type],941
+text_retained,[Biopsy ref location],941
+text_retained,[Biopsy position],941
+text_retained,[Maximum Offset Value],941
+text_retained,[Max overranges in a view],941
+text_retained,[No views ref chans blocked],941
+text_retained,[Macro width at ISO Center],941
+text_retained,[Sigma Row number],941
+text_retained,[Biopsy T location],941
+text_retained,[DAS gain],941
+text_retained,[DAS output source],941
+text_retained,[Scan Start Location],941
+text_retained,[Detector Channel],941
+text_retained,[Scan End Location],941
+text_retained,[Perisstaltic Flag],941
+text_retained,[Cell spacing],939
+date_shifted,[PET acq_start],919
+date_shifted,[PET landmark_datetime],919
+date_shifted,[PET admin_datetime],919
+date_shifted,[PET scan_datetime],919
+date_shifted,[PET post_inj_datetime],919
+date_shifted,[PET meas_datetime],919
+date_shifted,[PET patient_datetime],919
+date_shifted,[PET scan_ready],919
+text_retained,Study Status ID,917
+date_shifted,Radiopharmaceutical Stop DateTime,915
+date_shifted,Date of Last Calibration,907
+text_retained,Burned In Annotation,906
+text_retained,[Monitor SAR],902
+text_retained,[Center freq. Method],902
+text_retained,[Saravghead],902
+text_retained,[Dependent on #views processed],867
+text_retained,[Private Scan Options],867
+text_retained,[Start View 1B],867
+text_retained,Presentation LUT Shape,843
+text_retained,Time,826
+text_removed,[Service id],825
+text_retained,Performed Procedure Step End Time,792
+text_removed,Performed Station AE Title,787
+text_retained,Low R-R Value,787
+text_retained,Number of Temporal Positions,787
+text_retained,Temporal Position Identifier,787
+text_retained,High R-R Value,787
+text_retained,[R Coord of Top Right Corner],785
+text_retained,[R Coord of Bottom Right Corner],785
+text_retained,[Surface coil intensity],785
+text_retained,[S Coord of Bottom Right Corner],785
+text_retained,[S Coord of Top Right Corner],785
+text_retained,[A Coord of Top Right Corner],785
+text_retained,[A Coord of Bottom Right Corner],785
+text_retained,[Oblique Plane],785
+text_removed,Station Name,776
+text_retained,Radiopharmaceutical Stop Time,774
+text_retained,Study Priority ID,763
+date_shifted,Performed Procedure Step End Date,758
+date_shifted,[PET is_datetime],753
+text_retained,Sequence Name,745
+text_retained,Spatial Resolution,735
+text_retained,Coding Scheme Version,710
+text_retained,Acquisition Duration,648
+text_retained,Diffusion Gradient Orientation,648
+text_retained,Diffusion b-value,648
+text_retained,[Feed per Rotation],620
+text_retained,Exposure Modulation Type,612
+text_retained,CTDIvol,612
+text_retained,Estimated Dose Saving,612
+uid_consistent,Synchronization Frame of Reference UID,595
+uid_changed,Synchronization Frame of Reference UID,595
+text_removed,Medical Alerts,584
+text_removed,Study Comments,556
+text_removed,[PET batch_description],547
+text_retained,[Target],535
+text_retained,[PET ac_img_smooth],494
+text_retained,[PET ac_bp_filter],494
+text_retained,[PET radial_filter_3d],494
+text_retained,[PET ir_corr_model],494
+text_retained,[PET ir_regularize],494
+text_retained,[PET scatter_num_iter],494
+text_retained,Axial Acceptance,473
+text_retained,[Osteo Offset],469
+text_retained,[Osteo Regression Line Slope],469
+text_retained,[Osteo Regression Line Intercept],469
+text_retained,[Osteo Phantom Number],469
+text_retained,[Scan Pitch Ratio],463
+text_removed,Person Name,452
+text_removed,Verifying Observer Name,450
+text_removed,Content Creator's Name,418
+text_retained,[PctRpeakDelay],400
+text_removed,Clinical Trial Subject Reading ID,398
+text_retained,Ethnic Group,370
+text_removed,Requested Procedure ID,356
+text_retained,Requested Procedure Comments,353
+text_retained,[Recon mode flag word],348
+text_retained,[Image Filtering Parameters],348
+text_retained,Exposure in mAs,339
+date_shifted,[PET cal_datetime],332
+text_removed,Requested Procedure Comments,326
+text_retained,Exposure Time in ms,326
+text_retained,X-Ray Tube Current in mA,326
+text_retained,[Full fidelity],321
+uid_changed,Irradiation Event UID,313
+uid_consistent,Irradiation Event UID,313
+date_shifted,Contribution DateTime,311
+text_removed,[Img is original or unoriginal],300
+text_retained,Conversion Type,263
+text_retained,Secondary Capture Device Manufacturer,235
+text_retained,Secondary Capture Device Manufacturer's Model Name,235
+text_notnull,Conversion Type,235
+tag_retained,Conversion Type,235
+text_retained,Time of Secondary Capture,233
+text_retained,Secondary Capture Device Software Versions,233
+text_retained,[Asset R Factors],231
+text_retained,[SAR Definition],231
+text_retained,[SAR value],231
+text_retained,[Private In-Plane Phase Encoding Direction],231
+text_retained,"[Governing Body, dB/dt, and SAR definition]",231
+text_retained,[Additional Asset Data],231
+text_retained,[Content Qualification],231
+text_retained,[GE Coil Name],231
+text_retained,Scheduled Procedure Step Description,229
+text_removed,Scheduled Procedure Step ID,229
+text_removed,Patient's Address,220
+text_removed,Clinical Trial Site Name,219
+date_shifted,Acquisition DateTime,213
+text_retained,Reason for Study,207
+text_retained,[FlowCompensation],195
+text_retained,[SlicePosition_PCS],195
+text_retained,[RealDwellTime],195
+text_retained,[TablePositionOrigin],195
+text_retained,[SliceMeasurementDuration],195
+text_retained,[SliceResolution],195
+text_retained,[Series Workflow Status],195
+text_retained,[GradientMode],195
+text_retained,[ImaAbsTablePosition],195
+text_retained,[ImaRelTablePosition],195
+text_retained,[Series Complete Flag],177
+text_retained,Pixel Aspect Ratio,164
+text_retained,[System Configuration Information],163
+text_removed,[Coil ID Data],163
+text_removed,Scheduled Procedure Step Description,162
+text_retained,Continuity Of Content,158
+uid_consistent,Storage Media File-set UID,155
+uid_changed,Storage Media File-set UID,155
+text_retained,Contrast/Bolus Ingredient Concentration,154
+text_retained,Contrast/Bolus Volume,154
+text_retained,Stack ID,152
+text_retained,In-Stack Position Number,152
+text_retained,Green Palette Color Lookup Table Descriptor,148
+text_retained,Blue Palette Color Lookup Table Descriptor,148
+text_retained,Red Palette Color Lookup Table Descriptor,148
+text_retained,[Indicates no. of updates to header],145
+text_retained,Secondary Capture Device ID,143
+text_retained,Text Value,143
+text_retained,Lossy Image Compression Ratio,143
+text_retained,[TimeAfterStart],135
+text_retained,[BandwidthPerPixelPhaseEncode],135
+text_retained,[DiffusionDirectionality],135
+text_retained,[B_value],135
+text_retained,Image Position,128
+text_retained,Image Dimensions,128
+text_retained,Image Orientation,128
+text_retained,Location,128
+text_retained,Admitting Diagnoses Description,128
+text_retained,Image Format,128
+text_retained,Image Geometry Type,128
+text_retained,Image Location,128
+text_retained,Acquisitions in Series,128
+text_retained,[PET other_atts_size],105
+text_retained,Real World Value Intercept,105
+text_retained,Real World Value Slope,105
+text_removed,Image Comments,99
+text_removed,Institutional Department Name,90
+text_retained,Contrast/Bolus Total Dose,88
+text_retained,[Filter Mode (String slop field 1 in legacy GE MR],84
+text_retained,Patient Orientation,82
+text_retained,Occupation,78
+text_retained,[Patient Status],77
+text_retained,Revolution Time,72
+text_retained,Table Speed,72
+text_retained,View Position,72
+text_retained,Single Collimation Width,72
+text_retained,Table Feed per Rotation,72
+text_retained,Spiral Pitch Factor,72
+text_retained,Total Collimation Width,72
+date_shifted,[Actual series data time stamp],68
+uid_changed,[ASSET Acquisition Calibration Series UID],68
+uid_consistent,[Equipment UID],68
+uid_consistent,[ASSET Acquisition Calibration Series UID],68
+text_retained,[Rx Stack Identification],68
+uid_changed,[PURE Acquisition Calibration Series UID],68
+uid_changed,[Equipment UID],68
+text_retained,[Number of images archived],68
+text_retained,[Prescan Reuse String],68
+text_retained,[Indicates study has complete info (DICOM/genesis)],68
+text_retained,[No. of updates to header],68
+uid_consistent,[PURE Acquisition Calibration Series UID],68
+text_retained,[Last image number used],68
+text_retained,Imager Pixel Spacing,68
+date_shifted,[Pulse Sequence Date],68
+text_retained,Longitudinal Temporal Offset from Event,66
+text_retained,Longitudinal Temporal Event Type,66
+text_retained,Contrast Flow Rate,66
+text_retained,Contrast Flow Duration,66
+text_removed,[PMTF Information 1],64
+text_removed,[PMTF Information 4],64
+text_notnull,Presentation LUT Shape,63
+tag_retained,Lossy Image Compression,63
+tag_retained,Burned In Annotation,63
+text_notnull,Lossy Image Compression,63
+tag_retained,Presentation LUT Shape,63
+text_notnull,Burned In Annotation,63
+text_retained,Detector Type,61
+text_retained,[CSA Image Header Type],60
+text_retained,[Significant Flag],60
+text_retained,VOI LUT Function,60
+text_retained,[Confidential Flag],60
+text_retained,Smoking Status,60
+uid_changed,UID,57
+uid_consistent,UID,57
+text_retained,Relative X-Ray Exposure,56
+text_retained,Quality Control Image,56
+tag_retained,Acquisition Context Sequence,56
+text_retained,Number of Study Related Instances,54
+text_retained,Modalities in Study,53
+text_removed,Patient Comments,53
+text_retained,Exposure Index,47
+text_retained,Pixel Intensity Relationship Sign,47
+text_retained,Pixel Intensity Relationship,47
+text_retained,Detector Temperature,47
+text_retained,Exposure in uAs,46
+text_notnull,Number of Frames,44
+text_retained,Number of Frames,44
+tag_retained,Number of Frames,44
+tag_retained,Imager Pixel Spacing,43
+text_notnull,Imager Pixel Spacing,43
+text_notnull,Image Laterality,43
+tag_retained,Rescale Type,43
+text_notnull,Rescale Type,43
+tag_retained,Pixel Intensity Relationship,43
+text_notnull,Pixel Intensity Relationship,43
+tag_retained,Presentation Intent Type,43
+text_notnull,Presentation Intent Type,43
+text_notnull,Pixel Intensity Relationship Sign,43
+tag_retained,Pixel Intensity Relationship Sign,43
+tag_retained,Detector Type,43
+tag_retained,Image Laterality,43
+tag_retained,Content Time,42
+text_notnull,Content Date,42
+text_notnull,Content Time,42
+text_notnull,Instance Number,42
+tag_retained,Content Date,42
+date_shifted,Date,41
+text_retained,Template Identifier,40
+text_retained,Patient Comments,40
+text_retained,Exposure Control Mode,39
+text_retained,Field of View Origin,37
+text_retained,Positioner Type,37
+text_retained,Deviation Index,37
+text_retained,Target Exposure Index,37
+text_retained,Field of View Rotation,37
+text_retained,Field of View Horizontal Flip,37
+text_retained,Exposure Time in uS,36
+text_retained,Detector Binning,36
+text_retained,[GE IIS Compression ID],35
+text_retained,Image Laterality,35
+pixels_hidden,,35
+text_retained,Image and Fluoroscopy Area Dose Product,33
+text_retained,Entrance Dose,32
+uid_consistent,Mapping Resource UID,30
+text_retained,Exposure Control Mode Description,30
+uid_changed,Mapping Resource UID,30
+text_notnull,View Code Sequence,29
+text_removed,Text Value,29
+text_retained,Organ Exposed,29
+tag_retained,View Code Sequence,29
+text_retained,Anode Target Material,28
+text_retained,Filter Material,28
+text_retained,Filter Thickness Maximum,27
+text_retained,Filter Thickness Minimum,27
+tag_retained,View Position,26
+tag_retained,Body Part Examined,26
+text_retained,Time of Last Detector Calibration,25
+text_retained,Detector Configuration,25
+date_shifted,Date of Last Detector Calibration,25
+text_retained,Entrance Dose in mGy,25
+text_retained,Detector Conditions Nominal Flag,25
+text_retained,Transducer Data,24
+text_retained,Frame Increment Pointer,24
+text_retained,Acquisition Time Synchronized,24
+text_retained,Collimator Shape,24
+text_retained,Synchronization Trigger,24
+text_notnull,Frame Increment Pointer,24
+tag_retained,Frame Increment Pointer,24
+text_retained,LUT Descriptor,23
+text_retained,Estimated Radiographic Magnification Factor,23
+text_retained,LUT Data,23
+text_notnull,Value Type,22
+text_retained,Presentation Intent Type,22
+text_retained,Completion Flag,22
+tag_retained,Verification Flag,22
+tag_retained,Performed Procedure Code Sequence,22
+text_notnull,Completion Flag,22
+text_notnull,Verification Flag,22
+tag_retained,Referenced Performed Procedure Step Sequence,22
+text_notnull,Series Number,22
+tag_retained,Value Type,22
+tag_retained,Completion Flag,22
+text_retained,Verification Flag,22
+text_retained,Compression Force,21
+text_retained,Breast Implant Present,21
+text_retained,Organ Dose,21
+text_retained,Half Value Layer,21
+text_retained,Positioner Primary Angle,21
+text_retained,Body Part Thickness,21
+text_retained,Pixel Padding Range Limit,20
+tag_retained,Content Qualification,20
+tag_retained,Manufacturer's Model Name,20
+tag_retained,Pixel Presentation,20
+tag_retained,Volumetric Properties,20
+tag_retained,Device Serial Number,20
+text_notnull,Manufacturer's Model Name,20
+text_notnull,Pixel Presentation,20
+text_notnull,Volumetric Properties,20
+text_notnull,Volume Based Calculation Technique,20
+text_notnull,Shared Functional Groups Sequence,20
+text_notnull,Manufacturer,20
+text_notnull,Device Serial Number,20
+tag_retained,Shared Functional Groups Sequence,20
+text_notnull,Content Qualification,20
+text_notnull,Software Versions,20
+text_retained,Frame Laterality,20
+text_retained,Content Qualification,20
+text_retained,X-Ray Receptor Type,20
+text_retained,Paddle Description,20
+tag_retained,Software Versions,20
+tag_retained,Volume Based Calculation Technique,20
+text_retained,X-Ray Tube Current in uA,19
+tag_retained,Anatomic Region Sequence,19
+text_retained,Grid,19
+text_retained,Detector Time Since Last Exposure,16
+text_retained,Detector Manufacturer's Model Name,16
+text_retained,Detector Manufacturer Name,16
+text_retained,Collimator Upper Horizontal Edge,16
+text_retained,Collimator Left Vertical Edge,16
+text_retained,Collimator Right Vertical Edge,16
+text_retained,Collimator Lower Horizontal Edge,16
+text_retained,Detector Mode,16
+text_retained,Detector Element Physical Size,16
+text_retained,Detector Element Spacing,16
+text_retained,Acquisition Device Processing Description,15
+text_retained,Length to End,13
+text_retained,LUT Explanation,12
+text_retained,Plate Type,12
+text_retained,Acquisition Device Processing Code,12
+text_retained,Cassette Orientation,12
+text_retained,Sensitivity,12
+text_retained,Cassette Size,12
+text_removed,Verifying Organization,10
+date_shifted,DateTime,10
+date_shifted,Verification DateTime,10
+text_retained,Referenced Segment Number,10
+tag_retained,Positioner Type,9
+date_shifted,Admitting Date,9
+date_shifted,Curve Date,9
+date_shifted,Scheduled Procedure Step Start Date,9
+text_retained,Detector Description,9
+date_shifted,Overlay Date,9
+date_shifted,Last Menstrual Date,9
+text_retained,Detector Active Shape,9
+text_retained,Detector Active Dimension(s),9
+text_notnull,Organ Exposed,9
+text_notnull,Positioner Type,9
+tag_retained,Organ Exposed,9
+text_notnull,Anatomic Region Sequence,9
+date_shifted,Scheduled Procedure Step End Date,9
+text_retained,Comments on Radiation Dose,8
+text_retained,Exposures on Detector Since Manufactured,8
+text_retained,Vertices of the Polygonal Collimator,8
+text_retained,Rectification Type,8
+text_retained,Detector Active Time,8
+text_removed,[Histogram tables],7
+text_retained,Exposures on Detector Since Last Calibration,7
+text_retained,Total Number of Exposures,7
+text_retained,Shutter Shape,6
+text_retained,Referenced Frame Number,6
+text_retained,Vertices of the Polygonal Shutter,6
+text_removed,Detector ID,5
+uid_changed,[SC Instance UID],4
+text_retained,[Windowing parameters],4
+text_retained,[Noise Reduction Sensitivity],4
+text_retained,[Exponent],4
+text_retained,[User Window Width],4
+text_retained,Positioner Secondary Angle,4
+uid_changed,[SC series UID],4
+uid_consistent,[SC series UID],4
+text_retained,Grid Focal Distance,4
+text_retained,[Image Crop point],4
+text_retained,[User Window Center],4
+uid_consistent,[SC Instance UID],4
+text_retained,[Clinical View],4
+text_retained,[Estimated Anat mean],4
+text_retained,[Detector Entrance Dose],4
+text_retained,Graphic Data,4
+text_retained,[STX buffer],4
+text_retained,[Raw Diagnostic High],4
+text_retained,[Noise Reduction Threshold],4
+text_retained,[Raw Diagnostic Low],4
+text_retained,[2DLocX],4
+text_retained,Graphic Type,4
+text_retained,[Asymmetrical Collimation Information],4
+text_retained,[2DLocY],4
+text_retained,[A Coefficients],4
+text_retained,Coding Scheme Name,2
+text_removed,Comments on Radiation Dose,2
+uid_consistent,Coding Scheme UID,2
+uid_changed,Coding Scheme UID,2
+text_retained,Requested Procedure Priority,2
+text_retained,Coding Scheme Responsible Organization,2
+text_retained,Reason for the Requested Procedure,2
+text_removed,Timezone Offset From UTC,2
+text_retained,Collimator/grid Name,2
+text_removed,Scheduled Study Location AE Title,1
+text_removed,Gantry ID,1
+text_retained,Calibration Image,1
+text_retained,Exposure Status,1
+date_shifted,Observation DateTime,1

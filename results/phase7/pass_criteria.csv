@@ -1,0 +1,12 @@
+check,target,result
+"faces before defacing (test, 160 views, both detectors agree)",≈ 100% of front views,88 views; front views: 76 / 80
+"faces after FP-DeID defacing (160 views, both detectors agree)",0,7
+faces after quickshear / box (160 views),reported,36 / 11
+brain voxels changed (FP-DeID),0,0
+skull-strip Dice before vs after (FP-DeID),≥ 0.99,0.9941
+tissue segmentation Dice (FP-DeID),≥ 0.99,0.9859
+brain volume change (FP-DeID),< 0.5%,0.699
+removed tissue: FP-DeID / quickshear / box (ml),reported,918 / 272 / 887
+runtime per scan (SynthStrip + defacing),reported,30.2 s
+DICOM series: same voxels as volume defacing,100%,100.0
+DICOM series: headers unchanged,100%,256 / 256

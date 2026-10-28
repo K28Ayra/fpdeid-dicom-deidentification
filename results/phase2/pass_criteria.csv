@@ -1,0 +1,11 @@
+check,target,result
+MIDI-B weighted score,≥ 97% and > best baseline (95.87%),99.15
+keep-check accuracy,≥ 99.5%,94.185
+research fields kept,100%,100.0
+valid DICOM (no new error),100%,100.0
+date intervals kept,100%,100.0
+original UIDs left,0,0.0
+files in right series,100%,100.0
+audit coverage,100%,100.0
+deterministic files,100%,100.0
+errors while cleaning,0,0.0

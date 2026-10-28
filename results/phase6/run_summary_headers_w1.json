@@ -1,0 +1,16 @@
+{
+  "input": "/home/ayra2/ayra_data/midi_b/validation/images",
+  "output": "/home/ayra2/ayra_data/outputs/phase6/headers_w1",
+  "policy": "/home/ayra2/configs/policy.yaml",
+  "code_version": "unknown",
+  "started": "2026-10-27T21:11:19",
+  "workers": 1,
+  "files": 23921,
+  "patients": 216,
+  "seconds: fingerprints": 121.3,
+  "header errors": 0,
+  "seconds: headers": 285.2,
+  "lineage lines": 23921,
+  "seconds: lineage": 17.7,
+  "peak memory GB (all processes)": 0.7
+}

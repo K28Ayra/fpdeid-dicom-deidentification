@@ -1,0 +1,14 @@
+# Environment for the official MIDI-B scorer (it pins old package versions, so it has its own environment).
+#   bash scripts/setup_tools.sh        (downloads the scorer into tools/MIDI_validation_script)
+#   conda env create -f environment-scorer.yml
+name: midi-scorer
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - torch==2.7.1
+      - torchvision==0.22.1
+      - -r tools/MIDI_validation_script/requirements.txt

@@ -1,0 +1,1445 @@
+path,keyword,name,VR,private,depth,n_files,n_empty,modalities
+"(0008,0060)",Modality,Modality,CS,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0010,0010)",PatientName,Patient's Name,PN,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0010,0030)",PatientBirthDate,Patient's Birth Date,DA,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0010,0020)",PatientID,Patient ID,LO,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0020,0013)",InstanceNumber,Instance Number,IS,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0030)",StudyTime,Study Time,TM,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0010,0040)",PatientSex,Patient's Sex,CS,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0020,000D)",StudyInstanceUID,Study Instance UID,UI,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0016)",SOPClassUID,SOP Class UID,UI,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0018)",SOPInstanceUID,SOP Instance UID,UI,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0020)",StudyDate,Study Date,DA,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0090)",ReferringPhysicianName,Referring Physician's Name,PN,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0013,""CTP"",13)",,Private tag data,LO,True,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0050)",AccessionNumber,Accession Number,SH,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0013,""CTP"",10)",,Private tag data,LO,True,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0020,000E)",SeriesInstanceUID,Series Instance UID,UI,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0013,0010)",,Private Creator,LO,True,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0020,0010)",StudyID,Study ID,SH,False,0,23921,6464,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0020,0011)",SeriesNumber,Series Number,IS,False,0,23921,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0010,1010)",PatientAge,Patient's Age,AS,False,0,23919,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0070)",Manufacturer,Manufacturer,LO,False,0,23919,412,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0018,1020)",SoftwareVersions,Software Versions,LO,False,0,23907,14242,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0028,0004)",PhotometricInterpretation,Photometric Interpretation,CS,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0002)",SamplesPerPixel,Samples per Pixel,US,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0010)",Rows,Rows,US,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0101)",BitsStored,Bits Stored,US,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0102)",HighBit,High Bit,US,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0103)",PixelRepresentation,Pixel Representation,US,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0100)",BitsAllocated,Bits Allocated,US,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0011)",Columns,Columns,US,False,0,23899,0,"CR,CT,DX,MG,MR,PT,US"
+"(0008,0008)",ImageType,Image Type,CS,False,0,23897,0,"CR,CT,DX,MG,MR,PT,US"
+"(0008,1090)",ManufacturerModelName,Manufacturer's Model Name,LO,False,0,23887,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,1030)",StudyDescription,Study Description,LO,False,0,23886,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0010,1030)",PatientWeight,Patient's Weight,DS,False,0,23879,0,"CR,CT,DX,MR,PT,SR,US"
+"(0010,1020)",PatientSize,Patient's Size,DS,False,0,23869,0,"CR,CT,DX,MR,PT,SR,US"
+"(0008,0033)",ContentTime,Content Time,TM,False,0,23786,13,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0023)",ContentDate,Content Date,DA,False,0,23786,12,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,103E)",SeriesDescription,Series Description,LO,False,0,23722,0,"CR,CT,DX,MG,MR,PT,SR"
+"(0028,0030)",PixelSpacing,Pixel Spacing,DS,False,0,23688,0,"CR,CT,DX,MG,MR,PT,US"
+"(0020,0052)",FrameOfReferenceUID,Frame of Reference UID,UI,False,0,23668,0,"CR,CT,DX,MG,MR,PT"
+"(0018,0050)",SliceThickness,Slice Thickness,DS,False,0,23656,0,"CT,MR,PT,US"
+"(0018,5100)",PatientPosition,Patient Position,CS,False,0,23646,4,"CR,CT,MR,PT"
+"(0020,0037)",ImageOrientationPatient,Image Orientation (Patient),DS,False,0,23641,0,"CT,MR,PT"
+"(0020,0032)",ImagePositionPatient,Image Position (Patient),DS,False,0,23641,0,"CT,MR,PT"
+"(0020,1041)",SliceLocation,Slice Location,DS,False,0,23526,0,"CT,MR,PT"
+"(0018,1030)",ProtocolName,Protocol Name,LO,False,0,23440,100,"CR,CT,DX,MG,MR,PT"
+"(0032,1060)",RequestedProcedureDescription,Requested Procedure Description,LO,False,0,23350,1,"CR,CT,DX,MG,MR,PT,US"
+"(0032,4000)",StudyComments,Study Comments,LT,False,0,23312,4,"CR,CT,MG,MR,PT,US"
+"(0008,0005)",SpecificCharacterSet,Specific Character Set,CS,False,0,23290,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0010,21B0)",AdditionalPatientHistory,Additional Patient History,LT,False,0,23284,82,"CR,CT,DX,MG,MR,PT,SR"
+"(0008,0022)",AcquisitionDate,Acquisition Date,DA,False,0,22974,0,"CR,CT,DX,MG,MR,PT"
+"(0008,0032)",AcquisitionTime,Acquisition Time,TM,False,0,22973,0,"CR,CT,DX,MG,MR,PT"
+"(0010,2160)",EthnicGroup,Ethnic Group,SH,False,0,22873,72,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0008,0021)",SeriesDate,Series Date,DA,False,0,22797,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0020,1040)",PositionReferenceIndicator,Position Reference Indicator,LO,False,0,22693,11025,"CT,MG,MR,PT"
+"(0018,0015)",BodyPartExamined,Body Part Examined,CS,False,0,22257,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,0303)",LongitudinalTemporalInformationModified,Longitudinal Temporal Information Modified,CS,False,0,21918,0,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0018,1100)",ReconstructionDiameter,Reconstruction Diameter,DS,False,0,21597,0,"CT,MR,PT"
+"(0008,0031)",SeriesTime,Series Time,TM,False,0,21072,2,"CR,CT,DX,MG,MR,PT,SR,US"
+"(0028,1052)",RescaleIntercept,Rescale Intercept,DS,False,0,20896,0,"CR,CT,DX,MG,MR,PT"
+"(0028,1053)",RescaleSlope,Rescale Slope,DS,False,0,20896,0,"CR,CT,DX,MG,MR,PT"
+"(0008,1070)",OperatorsName,Operators' Name,PN,False,0,20130,0,"CT,PT"
+"(0008,0080)",InstitutionName,Institution Name,LO,False,0,20126,12,"CT,PT,SR"
+"(0010,1040)",PatientAddress,Patient's Address,LO,False,0,20025,2,"CT,PT"
+"(0008,0054)",RetrieveAETitle,Retrieve AE Title,AE,False,0,19929,0,"CT,PT"
+"(0010,2180)",Occupation,Occupation,SH,False,0,18996,6,"MR,PT,SR"
+"(0028,0106)",SmallestImagePixelValue,Smallest Image Pixel Value,SS,False,0,18821,0,"CR,CT,DX,MG,MR,PT"
+"(0028,0107)",LargestImagePixelValue,Largest Image Pixel Value,SS,False,0,18821,0,"CR,CT,DX,MG,MR,PT"
+"(0008,0013)",InstanceCreationTime,Instance Creation Time,TM,False,0,18667,0,"CR,CT,MG,MR,PT,SR"
+"(0008,0012)",InstanceCreationDate,Instance Creation Date,DA,False,0,18667,70,"CR,CT,MG,MR,PT,SR"
+"(0012,0050)",ClinicalTrialTimePointID,Clinical Trial Time Point ID,LO,False,0,17956,311,"CR,CT,DX,MR,PT,SR,US"
+"(0012,0051)",ClinicalTrialTimePointDescription,Clinical Trial Time Point Description,ST,False,0,17645,0,"CR,CT,DX,MR,PT,SR,US"
+"(0054,1001)",Units,Units,CS,False,0,15814,0,"CT,PT"
+"(0054,0081)",NumberOfSlices,Number of Slices,US,False,0,15748,0,"PT,US"
+"(0054,0410)>(0008,0100)",CodeValue,Code Value,SH,False,1,15732,0,"CR,DX,PT"
+"(0054,0410)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,15732,0,"CR,DX,PT"
+"(0054,0410)",PatientOrientationCodeSequence,Patient Orientation Code Sequence,SQ,False,0,15732,0,"CR,DX,PT"
+"(0054,0410)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,15732,0,"CR,DX,PT"
+"(0054,0414)",PatientGantryRelationshipCodeSequence,Patient Gantry Relationship Code Sequence,SQ,False,0,15728,0,"CR,PT"
+"(0054,0414)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,15728,0,"CR,PT"
+"(0054,0414)>(0008,0100)",CodeValue,Code Value,SH,False,1,15728,0,"CR,PT"
+"(0054,0414)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,15728,0,"CR,PT"
+"(0054,1103)",ReconstructionMethod,Reconstruction Method,LO,False,0,15724,0,PT
+"(0054,1300)",FrameReferenceTime,Frame Reference Time,DS,False,0,15724,0,PT
+"(0054,1002)",CountsSource,Counts Source,CS,False,0,15724,0,PT
+"(0054,1100)",RandomsCorrectionMethod,Randoms Correction Method,CS,False,0,15724,0,PT
+"(0054,1000)",SeriesType,Series Type,CS,False,0,15724,0,PT
+"(0054,1321)",DecayFactor,Decay Factor,DS,False,0,15724,0,PT
+"(0054,1102)",DecayCorrection,Decay Correction,CS,False,0,15724,0,PT
+"(0054,0016)>(0054,0300)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,15724,0,PT
+"(0054,0016)>(0018,1076)",RadionuclidePositronFraction,Radionuclide Positron Fraction,DS,False,1,15724,0,PT
+"(0054,0016)>(0054,0300)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,15724,0,PT
+"(0054,0016)>(0018,1075)",RadionuclideHalfLife,Radionuclide Half Life,DS,False,1,15724,0,PT
+"(0054,0016)>(0054,0300)>(0008,0100)",CodeValue,Code Value,SH,False,2,15724,0,PT
+"(0054,1330)",ImageIndex,Image Index,US,False,0,15724,0,PT
+"(0054,0016)>(0054,0300)",RadionuclideCodeSequence,Radionuclide Code Sequence,SQ,False,1,15724,0,PT
+"(0018,1242)",ActualFrameDuration,Actual Frame Duration,IS,False,0,15724,0,PT
+"(0018,1181)",CollimatorType,Collimator Type,CS,False,0,15724,0,PT
+"(0054,0016)",RadiopharmaceuticalInformationSequence,Radiopharmaceutical Information Sequence,SQ,False,0,15724,0,PT
+"(0028,0051)",CorrectedImage,Corrected Image,CS,False,0,15724,0,PT
+"(0054,0016)>(0018,1072)",RadiopharmaceuticalStartTime,Radiopharmaceutical Start Time,TM,False,1,15542,0,PT
+"(0054,0016)>(0018,1074)",RadionuclideTotalDose,Radionuclide Total Dose,DS,False,1,15542,0,PT
+"(0054,1105)",ScatterCorrectionMethod,Scatter Correction Method,LO,False,0,15511,0,PT
+"(0018,1149)",FieldOfViewDimensions,Field of View Dimension(s),IS,False,0,15275,0,"CR,DX,PT"
+"(0018,1147)",FieldOfViewShape,Field of View Shape,CS,False,0,15274,0,"CR,DX,MG,PT"
+"(0054,0016)>(0018,0031)",Radiopharmaceutical,Radiopharmaceutical,LO,False,1,15251,0,PT
+"(0054,0016)>(0054,0304)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,15251,0,PT
+"(0054,0202)",TypeOfDetectorMotion,Type of Detector Motion,CS,False,0,15251,0,PT
+"(0054,0016)>(0054,0304)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,15251,0,PT
+"(0054,0016)>(0054,0304)",RadiopharmaceuticalCodeSequence,Radiopharmaceutical Code Sequence,SQ,False,1,15251,0,PT
+"(0054,1101)",AttenuationCorrectionMethod,Attenuation Correction Method,LO,False,0,15099,0,PT
+"(0054,0101)",NumberOfTimeSlices,Number of Time Slices,US,False,0,14523,0,PT
+"(0018,1120)",GantryDetectorTilt,Gantry/Detector Tilt,DS,False,0,12621,0,"CT,PT"
+"(0054,0410)>(0054,0412)",PatientOrientationModifierCodeSequence,Patient Orientation Modifier Code Sequence,SQ,False,1,12371,0,PT
+"(0054,0410)>(0054,0412)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,12371,0,PT
+"(0054,0410)>(0054,0412)>(0008,0100)",CodeValue,Code Value,SH,False,2,12371,0,PT
+"(0054,0410)>(0054,0412)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,12371,0,PT
+"(0009,0010)",,Private Creator,LO,True,0,12214,0,"CT,MR,PT"
+"(0028,1050)",WindowCenter,Window Center,DS,False,0,12127,0,"CR,CT,DX,MG,MR,PT,US"
+"(0028,1051)",WindowWidth,Window Width,DS,False,0,12127,0,"CR,CT,DX,MG,MR,PT,US"
+"(0018,1000)",DeviceSerialNumber,Device Serial Number,LO,False,0,10641,6670,"CT,MG,MR,PT,SR,US"
+"(0054,0016)>(0054,0304)>(0008,0100)",CodeValue,Code Value,SH,False,2,10456,0,PT
+"(0028,2110)",LossyImageCompression,Lossy Image Compression,CS,False,0,10352,0,"CR,CT,DX,MG,MR,PT,US"
+"(0008,1010)",StationName,Station Name,SH,False,0,10296,9610,"CT,MG,MR,PT,SR"
+"(0008,0014)",InstanceCreatorUID,Instance Creator UID,UI,False,0,9984,0,"CT,MG,MR,PT,SR"
+"(0018,1083)",IntervalsAcquired,Intervals Acquired,IS,False,0,9828,0,"MR,PT"
+"(0018,1084)",IntervalsRejected,Intervals Rejected,IS,False,0,9564,0,"MR,PT"
+"(0054,1201)",AxialMash,Axial Mash,IS,False,0,9514,0,PT
+"(0054,0013)>(0054,0015)",EnergyWindowUpperLimit,Energy Window Upper Limit,DS,False,1,9514,0,PT
+"(0054,0013)",EnergyWindowRangeSequence,Energy Window Range Sequence,SQ,False,0,9514,0,PT
+"(0054,1322)",DoseCalibrationFactor,Dose Calibration Factor,DS,False,0,9514,0,PT
+"(0054,0013)>(0054,0014)",EnergyWindowLowerLimit,Energy Window Lower Limit,DS,False,1,9514,0,PT
+"(0018,1130)",TableHeight,Table Height,DS,False,0,9268,0,"CT,PT"
+"(0054,1210)",CoincidenceWindowWidth,Coincidence Window Width,DS,False,0,9041,0,PT
+"(0054,1202)",TransverseMash,Transverse Mash,IS,False,0,9041,0,PT
+"(0018,0074)",AcquisitionStartConditionData,Acquisition Start Condition Data,IS,False,0,9041,0,PT
+"(0054,0016)>(0018,1071)",RadiopharmaceuticalVolume,Radiopharmaceutical Volume,DS,False,1,9041,0,PT
+"(0054,1320)",SliceSensitivityFactor,Slice Sensitivity Factor,DS,False,0,9041,0,PT
+"(0018,0071)",AcquisitionTerminationCondition,Acquisition Termination Condition,CS,False,0,9041,0,PT
+"(0018,0075)",AcquisitionTerminationConditionData,Acquisition Termination Condition Data,IS,False,0,9041,0,PT
+"(0018,0073)",AcquisitionStartCondition,Acquisition Start Condition,CS,False,0,8936,0,PT
+"(0054,1323)",ScatterFractionFactor,Scatter Fraction Factor,DS,False,0,8641,0,PT
+"(0009,""GEMS_PETD_01"",29)",,[PET gantry_tilt_angle],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",3F)",,[PET half_life],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",4E)",,[PET lower_axial_acc],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",39)",,[PET meas_datetime],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",38)",,[PET tracer_activity],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",52)",,[PET coinc_delay_offset],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",51)",,[PET upper_coinc_limit],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",69)",,[PET slice_count],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",40)",,[PET positron_fraction],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",4D)",,[PET emission_present],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",54)",,[PET upper_energy_limit],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",4F)",,[PET upper_axial_acc],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",50)",,[PET lower_coinc_limit],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",36)",,[PET tracer_name],LO,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",55)",,[PET lower_energy_limit],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",53)",,[PET coinc_output_mode],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",3B)",,[PET admin_datetime],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",3A)",,[PET pre_inj_volume],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",28)",,[PET axial_compression],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",3C)",,[PET post_inj_activity],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",C7)",,[PET overlap],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",B8)",,[PET ir_loop_filt_parm],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",CD)",,[PET vqc_y_axis_trans],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",B9)",,[PET response_filt_parm],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",CB)",,[PET vqc_x_axis_trans],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",CE)",,[PET vqc_y_axis_swivel],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",CC)",,[PET vqc_x_axis_tilt],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",21)",,[PET countrate_period],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",20)",,[PET collect_countrate],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",2E)",,[PET mask_width],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",2D)",,[PET event_separation],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",2C)",,[PET axial_fov],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",68)",,[PET landmark_datetime],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",67)",,[PET table_z_position],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",66)",,[PET table_height],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",5E)",,[PET exam_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",5D)",,[PET scan_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",3E)",,[PET radionuclide_name],SH,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",3D)",,[PET post_inj_datetime],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",59)",,[PET wc_cal_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",57)",,[PET normal_2d_cal_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",56)",,[PET normal_cal_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",B4)",,[PET ir_recon_fov],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",B6)",,[PET ir_loop_filter],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",B2)",,[PET ir_num_iterations],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",8E)",,[PET bp_filter],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",91)",,[PET bp_center_l],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",92)",,[PET bp_center_p],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",94)",,[PET atten_smooth_param],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",93)",,[PET atten_smooth],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",9B)",,[PET cac_skull_offset],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",9A)",,[PET cac_edge_threshold],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",95)",,[PET angle_smooth_param],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",98)",,[PET norm_cal_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",A6)",,[PET slice_number],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",8D)",,[PET atten_coefficient],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",6A)",,[PET start_location],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",6B)",,[PET acq_delay],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",7D)",,[PET is_contents],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",7E)",,[PET is_type],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",90)",,[PET bp_filter_order],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",AB)",,[PET bp_center_x],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",AC)",,[PET bp_center_y],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",B3)",,[PET ir_num_subsets],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",BB)",,[PET post_filt_parm],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",BA)",,[PET post_filter],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",74)",,[PET validity_info],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",73)",,[PET frame_valid],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",70)",,[PET actual_stop_cond],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",6D)",,[PET acq_duration],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",6C)",,[PET acq_start],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",D5)",,[PET loop_filter_parm],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",D0)",,[PET vqc_z_axis_roll],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",CF)",,[PET vqc_z_axis_trans],FL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",1B)",,[PET start_cond_data],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",1C)",,[PET sel_stop_cond],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",1D)",,[PET sel_stop_cond_data],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",1E)",,[PET collect_deadtime],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",1F)",,[PET collect_singles],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",17)",,[PET scan_perspective],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",05)",,[PET patient_datetime],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",1A)",,[PET start_condition],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",7C)",,[PET is_source],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",5A)",,[PET derived],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",5C)",,[PET frame_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",16)",,[PET patient_position],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",15)",,[PET landmark_abbrev],SH,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",14)",,[PET landmark_name],LO,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",13)",,[PET for_identifier],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",0E)",,[PET scan_ready],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",0D)",,[PET scan_datetime],DT,True,0,8392,7473,PT
+"(0009,""GEMS_PETD_01"",0A)",,[PET scan_id],UI,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",22)",,[PET delayed_events],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",8C)",,[PET attenuation],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",8B)",,[PET recon_method],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",80)",,[PET multi_patient],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",7F)",,[PET is_reference],DS,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",2B)",,[PET scan_fov],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",2A)",,[PET collimation],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",19)",,[PET scan_mode],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",18)",,[PET scan_type],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",27)",,[PET theta_compression],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",26)",,[PET axial_angle_3d],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",25)",,[PET axial_acceptance],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",24)",,[PET word_size],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",23)",,[PET delayed_bias],SL,True,0,8392,0,PT
+"(0009,""GEMS_PETD_01"",A7)",,[PET total_counts],FL,True,0,8217,0,PT
+"(0020,0012)",AcquisitionNumber,Acquisition Number,IS,False,0,8128,0,"CR,CT,DX,MG,MR,PT"
+"(0009,""GEMS_PETD_01"",35)",,[PET triggers_rejected],SL,True,0,8128,0,PT
+"(0009,""GEMS_PETD_01"",34)",,[PET triggers_acquired],SL,True,0,8128,0,PT
+"(0009,""GEMS_PETD_01"",97)",,[PET trans_scan_id],UI,True,0,8050,2268,PT
+"(0009,""GEMS_PETD_01"",AD)",,[PET trans_frame_id],UI,True,0,8050,2774,PT
+"(0010,4000)",PatientComments,Patient Comments,LT,False,0,7657,2,"CR,CT,DX,MG,MR,SR"
+"(0054,0016)>(0018,1078)",RadiopharmaceuticalStartDateTime,Radiopharmaceutical Start DateTime,DT,False,1,7125,0,PT
+"(0018,1040)",ContrastBolusRoute,Contrast/Bolus Route,LO,False,0,7046,5994,"CT,MR,PT"
+"(0008,1110)",ReferencedStudySequence,Referenced Study Sequence,SQ,False,0,6911,0,"CR,CT,MR,PT,SR"
+"(0011,0010)",,Private Creator,LO,True,0,6782,0,"CR,MR,PT"
+"(0008,1111)",ReferencedPerformedProcedureStepSequence,Referenced Performed Procedure Step Sequence,SQ,False,0,6703,0,"CR,CT,DX,MR,PT,SR"
+"(0008,1111)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,1,6681,0,"CR,CT,DX,MR,PT"
+"(0008,1111)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,1,6681,0,"CR,CT,DX,MR,PT"
+"(07A1,0010)",,Private Creator,LO,True,0,6658,0,"CT,MR,PT"
+"(00E1,0010)",,Private Creator,LO,True,0,6658,0,"CT,MR,PT"
+"(0019,0010)",,Private Creator,LO,True,0,6637,0,"CT,MR,PT"
+"(0008,002A)",AcquisitionDateTime,Acquisition DateTime,DT,False,0,6631,6418,"CR,CT,DX,PT"
+"(0008,1250)>(0040,A170)",PurposeOfReferenceCodeSequence,Purpose of Reference Code Sequence,SQ,False,1,6210,0,PT
+"(0008,1250)>(0020,000D)",StudyInstanceUID,Study Instance UID,UI,False,1,6210,0,PT
+"(0008,1250)",RelatedSeriesSequence,Related Series Sequence,SQ,False,0,6210,0,PT
+"(0008,1250)>(0040,A170)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,6210,0,PT
+"(0054,0016)>(0054,0302)>(0008,0100)",CodeValue,Code Value,SH,False,2,6210,0,PT
+"(0054,0016)>(0054,0302)",AdministrationRouteCodeSequence,Administration Route Code Sequence,SQ,False,1,6210,0,PT
+"(0008,1250)>(0020,000E)",SeriesInstanceUID,Series Instance UID,UI,False,1,6210,0,PT
+"(0054,0016)>(0018,1070)",RadiopharmaceuticalRoute,Radiopharmaceutical Route,LO,False,1,6210,0,PT
+"(0008,9121)",ReferencedRawDataSequence,Referenced Raw Data Sequence,SQ,False,0,6210,0,PT
+"(0008,9121)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,1,6210,0,PT
+"(0008,9121)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,1,6210,0,PT
+"(0008,1250)>(0040,A170)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,6210,0,PT
+"(7053,0010)",,Private Creator,LO,True,0,6210,0,PT
+"(0054,0016)>(0054,0302)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,6210,0,PT
+"(0008,1250)>(0040,A170)>(0008,0100)",CodeValue,Code Value,SH,False,2,6210,0,PT
+"(0054,0016)>(0054,0302)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,6210,0,PT
+"(0018,0022)",ScanOptions,Scan Options,CS,False,0,5863,174,"CT,MR"
+"(0009,""GEMS_PETD_01"",09)",,[PET software_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",7B)",,[PET is_datetime],DT,True,0,5688,4935,PT
+"(0009,""GEMS_PETD_01"",08)",,[PET compatible_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",0C)",,[PET software_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",85)",,[PET flip],SL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",84)",,[PET rotate],FL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",60)",,[PET compatible_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",11)",,[PET scanner_desc],LO,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",12)",,[PET manufacturer],LO,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",0B)",,[PET compatible_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",61)",,[PET software_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",07)",,[PET exam_id],UI,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",03)",,[PET compatible_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",87)",,[PET pan_x],SL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",01)",,[GE Discovery PET Implementation Version Name],LO,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",04)",,[GE Advance Patient.software_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",77)",,[PET uncompressed_size],SL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",76)",,[PET compression],SL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",75)",,[PET archived],SL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",AA)",,[PET archived],SL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",A5)",,[PET software_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",88)",,[PET pan_y],SL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",7A)",,[PET software_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",79)",,[PET compatible_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",86)",,[PET zoom],FL,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",A4)",,[PET compatible_version],SH,True,0,5688,0,PT
+"(0009,""GEMS_PETD_01"",0F)",,[PET scan_description],ST,True,0,4935,0,PT
+"(0018,1012)",DateOfSecondaryCapture,Date of Secondary Capture,DA,False,0,4625,158,"CT,MR,PT,US"
+"(0018,1210)",ConvolutionKernel,Convolution Kernel,SH,False,0,4420,0,"CT,PT"
+"(0008,1050)",PerformingPhysicianName,Performing Physician's Name,PN,False,0,4406,0,CT
+"(0018,1060)",TriggerTime,Trigger Time,DS,False,0,4389,0,"MR,PT"
+"(0018,A001)",ContributingEquipmentSequence,Contributing Equipment Sequence,SQ,False,0,4352,0,"CT,DX"
+"(0008,0081)",InstitutionAddress,Institution Address,ST,False,0,4346,11,CT
+"(0018,A001)>(0008,0081)",InstitutionAddress,Institution Address,ST,False,1,4277,0,CT
+"(0008,1048)",PhysiciansOfRecord,Physician(s) of Record,PN,False,0,4275,22,CT
+"(0018,A001)>(0008,0080)",InstitutionName,Institution Name,LO,False,1,4267,0,CT
+"(0012,0020)",ClinicalTrialProtocolID,Clinical Trial Protocol ID,LO,False,0,4205,1619,"CT,DX,MR,PT,SR"
+"(0012,0030)",ClinicalTrialSiteID,Clinical Trial Site ID,LO,False,0,4205,2636,"CT,DX,MR,PT,SR"
+"(0012,0010)",ClinicalTrialSponsorName,Clinical Trial Sponsor Name,LO,False,0,4205,2627,"CT,DX,MR,PT,SR"
+"(0012,0021)",ClinicalTrialProtocolName,Clinical Trial Protocol Name,LO,False,0,4205,1630,"CT,DX,MR,PT,SR"
+"(0010,2000)",MedicalAlerts,Medical Alerts,LO,False,0,4141,21,"CR,CT,DX"
+"(7053,""PHILIPS PET PRIVATE GROUP"",00)",,[SUV Scale Factor],DS,True,0,4140,0,PT
+"(7053,""PHILIPS PET PRIVATE GROUP"",09)",,[Activity Concentration Scale Factor],DS,True,0,4140,0,PT
+"(0010,1000)",OtherPatientIDs,Other Patient IDs,LO,False,0,4093,53,CT
+"(0054,1310)",PrimaryPromptsCountsAccumulated,Primary (Prompts) Counts Accumulated,IS,False,0,3899,0,PT
+"(0028,0120)",PixelPaddingValue,Pixel Padding Value,US,False,0,3792,0,"CT,MG,MR"
+"(0018,0060)",KVP,KVP,DS,False,0,3762,0,"CR,CT,DX,MG"
+"(0029,0010)",,Private Creator,LO,True,0,3711,0,"CT,MR,PT,US"
+"(0018,1152)",Exposure,Exposure,IS,False,0,3647,0,"CR,CT,DX,MG"
+"(0018,1150)",ExposureTime,Exposure Time,IS,False,0,3627,0,"CR,CT,DX,MG"
+"(0018,1151)",XRayTubeCurrent,X-Ray Tube Current,IS,False,0,3619,0,"CR,CT,DX,MG"
+"(0018,1160)",FilterType,Filter Type,SH,False,0,3597,0,"CR,CT,DX"
+"(0018,0090)",DataCollectionDiameter,Data Collection Diameter,DS,False,0,3580,0,CT
+"(0018,1140)",RotationDirection,Rotation Direction,CS,False,0,3580,0,CT
+"(0040,A075)",VerifyingObserverName,Verifying Observer Name,PN,False,0,3545,0,"CR,DX,MG,MR"
+"(0021,0010)",,Private Creator,LO,True,0,3538,0,"CT,MR"
+"(0018,0087)",MagneticFieldStrength,Magnetic Field Strength,DS,False,0,3511,0,MR
+"(0018,0081)",EchoTime,Echo Time,DS,False,0,3511,0,MR
+"(0018,0086)",EchoNumbers,Echo Number(s),IS,False,0,3511,0,MR
+"(0018,1314)",FlipAngle,Flip Angle,DS,False,0,3511,0,MR
+"(0018,0021)",SequenceVariant,Sequence Variant,CS,False,0,3511,0,MR
+"(0018,0094)",PercentPhaseFieldOfView,Percent Phase Field of View,DS,False,0,3511,0,MR
+"(0018,0023)",MRAcquisitionType,MR Acquisition Type,CS,False,0,3511,34,MR
+"(0018,0093)",PercentSampling,Percent Sampling,DS,False,0,3511,0,MR
+"(0018,0085)",ImagedNucleus,Imaged Nucleus,SH,False,0,3511,0,MR
+"(0018,0084)",ImagingFrequency,Imaging Frequency,DS,False,0,3511,0,MR
+"(0018,0091)",EchoTrainLength,Echo Train Length,IS,False,0,3511,0,MR
+"(0018,0083)",NumberOfAverages,Number of Averages,DS,False,0,3511,0,MR
+"(0018,0080)",RepetitionTime,Repetition Time,DS,False,0,3511,0,MR
+"(0018,0020)",ScanningSequence,Scanning Sequence,CS,False,0,3511,0,MR
+"(0040,A123)",PersonName,Person Name,PN,False,0,3423,0,"CR,DX,MG,MR"
+"(0018,0088)",SpacingBetweenSlices,Spacing Between Slices,DS,False,0,3399,0,"CT,MR"
+"(0018,1310)",AcquisitionMatrix,Acquisition Matrix,US,False,0,3383,0,MR
+"(0018,1312)",InPlanePhaseEncodingDirection,In-plane Phase Encoding Direction,CS,False,0,3383,0,MR
+"(0018,0095)",PixelBandwidth,Pixel Bandwidth,DS,False,0,3383,0,MR
+"(0018,1316)",SAR,SAR,DS,False,0,3372,0,MR
+"(0054,1104)",DetectorLinesOfResponseUsed,Detector Lines of Response Used,LO,False,0,3353,0,PT
+"(0054,0412)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,3353,0,PT
+"(0018,1063)",FrameTime,Frame Time,DS,False,0,3353,0,PT
+"(0054,1311)",SecondaryCountsAccumulated,Secondary Counts Accumulated,IS,False,0,3353,0,PT
+"(0054,0412)>(0008,0100)",CodeValue,Code Value,SH,False,1,3353,0,PT
+"(0054,1324)",DeadTimeFactor,Dead Time Factor,DS,False,0,3353,0,PT
+"(0054,0412)",PatientOrientationModifierCodeSequence,Patient Orientation Modifier Code Sequence,SQ,False,0,3353,0,PT
+"(0054,0412)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,3353,0,PT
+"(0040,0241)",PerformedStationAETitle,Performed Station AE Title,AE,False,0,3334,0,MR
+"(0070,0084)",ContentCreatorName,Content Creator's Name,PN,False,0,3332,22,"CR,DX,MG,MR"
+"(0018,1110)",DistanceSourceToDetector,Distance Source to Detector,DS,False,0,3303,0,"CR,CT,DX,MG"
+"(0018,1190)",FocalSpots,Focal Spot(s),DS,False,0,3302,0,"CR,CT,DX,MG"
+"(0040,0275)",RequestAttributesSequence,Request Attributes Sequence,SQ,False,0,3293,0,"CR,MG,MR"
+"(0018,1111)",DistanceSourceToPatient,Distance Source to Patient,DS,False,0,3289,0,"CR,CT,DX,MG"
+"(0040,0275)>(0040,0007)",ScheduledProcedureStepDescription,Scheduled Procedure Step Description,LO,False,1,3288,0,"CR,MG,MR"
+"(0018,1170)",GeneratorPower,Generator Power,IS,False,0,3275,0,"CR,CT"
+"(0009,""GEMS_PETD_01"",D6)",,[PET image_one_loc],FL,True,0,3250,0,PT
+"(0009,""GEMS_PETD_01"",37)",,[PET batch_description],LO,True,0,3250,2703,PT
+"(0009,""GEMS_PETD_01"",D8)",,[PET frame_number],SL,True,0,3250,0,PT
+"(0009,""GEMS_PETD_01"",D7)",,[PET image_index_loc],FL,True,0,3250,0,PT
+"(0012,0040)",ClinicalTrialSubjectID,Clinical Trial Subject ID,LO,False,0,3197,1619,"CT,MR,SR"
+"(0020,0060)",Laterality,Laterality,CS,False,0,3123,1567,"CR,CT,MG,MR"
+"(0117,0010)",,Private Creator,LO,True,0,3116,0,MR
+"(0040,0254)",PerformedProcedureStepDescription,Performed Procedure Step Description,LO,False,0,3084,464,"CR,CT,DX,MG,MR"
+"(0018,4000)",AcquisitionComments,Acquisition Comments,LT,False,0,2992,0,MR
+"(0010,21C0)",PregnancyStatus,Pregnancy Status,US,False,0,2977,0,"CR,CT,DX,MR"
+"(0040,1400)",RequestedProcedureComments,Requested Procedure Comments,LT,False,0,2976,6,"CR,DX,MR"
+"(0117,1024)",,Private tag data,SQ,True,0,2940,0,MR
+"(0117,1024)>(0117,0010)",,Private Creator,LO,True,1,2940,0,MR
+"(0117,1024)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",C4)",,Private tag data,LT,True,1,2918,0,MR
+"(0012,0031)",ClinicalTrialSiteName,Clinical Trial Site Name,LO,False,0,2857,2638,"CT,DX,MR,PT,SR"
+"(0009,""GEMS_PETD_01"",9C)",,[PET emiss_sub_id],UI,True,0,2809,2809,PT
+"(0009,""GEMS_PETD_01"",AE)",,[PET tpluse_frame_id],UI,True,0,2809,2809,PT
+"(0040,0555)",AcquisitionContextSequence,Acquisition Context Sequence,SQ,False,0,2788,0,"CR,DX,MG,PT,US"
+"(0018,1250)",ReceiveCoilName,Receive Coil Name,SH,False,0,2766,0,MR
+"(0018,1088)",HeartRate,Heart Rate,IS,False,0,2766,0,MR
+"(0018,1200)",DateOfLastCalibration,Date of Last Calibration,DA,False,0,2748,1841,"CT,MG,MR,PT"
+"(0018,1201)",TimeOfLastCalibration,Time of Last Calibration,TM,False,0,2748,1619,"CT,MG,MR,PT"
+"(0018,0025)",AngioFlag,Angio Flag,CS,False,0,2724,0,MR
+"(0017,0010)",,Private Creator,LO,True,0,2706,0,"CT,PT"
+"(0040,0555)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,1,2704,0,PT
+"(0040,0555)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,2704,0,PT
+"(0009,""GEMS_PETD_01"",A1)",,[PET axial_start],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",A2)",,[PET axial_spacing],FL,True,0,2704,0,PT
+"(0019,""GEMS_PETD_01"",04)",,[PET cal_datetime],DT,True,0,2704,2538,PT
+"(0040,0555)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,2704,0,PT
+"(0040,0555)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,2,2704,0,PT
+"(0040,0555)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,1,2704,0,PT
+"(0009,""GEMS_PETD_01"",BF)",,[PET ac_bp_filt_cut_off],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",DB)",,[PET ir_z_filter_flag],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",DC)",,[PET ir_z_filter_ratio],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",DF)",,[PET num_of_slices],US,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",E5)",,[PET left shift],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",E2)",,[PET rest_stress],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",9D)",,[PET radial_filter_3d],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",A3)",,[PET axial_angles_used],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",B5)",,[PET ir_corr_model],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",8F)",,[PET bp_filter_cutoff],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",B7)",,[PET ir_pre_filt_parm],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",A0)",,[PET axial_cutoff_3d],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",E7)",,[PET superior shift],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",E6)",,[PET posterior shift],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",E9)",,[PET acq_bin_dur_percent],SL,True,0,2704,0,PT
+"(0017,""GEMS_PETD_01"",04)",,[PET cal_datetime],DT,True,0,2704,2538,PT
+"(0009,""GEMS_PETD_01"",9F)",,[PET axial_filter_3d],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",9E)",,[PET radial_cutoff_3d],FL,True,0,2704,0,PT
+"(0040,0555)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,2,2704,0,PT
+"(0040,0555)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,2704,0,PT
+"(0040,0555)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,2704,0,PT
+"(0009,""GEMS_PETD_01"",BD)",,[PET regularize_parm],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",C6)",,[PET seg_qc_parm],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",BC)",,[PET ir_regularize],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",C0)",,[PET ac_bp_filt_order],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",81)",,[PET number_of_normals],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",C1)",,[PET ac_img_smooth],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",C5)",,[PET scatter_parm],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",BE)",,[PET ac_bp_filter],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",C2)",,[PET ac_img_smooth_parm],FL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",C3)",,[PET scatter_method],SL,True,0,2704,0,PT
+"(0009,""GEMS_PETD_01"",C4)",,[PET scatter_num_iter],SL,True,0,2704,0,PT
+"(0043,0010)",,Private Creator,LO,True,0,2696,0,"CT,MR"
+"(0023,0010)",,Private Creator,LO,True,0,2696,0,"CT,MR"
+"(0027,0010)",,Private Creator,LO,True,0,2696,0,"CT,MR"
+"(0008,1140)",ReferencedImageSequence,Referenced Image Sequence,SQ,False,0,2689,0,"CT,MR"
+"(0008,1032)",ProcedureCodeSequence,Procedure Code Sequence,SQ,False,0,2684,0,"CR,CT,DX,MR,PT,SR,US"
+"(0018,1315)",VariableFlipAngleFlag,Variable Flip Angle Flag,CS,False,0,2596,0,MR
+"(0009,""GEMS_PETD_01"",E0)",,[PET num_of_time_slices],US,True,0,2538,0,PT
+"(0008,1110)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,1,2461,0,"CT,MR,PT,SR"
+"(0008,1110)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,1,2461,0,"CT,MR,PT,SR"
+"(0040,0244)",PerformedProcedureStepStartDate,Performed Procedure Step Start Date,DA,False,0,2409,0,"CR,CT,DX,MR,PT,US"
+"(0040,0245)",PerformedProcedureStepStartTime,Performed Procedure Step Start Time,TM,False,0,2400,0,"CR,CT,DX,MR,PT,US"
+"(0018,0031)",Radiopharmaceutical,Radiopharmaceutical,LO,False,0,2397,0,PT
+"(0018,1072)",RadiopharmaceuticalStartTime,Radiopharmaceutical Start Time,TM,False,0,2397,0,PT
+"(0018,1071)",RadiopharmaceuticalVolume,Radiopharmaceutical Volume,DS,False,0,2397,0,PT
+"(0008,1032)>(0008,0100)",CodeValue,Code Value,SH,False,1,2126,84,"CR,CT,DX,MR,SR,US"
+"(0008,1032)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,2126,0,"CR,CT,DX,MR,SR,US"
+"(0019,""GEMS_ACQU_01"",1A)",,[Last scan ras],LO,True,0,2074,227,"CT,MR"
+"(0019,""GEMS_ACQU_01"",18)",,[First scan ras],LO,True,0,2074,227,"CT,MR"
+"(0019,""GEMS_ACQU_01"",11)",,[Series contrast],SS,True,0,2074,0,"CT,MR"
+"(0027,""GEMS_IMAG_01"",10)",,[Scout Type],SS,True,0,2074,0,"CT,MR"
+"(0027,""GEMS_IMAG_01"",35)",,[Plane Type],SS,True,0,2074,0,"CT,MR"
+"(0043,""GEMS_PARM_01"",10)",,[Window value],US,True,0,2074,0,"CT,MR"
+"(0008,2111)",DerivationDescription,Derivation Description,ST,False,0,2062,425,"CT,DX,MG,MR,PT,US"
+"(0012,0042)",ClinicalTrialSubjectReadingID,Clinical Trial Subject Reading ID,LO,False,0,2017,1619,"CT,MR,SR"
+"(0028,1055)",WindowCenterWidthExplanation,Window Center & Width Explanation,LO,False,0,2003,7,"CR,CT,DX,MG,MR"
+"(0008,1032)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,1983,0,"CR,CT,DX,MR,US"
+"(0018,1094)",TriggerWindow,Trigger Window,IS,False,0,1979,0,MR
+"(0018,1090)",CardiacNumberOfImages,Cardiac Number of Images,IS,False,0,1979,0,MR
+"(0020,4000)",ImageComments,Image Comments,LT,False,0,1968,152,"CT,MG,MR,US"
+"(0021,""GEMS_RELA_01"",36)",,[Image from which prescribed],SS,True,0,1932,0,"CT,MR"
+"(0019,""GEMS_ACQU_01"",0F)",,[Horiz. Frame of ref.],DS,True,0,1932,0,"CT,MR"
+"(0009,""GEMS_IDEN_01"",04)",,[Product id],SH,True,0,1855,0,"CT,MR"
+"(0009,""GEMS_IDEN_01"",02)",,[Suite id],SH,True,0,1855,210,"CT,MR"
+"(0028,1054)",RescaleType,Rescale Type,LO,False,0,1789,0,"CR,CT,DX,MG,MR,PT"
+"(0088,0140)",StorageMediaFileSetUID,Storage Media File-set UID,UI,False,0,1774,1619,"CR,CT,DX,PT"
+"(0025,0010)",,Private Creator,LO,True,0,1755,0,MR
+"(0018,0082)",InversionTime,Inversion Time,DS,False,0,1740,0,MR
+"(0008,2112)",SourceImageSequence,Source Image Sequence,SQ,False,0,1739,0,"CR,CT,DX,MR"
+"(0027,""GEMS_IMAG_01"",46)",,[Normal A coord],FL,True,0,1726,0,"CT,MR"
+"(0027,""GEMS_IMAG_01"",47)",,[Normal S coord],FL,True,0,1726,0,"CT,MR"
+"(0027,""GEMS_IMAG_01"",45)",,[Normal R coord],FL,True,0,1726,0,"CT,MR"
+"(0027,""GEMS_IMAG_01"",44)",,[Center S coord of plane image],FL,True,0,1726,0,"CT,MR"
+"(0027,""GEMS_IMAG_01"",43)",,[Center A coord of plane image],FL,True,0,1726,0,"CT,MR"
+"(0027,""GEMS_IMAG_01"",42)",,[Center R coord of plane image],FL,True,0,1726,0,"CT,MR"
+"(0018,1251)",TransmitCoilName,Transmit Coil Name,SH,False,0,1704,300,MR
+"(0020,1002)",ImagesInAcquisition,Images in Acquisition,IS,False,0,1692,0,"CR,CT,DX,MG,MR"
+"(0021,""GEMS_RELA_01"",35)",,[Series from which prescribed],SS,True,0,1685,0,"CT,MR"
+"(0040,A124)",UID,UID,UI,False,0,1626,1619,"CR,CT,DX"
+"(3006,0024)",ReferencedFrameOfReferenceUID,Referenced Frame of Reference UID,UI,False,0,1619,1619,CT
+"(3006,00C2)",RelatedFrameOfReferenceUID,Related Frame of Reference UID,UI,False,0,1619,1619,CT
+"(0018,0010)",ContrastBolusAgent,Contrast/Bolus Agent,LO,False,0,1589,13,"CR,CT,DX,MR"
+"(0028,0109)",LargestPixelValueInSeries,Largest Pixel Value in Series,SS,False,0,1525,0,"MR,PT"
+"(0029,0011)",,Private Creator,LO,True,0,1416,0,"CT,MR"
+"(0021,""GEMS_RELA_01"",03)",,[Series from which Prescribed],SS,True,0,1405,0,"CT,MR"
+"(0018,0089)",NumberOfPhaseEncodingSteps,Number of Phase Encoding Steps,IS,False,0,1404,0,MR
+"(0018,1318)",dBdt,dB/dt,DS,False,0,1265,0,MR
+"(0021,""GEMS_RELA_01"",5A)",,[Diffusion direction],SL,True,0,1217,0,MR
+"(0043,""GEMS_PARM_01"",39)",,[Slop_int_6... slop_int_9],IS,True,0,1217,0,MR
+"(0019,""GEMS_ACQU_01"",D9)",,"[Concatenated SAT {# DTI Diffusion Dir., release 9.0 & below}]",DS,True,0,1217,0,MR
+"(0020,0110)",TemporalResolution,Temporal Resolution,DS,False,0,1186,0,MR
+"(0029,""GEMS_IMPS_01"",34)",,[Advantage comp. Overflow],SL,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",93)",,[Auto Prescan Center Frequency],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",92)",,[Slice offset on freq axis],SL,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",0E)",,[PSD estimated limit in tesla per second],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",94)",,[Auto Prescan Transmit Gain],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",D2)",,[Projection Algorithm],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",CF)",,[Prescan status],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",A0)",,[Surface Coil Type],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",E2)",,[Velocity Encode Scale],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",F2)",,[Fast phases],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",A1)",,[Extremity Coil flag],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",A3)",,[Calibrated Field strength],UL,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",F9)",,[Transmit gain],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",7D)",,[Second echo],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",7E)",,[Number of echoes],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",12)",,[Last pseq],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",84)",,[Peak SAR],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",17)",,[Series plane],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",19)",,[First scan location],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",1B)",,[Last scan loc],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",A4)",,[SAT fat/water/bone],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",9E)",,[Internal Pulse Sequence Name],LO,True,0,1133,128,MR
+"(0019,""GEMS_ACQU_01"",9F)",,[Transmitting Coil Type],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",1E)",,[Display field of view],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",91)",,[Pause Time],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",7F)",,[Table delta],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",81)",,[Contiguous],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",5A)",,[Acquisition Duration],FL,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",0D)",,[PSD estimated limit],DS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",0C)",,[dB/dt Limits in units of percent],DS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",0B)",,[DB/dt Peak rate of change of gradient field],DS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",2F)",,"[Image Type (real, imaginary, phase, magnitude)]",SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",0A)",,[Type of receiver used],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",09)",,[Respiratory trigger point],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",32)",,[Vas flags],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",90)",,[Pause Interval],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",A2)",,[Raw data run number],SL,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",97)",,[Bitmap defining CVs],SL,True,0,1133,0,MR
+"(0029,""GEMS_IMPS_01"",17)",,[Lower range of Pixels2],SL,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",41)",,[Image location],FL,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",40)",,[RAS letter of image location],SH,True,0,1133,82,MR
+"(0027,""GEMS_IMAG_01"",33)",,[Imaging Options],UL,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",33)",,[Neg_scanspacing],FL,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",35)",,[User_usage_tag],UL,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",36)",,[User_fill_map_MSW],UL,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",37)",,[User_fill_map_LSW],UL,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",34)",,[Offset Frequency],IS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",38)",,[User data 25...User data 48 {User48=Effective Resolution for spiral}],FL,True,0,1133,0,MR
+"(0029,""GEMS_IMPS_01"",16)",,[Upper range of Pixels1],SL,True,0,1133,0,MR
+"(0029,""GEMS_IMPS_01"",15)",,[Lower range of Pixels1],SL,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",62)",,[Number of Excitations],FL,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",32)",,[Pulse Sequence],SS,True,0,1133,0,MR
+"(0029,""GEMS_IMPS_01"",35)",,[Advantage comp. Underflow],SL,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",61)",,[Image dimension - Y],FL,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",60)",,[Image dimension - X],FL,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",57)",,[Locs per 3D slab],SL,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",56)",,[Num 3D slabs],SL,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",83)",,[Auto window/level window],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",84)",,[Auto window/level level],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",82)",,[Auto window/level beta],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",81)",,[Auto window/level alpha],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",5E)",,[RTIA_timer],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",5F)",,[Fps],DS,True,0,1133,0,MR
+"(0025,""GEMS_SERS_01"",10)",,[Landmark Counter],SL,True,0,1133,0,MR
+"(0025,""GEMS_SERS_01"",11)",,[Number of Acquisitions],SS,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",31)",,[Imaging Mode],SS,True,0,1133,0,MR
+"(0027,""GEMS_IMAG_01"",30)",,[Foreign Image Revision],SH,True,0,1133,1133,MR
+"(0043,""GEMS_PARM_01"",07)",,[Views per segment],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",08)",,"[Respiratory rate, bpm]",SS,True,0,1133,0,MR
+"(0025,""GEMS_SERS_01"",06)",,[Last pulse sequence used],SS,True,0,1133,0,MR
+"(0025,""GEMS_SERS_01"",07)",,[Images in Series],SL,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",87)",,[Cardiac repetition time],DS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",01)",,[Bitmap of prescan options],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",88)",,[Images per cardiac cycle],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",8A)",,[Actual receive gain analog],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",04)",,[Gradient offset in Z],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",06)",,[Number of EPI shots],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",03)",,[Gradient offset in Y],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",02)",,[Gradient offset in X],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",9B)",,[Pulse Sequence Mode],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",1D)",,[Level value],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",2C)",,[Effective echo spacing],SS,True,0,1133,0,MR
+"(0043,""GEMS_PARM_01"",2D)",,[Filter Mode (String slop field 1 in legacy GE MR],SH,True,0,1133,1049,MR
+"(0043,""GEMS_PARM_01"",2E)",,[String slop field 2],SH,True,0,1133,1133,MR
+"(0019,""GEMS_ACQU_01"",95)",,[Auto Prescan Analog receiver gain],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",96)",,[Auto Prescan Digital receiver gain],SS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",59)",,[Image Filtering 0.5/0.2T],SL,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",CA)",,[SAT thickness H/F],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C9)",,[SAT thickness A/P],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C8)",,[SAT thickness R/L],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C7)",,[SAT location F],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",D8)",,[Variable echoflag],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",D7)",,[Cardiac phase number],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",D5)",,[Fractional echo],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",D3)",,[Projection Algorithm Name],SH,True,0,1133,1133,MR
+"(0021,""GEMS_RELA_01"",5C)",,[Tagging Orientation],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",5D)",,[Tag Spacing],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",4F)",,[Locations in acquisition],SS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",50)",,[Graphically prescribed],SS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",52)",,[Rotation from source y rot],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",51)",,[Rotation from source x rot],DS,True,0,1133,0,MR
+"(0029,""GEMS_IMPS_01"",18)",,[Upper range of Pixels2],SL,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",53)",,[Rotation from source z rot],DS,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",58)",,[Overlaps],SL,True,0,1133,0,MR
+"(0021,""GEMS_RELA_01"",5B)",,[Tagging Flip Angle],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C6)",,[SAT location H],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C4)",,[SAT location A],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C5)",,[SAT location P],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C0)",,[Saturation planes],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C2)",,[SAT location R],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",C3)",,[SAT location L],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",CC)",,[Velocity encoding],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",CD)",,[Thickness disclaimer],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",CB)",,[Phase Contrast flow axis],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",CE)",,[Prescan type],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",BE)",,[Projection angle],DS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",8B)",,[Actual receive gain digital],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",8F)",,[Swappf],SS,True,0,1133,0,MR
+"(0019,""GEMS_ACQU_01"",8D)",,[Delay after trigger],DS,True,0,1133,0,MR
+"(0018,0024)",SequenceName,Sequence Name,SH,False,0,1132,387,MR
+"(0028,0108)",SmallestPixelValueInSeries,Smallest Pixel Value in Series,US,False,0,1102,0,MR
+"(0008,1140)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,1,1070,0,"CT,MR"
+"(0008,1140)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,1,1070,0,"CT,MR"
+"(0019,""GEMS_ACQU_01"",AF)",,[User data 8],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B3)",,[User data 12],DS,True,0,1065,0,MR
+"(0021,""GEMS_RELA_01"",37)",,[Screen Format],SS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B1)",,[User data 10],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B8)",,[User data 17],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",AC)",,[User data 5],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",DF)",,"[User data 23 {# DTI Diffusion Dir., release 9.0 & below}]",DS,True,0,1065,0,MR
+"(0043,""GEMS_PARM_01"",30)",,[Vas collapse flag],SS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",AA)",,[User data 3],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",A9)",,[User data 2],DS,True,0,1065,0,MR
+"(0043,""GEMS_PARM_01"",60)",,[Slop_int_10...slop_int_17],IS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",A8)",,[User data 1],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",AD)",,[User data 6],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B9)",,[User data 18],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",A7)",,[User data 0],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B7)",,[User data 16],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",BB)",,[User data 20],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",BA)",,[User data 19],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",AB)",,[User data 4],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",E0)",,"[User data 24 {# DTI Diffusion Dir., release 10.0 & above}]",DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B0)",,[User data 9],DS,True,0,1065,0,MR
+"(0043,""GEMS_PARM_01"",6F)",,[Scanner Table Entry (single gradient coil systems only)/Scanner Table Entry + Gradient Coil Selected],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B4)",,[User data 13],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",AE)",,[User data 7],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B6)",,[User data 15],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B5)",,[User data 14],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",BC)",,[User data 21],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",BD)",,[User data 22],DS,True,0,1065,0,MR
+"(0019,""GEMS_ACQU_01"",B2)",,[User data 11],DS,True,0,1065,0,MR
+"(0028,0301)",BurnedInAnnotation,Burned In Annotation,CS,False,0,1064,158,"CR,CT,DX,MG,MR,US"
+"(0019,""GEMS_ACQU_01"",9D)",,[Pulse Sequence Date],DT,True,0,1056,988,MR
+"(0043,""GEMS_PARM_01"",1C)",,[GE image integrity],SS,True,0,1056,0,MR
+"(0029,""GEMS_IMPS_01"",26)",,[Version of the hdr struct],SS,True,0,1056,0,MR
+"(0019,""GEMS_ACQU_01"",9C)",,[Pulse Sequence Name],LO,True,0,1056,0,MR
+"(7FD1,0010)",,Private Creator,LO,True,0,1021,0,"CT,MR"
+"(0045,0010)",,Private Creator,LO,True,0,949,0,"CR,CT,DX"
+"(0020,0020)",PatientOrientation,Patient Orientation,CS,False,0,949,867,"CR,CT,DX,MG,US"
+"(0043,""GEMS_PARM_01"",44)",,[DAS output source],SL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",43)",,[DAS fpa gain],SL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",42)",,[DAS trigger source],SL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",45)",,[DAS ad input],SL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",41)",,[Degree of rotation],FL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",31)",,[Recon Center Coordinates],DS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",22)",,[Peristaltic Flag],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",12)",,[Start View 1A],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",16)",,[Number Views 2B],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",15)",,[Start View 2B],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",14)",,[Number of Views 1A],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",04)",,[DAS gain],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",03)",,[DAS type],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",02)",,[Macro width at ISO Center],FL,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",21)",,[Iterbone Flag],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",0D)",,[Z tracking Flag],SS,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",4E)",,[Duration of X-ray on],FL,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",08)",,[View Weighting Mode],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",09)",,[Sigma Row number],SS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",2C)",,[Number of triggers],SL,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",43)",,[Total Segments Required],SS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",25)",,[Mid scan flag],SS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",42)",,[Segment Number],SS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",02)",,[Detector Channel],SL,True,0,941,0,CT
+"(0027,""GEMS_IMAG_01"",1C)",,[Vma mamp],SL,True,0,941,0,CT
+"(0027,""GEMS_IMAG_01"",1E)",,[Vma mod],SL,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",26)",,[Tube Azimuth [degree]],SL,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",2F)",,[Trigger frequency],DS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",2E)",,[Angle of first view],DS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",27)",,[Rotation Speed [msec]],DS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",39)",,[SFOV Type],SS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",23)",,[Table Speed [mm/rotation]],DS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",04)",,[Cell spacing],DS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",03)",,[Cell number at Theta],DS,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",24)",,[Mid Scan Time [sec]],DS,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",40)",,[Trigger on position],FL,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",0A)",,[Minimum DAS value],FL,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",13)",,[Sigma Mode],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",11)",,[Number of Views 2A],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",32)",,[Temporal Resolution],FL,True,0,941,0,CT
+"(0027,""GEMS_IMAG_01"",51)",,[Scan End Location],FL,True,0,941,0,CT
+"(0027,""GEMS_IMAG_01"",20)",,[Smart scan ON/OFF flag],SS,True,0,941,0,CT
+"(0027,""GEMS_IMAG_01"",1F)",,[Vma clip],SL,True,0,941,0,CT
+"(0027,""GEMS_IMAG_01"",50)",,[Scan Start Location],FL,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",47)",,[View compression factor],SS,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",26)",,[No views ref chans blocked],US,True,0,941,0,CT
+"(0021,""GEMS_RELA_01"",92)",,[Biopsy T location],FL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",21)",,[Corrected after glow terms],SS,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",1F)",,[Max overranges in a view],SL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",16)",,[Number of overranges],SS,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",1E)",,[Delta Start Time [msec]],DS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",0B)",,[Maximum Offset Value],FL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",25)",,[Reference channels],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",0F)",,[Z tracking Error],FL,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",01)",,[Number of Macro Rows in Detector],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",0C)",,[Number of Views shifted],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",0E)",,[Mean Z error],FL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",4D)",,[Start scan to X-ray on delay],FL,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",46)",,[DAS cal mode],SL,True,0,941,0,CT
+"(0021,""GEMS_RELA_01"",93)",,[Biopsy ref location],FL,True,0,941,0,CT
+"(0019,""GEMS_ACQU_01"",52)",,[Recon post proc. Flag],SS,True,0,941,0,CT
+"(0021,""GEMS_RELA_01"",91)",,[Biopsy position],SS,True,0,941,0,CT
+"(0043,""GEMS_PARM_01"",12)",,[X-ray chain],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",10)",,[Start View 2A],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",07)",,[Z smoothing Factor],FL,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",18)",,[Number of Views 1B],SS,True,0,941,0,CT
+"(0045,""GEMS_HELIOS_01"",06)",,[Table Direction],CS,True,0,941,0,CT
+"(0032,000A)",StudyStatusID,Study Status ID,CS,False,0,919,2,"CR,MR,PT,US"
+"(0054,0016)>(0018,1079)",RadiopharmaceuticalStopDateTime,Radiopharmaceutical Stop DateTime,DT,False,1,915,0,PT
+"(0019,""GEMS_ACQU_01"",98)",,[Center freq. Method],SS,True,0,902,0,MR
+"(0043,""GEMS_PARM_01"",0F)",,[Saravghead],DS,True,0,902,0,MR
+"(0019,""GEMS_ACQU_01"",85)",,[Monitor SAR],SS,True,0,902,0,MR
+"(0043,""GEMS_PARM_01"",27)",,[Scan Pitch Ratio],SH,True,0,867,404,CT
+"(0019,""GEMS_ACQU_01"",6A)",,[Dependent on #views processed],SS,True,0,867,0,CT
+"(0045,""GEMS_HELIOS_01"",17)",,[Start View 1B],SS,True,0,867,0,CT
+"(0043,""GEMS_PARM_01"",2B)",,[Private Scan Options],SS,True,0,867,0,CT
+"(2050,0020)",PresentationLUTShape,Presentation LUT Shape,CS,False,0,843,0,"CR,DX,MG,MR"
+"(0008,1080)",AdmittingDiagnosesDescription,Admitting Diagnoses Description,LO,False,0,839,705,"CT,MG,MR,PT"
+"(0040,2017)",FillerOrderNumberImagingServiceRequest,Filler Order Number / Imaging Service Request,LO,False,0,838,838,"CR,CT,DX,MG,MR"
+"(0009,""GEMS_IDEN_01"",30)",,[Service id],SH,True,0,825,0,MR
+"(0040,0260)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,794,0,"CR,DX,MR"
+"(0040,0260)>(0008,0100)",CodeValue,Code Value,SH,False,1,794,0,"CR,DX,MR"
+"(0040,0260)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,794,5,"CR,DX,MR"
+"(0040,0260)",PerformedProtocolCodeSequence,Performed Protocol Code Sequence,SQ,False,0,794,0,"CR,DX,MR"
+"(0040,0250)",PerformedProcedureStepEndDate,Performed Procedure Step End Date,DA,False,0,792,34,"DX,MR"
+"(0040,0251)",PerformedProcedureStepEndTime,Performed Procedure Step End Time,TM,False,0,792,0,"DX,MR"
+"(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,0,787,0,MR
+"(0008,1032)>(0008,010B)",ContextGroupExtensionFlag,Context Group Extension Flag,CS,False,1,787,0,MR
+"(0018,1081)",LowRRValue,Low R-R Value,IS,False,0,787,0,MR
+"(0020,0100)",TemporalPositionIdentifier,Temporal Position Identifier,IS,False,0,787,0,MR
+"(0020,0105)",NumberOfTemporalPositions,Number of Temporal Positions,IS,False,0,787,0,MR
+"(0018,1082)",HighRRValue,High R-R Value,IS,False,0,787,0,MR
+"(0040,0260)>(0008,010B)",ContextGroupExtensionFlag,Context Group Extension Flag,CS,False,1,787,0,MR
+"(0027,""GEMS_IMAG_01"",4D)",,[S Coord of Bottom Right Corner],FL,True,0,785,0,MR
+"(0019,""GEMS_ACQU_01"",C1)",,[Surface coil intensity],SS,True,0,785,0,MR
+"(0027,""GEMS_IMAG_01"",4A)",,[S Coord of Top Right Corner],FL,True,0,785,0,MR
+"(0027,""GEMS_IMAG_01"",4B)",,[R Coord of Bottom Right Corner],FL,True,0,785,0,MR
+"(0027,""GEMS_IMAG_01"",48)",,[R Coord of Top Right Corner],FL,True,0,785,0,MR
+"(0027,""GEMS_IMAG_01"",49)",,[A Coord of Top Right Corner],FL,True,0,785,0,MR
+"(0027,""GEMS_IMAG_01"",36)",,[Oblique Plane],SL,True,0,785,0,MR
+"(0027,""GEMS_IMAG_01"",4C)",,[A Coord of Bottom Right Corner],FL,True,0,785,0,MR
+"(0054,0016)>(0018,1073)",RadiopharmaceuticalStopTime,Radiopharmaceutical Stop Time,TM,False,1,774,0,PT
+"(0032,000C)",StudyPriorityID,Study Priority ID,CS,False,0,764,1,"DX,MG,MR,PT,US"
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",C5)",,Private tag data,CS,True,0,764,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",C6)",,Private tag data,LO,True,0,764,700,MR
+"(0013,0011)",,Private Creator,LO,True,0,753,0,PT
+"(0018,1050)",SpatialResolution,Spatial Resolution,DS,False,0,735,0,"CR,DX,MR"
+"(0009,0011)",,Private Creator,LO,True,0,725,0,"CT,MR,PT"
+"(0117,1024)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",C3)",,Private tag data,CS,True,1,700,0,MR
+"(0117,1024)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",C0)",,Private tag data,CS,True,1,700,0,MR
+"(0117,1024)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",C2)",,Private tag data,DS,True,1,700,0,MR
+"(0117,1024)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",C1)",,Private tag data,LO,True,1,700,0,MR
+"(0018,9087)",DiffusionBValue,Diffusion b-value,FD,False,0,648,0,MR
+"(0018,9089)",DiffusionGradientOrientation,Diffusion Gradient Orientation,FD,False,0,648,0,MR
+"(0018,9073)",AcquisitionDuration,Acquisition Duration,FD,False,0,648,0,MR
+"(0019,""SIEMENS CT VA0  COAD"",B0)",,[Feed per Rotation],DS,True,0,620,0,CT
+"(0020,0200)",SynchronizationFrameOfReferenceUID,Synchronization Frame of Reference UID,UI,False,0,595,0,"CT,US"
+"(0033,0010)",,Private Creator,LO,True,0,593,0,"MR,PT,US"
+"(004B,0010)",,Private Creator,LO,True,0,590,0,MR
+"(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,0,578,0,"CR,CT,DX"
+"(0031,0010)",,Private Creator,LO,True,0,568,0,"MR,PT,US"
+"(0008,9215)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,559,0,"CT,MR,US"
+"(0008,9215)",DerivationCodeSequence,Derivation Code Sequence,SQ,False,0,559,0,"CT,MR,US"
+"(0008,9215)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,559,0,"CT,MR,US"
+"(0008,9215)>(0008,0100)",CodeValue,Code Value,SH,False,1,559,0,"CT,MR,US"
+"(0021,""SIEMENS MED"",11)",,[Target],DS,True,0,535,0,CT
+"(0008,1032)>(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,1,531,0,"CT,MR"
+"(0051,0010)",,Private Creator,LO,True,0,523,0,MR
+"(0008,0100)",CodeValue,Code Value,SH,False,0,522,522,MR
+"(0040,0280)",CommentsOnThePerformedProcedureStep,Comments on the Performed Procedure Step,ST,False,0,498,498,MR
+"(0054,1200)",AxialAcceptance,Axial Acceptance,DS,False,0,473,0,PT
+"(0054,0414)>(0008,0106)",ContextGroupVersion,Context Group Version,DT,False,1,473,0,PT
+"(0054,0016)>(0054,0300)>(0008,0106)",ContextGroupVersion,Context Group Version,DT,False,2,473,0,PT
+"(0054,0410)>(0054,0412)>(0008,010F)",ContextIdentifier,Context Identifier,CS,False,2,473,0,PT
+"(0054,0410)>(0054,0412)>(0008,0106)",ContextGroupVersion,Context Group Version,DT,False,2,473,0,PT
+"(0054,0410)>(0054,0412)>(0008,0105)",MappingResource,Mapping Resource,CS,False,2,473,0,PT
+"(0054,0410)>(0008,0105)",MappingResource,Mapping Resource,CS,False,1,473,0,PT
+"(0054,0414)>(0008,0105)",MappingResource,Mapping Resource,CS,False,1,473,0,PT
+"(0054,0410)>(0008,010F)",ContextIdentifier,Context Identifier,CS,False,1,473,0,PT
+"(0054,0410)>(0008,0106)",ContextGroupVersion,Context Group Version,DT,False,1,473,0,PT
+"(0054,0016)>(0054,0300)>(0008,0105)",MappingResource,Mapping Resource,CS,False,2,473,0,PT
+"(0054,0016)>(0054,0300)>(0008,010F)",ContextIdentifier,Context Identifier,CS,False,2,473,0,PT
+"(0054,0414)>(0008,010F)",ContextIdentifier,Context Identifier,CS,False,1,473,0,PT
+"(0019,""SIEMENS CT VA0  COAD"",90)",,[Osteo Offset],DS,True,0,469,0,CT
+"(0019,""SIEMENS CT VA0  COAD"",92)",,[Osteo Regression Line Slope],DS,True,0,469,0,CT
+"(0019,""SIEMENS CT VA0  COAD"",96)",,[Osteo Phantom Number],IS,True,0,469,0,CT
+"(0019,""SIEMENS CT VA0  COAD"",93)",,[Osteo Regression Line Intercept],DS,True,0,469,0,CT
+"(0018,1041)",ContrastBolusVolume,Contrast/Bolus Volume,DS,False,0,460,0,"CT,MR"
+"(0018,1049)",ContrastBolusIngredientConcentration,Contrast/Bolus Ingredient Concentration,DS,False,0,460,0,"CT,MR"
+"(0040,2016)",PlacerOrderNumberImagingServiceRequest,Placer Order Number / Imaging Service Request,LO,False,0,442,442,"CR,DX,MG,MR"
+"(2001,0010)",,Private Creator,LO,True,0,441,0,"CR,DX,MR"
+"(2005,0014)",,Private Creator,LO,True,0,434,0,MR
+"(2005,0010)",,Private Creator,LO,True,0,434,0,MR
+"(2005,0013)",,Private Creator,LO,True,0,434,0,MR
+"(2005,0011)",,Private Creator,LO,True,0,434,0,MR
+"(2005,0012)",,Private Creator,LO,True,0,434,0,MR
+"(0905,0010)",,Private Creator,LO,True,0,431,0,"CT,MR"
+"(0032,1064)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,416,2,"CR,CT,DX,MR"
+"(0032,1064)",RequestedProcedureCodeSequence,Requested Procedure Code Sequence,SQ,False,0,416,0,"CR,CT,DX,MR"
+"(0032,1064)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,415,6,"CR,CT,DX,MR"
+"(0032,1064)>(0008,0100)",CodeValue,Code Value,SH,False,1,415,1,"CR,CT,DX,MR"
+"(0032,1001)",ScheduledStudyStartTime,Scheduled Study Start Time,TM,False,0,403,403,"CR,CT,MG"
+"(0032,1000)",ScheduledStudyStartDate,Scheduled Study Start Date,DA,False,0,401,401,"CT,MG"
+"(0018,A001)>(0040,A170)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,401,0,"CT,DX"
+"(0018,A001)>(0040,A170)>(0008,0100)",CodeValue,Code Value,SH,False,2,401,0,"CT,DX"
+"(0018,A001)>(0008,0070)",Manufacturer,Manufacturer,LO,False,1,401,0,"CT,DX"
+"(0018,A001)>(0040,A170)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,401,0,"CT,DX"
+"(0018,A001)>(0040,A170)",PurposeOfReferenceCodeSequence,Purpose of Reference Code Sequence,SQ,False,1,401,0,"CT,DX"
+"(0032,1051)",StudyCompletionTime,Study Completion Time,TM,False,0,400,400,CT
+"(0045,""GEMS_HELIOS_01"",33)",,[PctRpeakDelay],CS,True,0,400,0,CT
+"(0032,1050)",StudyCompletionDate,Study Completion Date,DA,False,0,400,400,CT
+"(0903,0010)",,Private Creator,LO,True,0,396,0,"CT,MR"
+"(0040,0321)",FilmConsumptionSequence,Film Consumption Sequence,SQ,False,0,394,0,"CR,DX,MR"
+"(0018,1018)",SecondaryCaptureDeviceManufacturerModelName,Secondary Capture Device Manufacturer's Model Name,LO,False,0,393,158,"CT,MG,MR,US"
+"(0018,1016)",SecondaryCaptureDeviceManufacturer,Secondary Capture Device Manufacturer,LO,False,0,393,158,"CT,MG,MR,US"
+"(0009,""GEMS_IDEN_01"",E3)",,[Equipment UID],UI,True,0,389,321,"CT,MR"
+"(0008,0104)",CodeMeaning,Code Meaning,LO,False,0,387,387,MR
+"(0031,0011)",,Private Creator,LO,True,0,382,0,"MR,PT,US"
+"(0018,1046)",ContrastFlowRate,Contrast Flow Rate,DS,False,0,372,0,CT
+"(0040,0275)>(0040,1001)",RequestedProcedureID,Requested Procedure ID,SH,False,1,356,0,"CR,MG,MR"
+"(0043,""GEMS_PARM_01"",7D)",,[Recon mode flag word],US,True,0,348,0,MR
+"(0043,""GEMS_PARM_01"",97)",,[Image Filtering Parameters],LO,True,0,348,0,MR
+"(0018,1019)",SecondaryCaptureDeviceSoftwareVersions,Secondary Capture Device Software Versions,LO,False,0,321,88,"CT,MR,US"
+"(0009,""GEMS_IDEN_01"",01)",,[Full fidelity],LO,True,0,321,0,CT
+"(0018,700A)",DetectorID,Detector ID,SH,False,0,320,315,"CR,CT,DX,MG"
+"(0010,2110)",Allergies,Allergies,LO,False,0,313,313,"CR,CT,DX"
+"(0008,3010)",IrradiationEventUID,Irradiation Event UID,UI,False,0,313,0,"CR,CT,DX"
+"(0018,A001)>(0018,A002)",ContributionDateTime,Contribution DateTime,DT,False,1,311,0,"CT,DX"
+"(7FDF,0010)",,Private Creator,LO,True,0,310,0,"CR,CT"
+"(0038,0500)",PatientState,Patient State,LO,False,0,307,307,"CR,CT"
+"(01F1,0010)",,Private Creator,LO,True,0,306,0,CT
+"(0018,9321)>(0018,9328)",ExposureTimeInms,Exposure Time in ms,FD,False,1,306,0,CT
+"(0018,9323)",ExposureModulationType,Exposure Modulation Type,CS,False,0,306,0,CT
+"(01F7,0010)",,Private Creator,LO,True,0,306,0,CT
+"(0018,9321)>(0018,9332)",ExposureInmAs,Exposure in mAs,FD,False,1,306,0,CT
+"(0018,9321)>(0018,9345)",CTDIvol,CTDIvol,FD,False,1,306,0,CT
+"(0018,9321)",CTExposureSequence,CT Exposure Sequence,SQ,False,0,306,0,CT
+"(0018,9321)>(0018,9323)",ExposureModulationType,Exposure Modulation Type,CS,False,1,306,0,CT
+"(0018,9321)>(0018,9324)",EstimatedDoseSaving,Estimated Dose Saving,FD,False,1,306,0,CT
+"(0018,9321)>(0018,9330)",XRayTubeCurrentInmA,X-Ray Tube Current in mA,FD,False,1,306,0,CT
+"(0018,9324)",EstimatedDoseSaving,Estimated Dose Saving,FD,False,0,306,0,CT
+"(0018,9345)",CTDIvol,CTDIvol,FD,False,0,306,0,CT
+"(0038,0050)",SpecialNeeds,Special Needs,LO,False,0,306,306,CT
+"(01E1,0010)",,Private Creator,LO,True,0,306,0,CT
+"(0043,""GEMS_PARM_01"",05)",,[Img is original or unoriginal],SS,True,0,300,0,MR
+"(0008,0064)",ConversionType,Conversion Type,CS,False,0,263,0,"CT,DX,MG,US"
+"(3109,0011)",,Private Creator,LO,True,0,252,0,"CT,MR"
+"(3109,0010)",,Private Creator,LO,True,0,252,0,"CT,MR"
+"(0018,1014)",TimeOfSecondaryCapture,Time of Secondary Capture,TM,False,0,233,0,"CT,US"
+"(0043,""GEMS_PARM_01"",83)",,[Asset R Factors],DS,True,0,231,0,MR
+"(0043,""GEMS_PARM_01"",84)",,[Additional Asset Data],LO,True,0,231,0,MR
+"(0043,""GEMS_PARM_01"",91)",,[SAR value],DS,True,0,231,0,MR
+"(0043,""GEMS_PARM_01"",8A)",,[Private In-Plane Phase Encoding Direction],CS,True,0,231,0,MR
+"(0043,""GEMS_PARM_01"",89)",,"[Governing Body, dB/dt, and SAR definition]",LO,True,0,231,0,MR
+"(0043,""GEMS_PARM_01"",90)",,[SAR Definition],LO,True,0,231,0,MR
+"(0043,""GEMS_PARM_01"",96)",,[Content Qualification],CS,True,0,231,0,MR
+"(0043,""GEMS_PARM_01"",81)",,[GE Coil Name],LO,True,0,231,0,MR
+"(0117,10B0)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",B1)",,Private tag data,DS,True,1,226,0,MR
+"(0117,10B0)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",B3)",,Private tag data,IS,True,1,226,0,MR
+"(0117,10B0)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",B5)",,Private tag data,LO,True,1,226,0,MR
+"(0117,1010)",,Private tag data,SQ,True,0,226,0,MR
+"(0117,1020)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",45)",,Private tag data,DS,True,1,226,0,MR
+"(0117,1020)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",44)",,Private tag data,DS,True,1,226,0,MR
+"(0117,10B0)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",B4)",,Private tag data,DS,True,1,226,0,MR
+"(0117,10B0)",,Private tag data,SQ,True,0,226,0,MR
+"(0117,10B0)>(0117,0010)",,Private Creator,LO,True,1,226,0,MR
+"(0117,10B0)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",B2)",,Private tag data,DS,True,1,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",31)",,Private tag data,DS,True,0,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",3A)",,Private tag data,LO,True,0,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",3B)",,Private tag data,LT,True,0,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",A2)",,Private tag data,US,True,0,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",A1)",,Private tag data,US,True,0,226,0,MR
+"(0117,1020)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",41)",,Private tag data,IS,True,1,226,0,MR
+"(0117,1020)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",42)",,Private tag data,DS,True,1,226,0,MR
+"(0117,1020)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",43)",,Private tag data,DS,True,1,226,0,MR
+"(0117,1020)>(0117,0010)",,Private Creator,LO,True,1,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",33)",,Private tag data,TM,True,0,226,0,MR
+"(0117,1020)",,Private tag data,SQ,True,0,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",35)",,Private tag data,IS,True,0,226,0,MR
+"(0117,1020)>(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",46)",,Private tag data,CS,True,1,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",30)",,Private tag data,IS,True,0,226,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",34)",,Private tag data,DS,True,0,226,0,MR
+"(3711,0010)",,Private Creator,LO,True,0,218,0,CT
+"(0032,1030)",ReasonForStudy,Reason for Study,LO,False,0,207,0,"MG,MR,PT"
+"(0019,""SIEMENS MR HEADER"",12)",,[TablePositionOrigin],SL,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",0F)",,[GradientMode],LO,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",11)",,[FlowCompensation],SH,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",18)",,[RealDwellTime],IS,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",15)",,[SlicePosition_PCS],FD,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",17)",,[SliceResolution],DS,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",13)",,[ImaAbsTablePosition],SL,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",14)",,[ImaRelTablePosition],IS,True,0,195,0,MR
+"(0029,""SIEMENS MEDCOM HEADER2"",60)",,[Series Workflow Status],LO,True,0,195,0,MR
+"(0019,""SIEMENS MR HEADER"",0B)",,[SliceMeasurementDuration],DS,True,0,195,0,MR
+"(0025,""GEMS_SERS_01"",17)",,[Series Complete Flag],SL,True,0,177,0,MR
+"(0009,0012)",,Private Creator,LO,True,0,176,0,"CT,MR"
+"(0028,0034)",PixelAspectRatio,Pixel Aspect Ratio,IS,False,0,172,0,"DX,MG,MR,US"
+"(0099,000A)",,Private Creator,LO,True,0,166,0,PT
+"(0040,0275)>(0040,0009)",ScheduledProcedureStepID,Scheduled Procedure Step ID,SH,False,1,165,0,"MG,MR"
+"(0043,""GEMS_PARM_01"",82)",,[System Configuration Information],LO,True,0,163,0,MR
+"(0043,""GEMS_PARM_01"",80)",,[Coil ID Data],LO,True,0,163,0,MR
+"(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,0,158,158,MR
+"(0020,9057)",InStackPositionNumber,In-Stack Position Number,UL,False,0,152,0,MR
+"(0020,9056)",StackID,Stack ID,SH,False,0,152,0,MR
+"(0088,0200)>(0028,0002)",SamplesPerPixel,Samples per Pixel,US,False,1,148,0,PT
+"(0088,0200)>(0028,0010)",Rows,Rows,US,False,1,148,0,PT
+"(0088,0200)>(0028,0004)",PhotometricInterpretation,Photometric Interpretation,CS,False,1,148,0,PT
+"(0088,0200)",IconImageSequence,Icon Image Sequence,SQ,False,0,148,0,PT
+"(0088,0200)>(0028,1102)",GreenPaletteColorLookupTableDescriptor,Green Palette Color Lookup Table Descriptor,SS,False,1,148,0,PT
+"(0088,0200)>(0028,1103)",BluePaletteColorLookupTableDescriptor,Blue Palette Color Lookup Table Descriptor,SS,False,1,148,0,PT
+"(0088,0200)>(0028,0100)",BitsAllocated,Bits Allocated,US,False,1,148,0,PT
+"(0088,0200)>(0028,0011)",Columns,Columns,US,False,1,148,0,PT
+"(0088,0200)>(0028,1201)",RedPaletteColorLookupTableData,Red Palette Color Lookup Table Data,OW,False,1,148,0,PT
+"(0088,0200)>(0028,1203)",BluePaletteColorLookupTableData,Blue Palette Color Lookup Table Data,OW,False,1,148,0,PT
+"(0088,0200)>(0028,1202)",GreenPaletteColorLookupTableData,Green Palette Color Lookup Table Data,OW,False,1,148,0,PT
+"(0088,0200)>(0028,0101)",BitsStored,Bits Stored,US,False,1,148,0,PT
+"(0088,0200)>(7FE0,0010)",PixelData,Pixel Data,OB,False,1,148,0,PT
+"(0088,0200)>(0028,0103)",PixelRepresentation,Pixel Representation,US,False,1,148,0,PT
+"(0088,0200)>(0028,1101)",RedPaletteColorLookupTableDescriptor,Red Palette Color Lookup Table Descriptor,SS,False,1,148,0,PT
+"(0088,0200)>(0028,0102)",HighBit,High Bit,US,False,1,148,0,PT
+"(0025,""GEMS_SERS_01"",14)",,[Indicates no. of updates to header],SL,True,0,145,0,MR
+"(0031,0012)",,Private Creator,LO,True,0,143,0,US
+"(0028,2112)",LossyImageCompressionRatio,Lossy Image Compression Ratio,DS,False,0,143,0,US
+"(0018,1010)",SecondaryCaptureDeviceID,Secondary Capture Device ID,LO,False,0,143,0,US
+"(0021,0011)",,Private Creator,LO,True,0,141,0,MR
+"(0117,""UCSF BIRP PRIVATE CREATOR 011710XX"",24)",,Private tag data,UN,True,0,141,0,MR
+"(0019,""SIEMENS MR HEADER"",0D)",,[DiffusionDirectionality],CS,True,0,135,0,MR
+"(0137,0050)",,Private Creator,LO,True,0,135,0,MR
+"(0019,""SIEMENS MR HEADER"",16)",,[TimeAfterStart],DS,True,0,135,0,MR
+"(0019,""SIEMENS MR HEADER"",28)",,[BandwidthPerPixelPhaseEncode],FD,True,0,135,0,MR
+"(0019,""SIEMENS MR HEADER"",0C)",,[B_value],IS,True,0,135,0,MR
+"(0032,1064)>(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,1,135,0,MR
+"(0028,0200)",ImageLocation,Image Location,US,False,0,128,0,MR
+"(0020,0035)",ImageOrientation,Image Orientation,DS,False,0,128,0,MR
+"(0020,0050)",Location,Location,DS,False,0,128,0,MR
+"(0020,0030)",ImagePosition,Image Position,DS,False,0,128,0,MR
+"(0011,0011)",,Private Creator,LO,True,0,128,0,MR
+"(0019,0012)",,Private Creator,LO,True,0,128,0,MR
+"(0019,0014)",,Private Creator,LO,True,0,128,0,MR
+"(0009,0013)",,Private Creator,LO,True,0,128,0,MR
+"(0028,0005)",ImageDimensions,Image Dimensions,US,False,0,128,0,MR
+"(0028,0040)",ImageFormat,Image Format,CS,False,0,128,0,MR
+"(0021,0023)",,Private Creator,LO,True,0,128,0,MR
+"(0021,0013)",,Private Creator,LO,True,0,128,0,MR
+"(0020,0070)",ImageGeometryType,Image Geometry Type,LO,False,0,128,0,MR
+"(0020,0080)",MaskingImage,Masking Image,CS,False,0,128,128,MR
+"(0020,1001)",AcquisitionsInSeries,Acquisitions in Series,IS,False,0,128,0,MR
+"(0019,0015)",,Private Creator,LO,True,0,128,0,MR
+"(0008,2112)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,1,120,0,"CR,CT,DX,MR"
+"(0008,2112)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,1,120,0,"CR,CT,DX,MR"
+"(0023,""GEMS_STDY_01"",70)",,[Start time(secs) in first axial],FD,True,0,109,0,MR
+"(0040,9096)",RealWorldValueMappingSequence,Real World Value Mapping Sequence,SQ,False,0,105,0,MR
+"(0040,9096)>(0040,9224)",RealWorldValueIntercept,Real World Value Intercept,FD,False,1,105,0,MR
+"(0040,9096)>(0040,9225)",RealWorldValueSlope,Real World Value Slope,FD,False,1,105,0,MR
+"(0009,""GEMS_PETD_01"",A9)",,[PET other_atts_size],SL,True,0,105,0,PT
+"(1099,0010)",,Private Creator,LO,True,0,94,0,CT
+"(0018,A001)>(0008,1010)",StationName,Station Name,SH,False,1,90,0,CT
+"(0018,A001)>(0008,1090)",ManufacturerModelName,Manufacturer's Model Name,LO,False,1,90,0,CT
+"(0018,A001)>(0018,1020)",SoftwareVersions,Software Versions,LO,False,1,90,0,CT
+"(0008,1120)",ReferencedPatientSequence,Referenced Patient Sequence,SQ,False,0,90,0,CT
+"(0018,A001)>(0008,1040)",InstitutionalDepartmentName,Institutional Department Name,LO,False,1,90,0,CT
+"(0018,A001)>(0018,1000)",DeviceSerialNumber,Device Serial Number,LO,False,1,90,0,CT
+"(0018,1044)",ContrastBolusTotalDose,Contrast/Bolus Total Dose,DS,False,0,88,0,MR
+"(0018,1048)",ContrastBolusIngredient,Contrast/Bolus Ingredient,CS,False,0,88,88,MR
+"(0045,""GEMS_HELIOS_01"",3B)",,[Noise Reduction Image Filter Description],LO,True,0,78,78,CT
+"(0040,A088)",VerifyingObserverIdentificationCodeSequence,Verifying Observer Identification Code Sequence,SQ,False,0,77,0,MR
+"(0043,""GEMS_PARM_01"",29)",,[Histogram tables],OB,True,0,77,0,MR
+"(0011,""GEMS_PATI_01"",10)",,[Patient Status],SS,True,0,77,0,MR
+"(0018,5101)",ViewPosition,View Position,CS,False,0,74,2,"CR,DX,MG"
+"(0018,9310)",TableFeedPerRotation,Table Feed per Rotation,FD,False,0,72,0,CT
+"(0018,9307)",TotalCollimationWidth,Total Collimation Width,FD,False,0,72,0,CT
+"(0018,9311)",SpiralPitchFactor,Spiral Pitch Factor,FD,False,0,72,0,CT
+"(0018,9309)",TableSpeed,Table Speed,FD,False,0,72,0,CT
+"(0018,9306)",SingleCollimationWidth,Single Collimation Width,FD,False,0,72,0,CT
+"(0018,9305)",RevolutionTime,Revolution Time,FD,False,0,72,0,CT
+"(0043,""GEMS_PARM_01"",9A)",,[Rx Stack Identification],IS,True,0,68,0,MR
+"(0025,""GEMS_SERS_01"",19)",,[Last image number used],SL,True,0,68,0,MR
+"(0018,1164)",ImagerPixelSpacing,Imager Pixel Spacing,DS,False,0,68,0,"CR,DX,MG"
+"(0043,""GEMS_PARM_01"",88)",,[PURE Acquisition Calibration Series UID],UI,True,0,68,0,MR
+"(0009,""GEMS_IDEN_01"",E9)",,[Actual series data time stamp],SL,True,0,68,0,MR
+"(0023,""GEMS_STDY_01"",74)",,[No. of updates to header],SL,True,0,68,0,MR
+"(0023,""GEMS_STDY_01"",7D)",,[Indicates study has complete info (DICOM/genesis)],SS,True,0,68,0,MR
+"(0025,""GEMS_SERS_01"",18)",,[Number of images archived],SL,True,0,68,0,MR
+"(0043,""GEMS_PARM_01"",95)",,[Prescan Reuse String],LO,True,0,68,0,MR
+"(0043,""GEMS_PARM_01"",98)",,[ASSET Acquisition Calibration Series UID],UI,True,0,68,0,MR
+"(0018,1047)",ContrastFlowDuration,Contrast Flow Duration,DS,False,0,66,0,CT
+"(0012,0053)",LongitudinalTemporalEventType,Longitudinal Temporal Event Type,CS,False,0,66,0,CT
+"(0012,0052)",LongitudinalTemporalOffsetFromEvent,Longitudinal Temporal Offset from Event,FD,False,0,66,0,CT
+"(0040,0007)",ScheduledProcedureStepDescription,Scheduled Procedure Step Description,LO,False,0,64,0,MR
+"(0040,0009)",ScheduledProcedureStepID,Scheduled Procedure Step ID,SH,False,0,64,0,MR
+"(0029,""SIEMENS MEDCOM HEADER"",31)",,[PMTF Information 1],LO,True,0,64,0,MR
+"(0029,""SIEMENS MEDCOM HEADER"",34)",,[PMTF Information 4],CS,True,0,64,0,MR
+"(0018,7004)",DetectorType,Detector Type,CS,False,0,61,0,"CR,DX,MG"
+"(0018,1508)",PositionerType,Positioner Type,CS,False,0,61,24,"CR,DX,MG"
+"(0903,""GEIIS PACS"",12)",,[Confidential Flag],US,True,0,60,0,MR
+"(0028,1056)",VOILUTFunction,VOI LUT Function,CS,False,0,60,0,"MG,MR"
+"(0903,""GEIIS PACS"",11)",,[Significant Flag],US,True,0,60,0,MR
+"(0010,21A0)",SmokingStatus,Smoking Status,CS,False,0,60,0,MR
+"(0051,""SIEMENS MR HEADER"",08)",,[CSA Image Header Type],CS,True,0,60,0,MR
+"(0028,0300)",QualityControlImage,Quality Control Image,CS,False,0,56,0,"CR,DX,MG"
+"(0020,1208)",NumberOfStudyRelatedInstances,Number of Study Related Instances,IS,False,0,54,0,"CR,MR"
+"(0008,0061)",ModalitiesInStudy,Modalities in Study,CS,False,0,53,0,"MG,MR"
+"(0018,1074)",RadionuclideTotalDose,Radionuclide Total Dose,DS,False,0,52,0,MR
+"(07A5,0010)",,Private Creator,LO,True,0,52,0,MR
+"(07A3,0010)",,Private Creator,LO,True,0,52,0,MR
+"(0028,1041)",PixelIntensityRelationshipSign,Pixel Intensity Relationship Sign,SS,False,0,47,0,"CR,DX,MG"
+"(0018,1411)",ExposureIndex,Exposure Index,DS,False,0,47,0,"CR,DX"
+"(0028,1040)",PixelIntensityRelationship,Pixel Intensity Relationship,CS,False,0,47,0,"CR,DX,MG"
+"(0018,1153)",ExposureInuAs,Exposure in uAs,IS,False,0,46,0,"CR,DX,MG"
+"(0907,0010)",,Private Creator,LO,True,0,46,0,MR
+"(0008,1120)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,1,45,0,CT
+"(0008,1120)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,1,45,0,CT
+"(0028,0008)",NumberOfFrames,Number of Frames,IS,False,0,44,0,"MG,US"
+"(0020,0062)",ImageLaterality,Image Laterality,CS,False,0,43,8,"DX,MG"
+"(0054,0220)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,37,0,"CR,DX,MG"
+"(0054,0220)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,37,0,"CR,DX,MG"
+"(0054,0220)",ViewCodeSequence,View Code Sequence,SQ,False,0,37,0,"CR,DX,MG"
+"(0018,1413)",DeviationIndex,Deviation Index,DS,False,0,37,0,"CR,DX"
+"(0018,1412)",TargetExposureIndex,Target Exposure Index,DS,False,0,37,0,"CR,DX"
+"(0054,0220)>(0008,0100)",CodeValue,Code Value,SH,False,1,37,0,"CR,DX,MG"
+"(0018,8150)",ExposureTimeInuS,Exposure Time in uS,DS,False,0,36,0,"DX,MG"
+"(0018,1405)",RelativeXRayExposure,Relative X-Ray Exposure,IS,False,0,36,0,"CR,DX,MG"
+"(7FD1,""GEIIS"",10)",,[GE IIS Compression ID],UL,True,0,35,0,CT
+"(0018,115E)",ImageAndFluoroscopyAreaDoseProduct,Image and Fluoroscopy Area Dose Product,DS,False,0,33,0,"CR,DX"
+"(0054,0220)>(0054,0222)",ViewModifierCodeSequence,View Modifier Code Sequence,SQ,False,1,33,0,"DX,MG"
+"(0040,0302)",EntranceDose,Entrance Dose,US,False,0,32,0,"CR,DX,MG"
+"(0040,0318)",OrganExposed,Organ Exposed,CS,False,0,29,0,MG
+"(0018,7001)",DetectorTemperature,Detector Temperature,DS,False,0,27,0,"CR,DX,MG"
+"(0018,700C)",DateOfLastDetectorCalibration,Date of Last Detector Calibration,DA,False,0,25,0,"DX,MG"
+"(0018,7000)",DetectorConditionsNominalFlag,Detector Conditions Nominal Flag,CS,False,0,25,0,"CR,MG"
+"(0018,7005)",DetectorConfiguration,Detector Configuration,CS,False,0,25,0,"CR,DX,MG"
+"(0018,700E)",TimeOfLastDetectorCalibration,Time of Last Detector Calibration,TM,False,0,25,0,"DX,MG"
+"(1129,""EIGEN, INC"",16)",,Private tag data,DS,True,0,24,0,US
+"(1129,""EIGEN, INC"",17)",,Private tag data,DS,True,0,24,0,US
+"(0018,1700)",CollimatorShape,Collimator Shape,CS,False,0,24,0,"CR,DX"
+"(0018,5010)",TransducerData,Transducer Data,LO,False,0,24,0,US
+"(0018,1800)",AcquisitionTimeSynchronized,Acquisition Time Synchronized,CS,False,0,24,0,US
+"(1129,0010)",,Private Creator,LO,True,0,24,0,US
+"(1129,""EIGEN, INC"",08)",,Private tag data,DS,True,0,24,0,US
+"(0018,106A)",SynchronizationTrigger,Synchronization Trigger,CS,False,0,24,0,US
+"(0028,0009)",FrameIncrementPointer,Frame Increment Pointer,AT,False,0,24,0,US
+"(0008,2218)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,23,0,"CR,DX,MG"
+"(0008,2218)",AnatomicRegionSequence,Anatomic Region Sequence,SQ,False,0,23,0,"CR,DX,MG"
+"(0008,2218)>(0008,0100)",CodeValue,Code Value,SH,False,1,23,0,"CR,DX,MG"
+"(0008,2218)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,23,0,"CR,DX,MG"
+"(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,1,22,0,SR
+"(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,22,0,SR
+"(0040,A730)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,22,0,SR
+"(0040,A050)",ContinuityOfContent,Continuity Of Content,CS,False,0,22,0,SR
+"(0040,A730)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,22,0,SR
+"(0040,A730)>(0040,A730)",ContentSequence,Content Sequence,SQ,False,1,22,0,SR
+"(0040,A730)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,2,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,2,22,0,SR
+"(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,1,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,3,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,3,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,3,22,0,SR
+"(0008,0068)",PresentationIntentType,Presentation Intent Type,CS,False,0,22,0,"CR,DX,MG"
+"(0040,A730)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,3,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,3,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)",ContentSequence,Content Sequence,SQ,False,2,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A050)",ContinuityOfContent,Continuity Of Content,CS,False,2,22,0,SR
+"(0040,A730)>(0040,A050)",ContinuityOfContent,Continuity Of Content,CS,False,1,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,2,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,4,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,4,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,5,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,5,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,5,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,2,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,4,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)",ContentSequence,Content Sequence,SQ,False,3,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,4,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,4,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,3,22,0,SR
+"(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,0,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,4,22,0,SR
+"(0040,A040)",ValueType,Value Type,CS,False,0,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,3,22,0,SR
+"(0040,A493)",VerificationFlag,Verification Flag,CS,False,0,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,4,22,0,SR
+"(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,1,22,0,SR
+"(0040,A730)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,1,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,4,22,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,4,22,0,SR
+"(0040,A730)",ContentSequence,Content Sequence,SQ,False,0,22,0,SR
+"(0040,A730)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,1,22,0,SR
+"(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,1,22,0,SR
+"(0040,A730)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,2,22,0,SR
+"(0040,A730)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,22,0,SR
+"(0040,A491)",CompletionFlag,Completion Flag,CS,False,0,22,0,SR
+"(0040,A372)",PerformedProcedureCodeSequence,Performed Procedure Code Sequence,SQ,False,0,22,0,SR
+"(0028,1300)",BreastImplantPresent,Breast Implant Present,CS,False,0,21,0,MG
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A121)",Date,Date,DA,False,3,21,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A160)",TextValue,Text Value,UT,False,3,21,0,SR
+"(0008,9205)",PixelPresentation,Pixel Presentation,CS,False,0,20,0,MG
+"(0008,9206)",VolumetricProperties,Volumetric Properties,CS,False,0,20,0,MG
+"(0008,9207)",VolumeBasedCalculationTechnique,Volume Based Calculation Technique,CS,False,0,20,0,MG
+"(5200,9230)>(0020,9116)>(0020,0037)",ImageOrientationPatient,Image Orientation (Patient),DS,False,2,20,0,MG
+"(0018,9507)>(0018,7060)",ExposureControlMode,Exposure Control Mode,CS,False,1,20,0,MG
+"(0018,9507)>(0018,7052)",FilterThicknessMinimum,Filter Thickness Minimum,DS,False,1,20,0,MG
+"(0018,9507)>(0018,7054)",FilterThicknessMaximum,Filter Thickness Maximum,DS,False,1,20,0,MG
+"(0018,9507)>(0018,7062)",ExposureControlModeDescription,Exposure Control Mode Description,LT,False,1,20,0,MG
+"(0018,9507)>(0018,9420)",XRayReceptorType,X-Ray Receptor Type,CS,False,1,20,0,MG
+"(0018,9507)>(0018,9538)",PerProjectionAcquisitionSequence,Per Projection Acquisition Sequence,SQ,False,1,20,0,MG
+"(0018,9507)>(0018,9538)>(0018,1405)",RelativeXRayExposure,Relative X-Ray Exposure,IS,False,2,20,0,MG
+"(0018,9507)>(0018,9538)>(0018,1510)",PositionerPrimaryAngle,Positioner Primary Angle,DS,False,2,20,0,MG
+"(0018,9507)>(0018,9538)>(0018,9328)",ExposureTimeInms,Exposure Time in ms,FD,False,2,20,0,MG
+"(0018,9507)>(0018,9538)>(0018,9330)",XRayTubeCurrentInmA,X-Ray Tube Current in mA,FD,False,2,20,0,MG
+"(0018,9507)>(0018,701A)",DetectorBinning,Detector Binning,DS,False,1,20,0,MG
+"(0018,9507)>(0018,7030)",FieldOfViewOrigin,Field of View Origin,DS,False,1,20,0,MG
+"(0018,9507)>(0018,7032)",FieldOfViewRotation,Field of View Rotation,DS,False,1,20,0,MG
+"(0018,9507)>(0018,7034)",FieldOfViewHorizontalFlip,Field of View Horizontal Flip,CS,False,1,20,0,MG
+"(0018,9507)>(0018,7050)",FilterMaterial,Filter Material,CS,False,1,20,0,MG
+"(5200,9229)>(0020,9071)>(0008,2218)>(0008,0100)",CodeValue,Code Value,SH,False,3,20,0,MG
+"(5200,9229)>(0020,9071)>(0008,2218)",AnatomicRegionSequence,Anatomic Region Sequence,SQ,False,2,20,0,MG
+"(5200,9229)>(0020,9071)",FrameAnatomySequence,Frame Anatomy Sequence,SQ,False,1,20,0,MG
+"(5200,9229)",SharedFunctionalGroupsSequence,Shared Functional Groups Sequence,SQ,False,0,20,0,MG
+"(5200,9229)>(0028,9110)>(0018,0050)",SliceThickness,Slice Thickness,DS,False,2,20,0,MG
+"(5200,9229)>(0028,9132)",FrameVOILUTSequence,Frame VOI LUT Sequence,SQ,False,1,20,0,MG
+"(5200,9230)>(0020,9113)>(0020,0032)",ImagePositionPatient,Image Position (Patient),DS,False,2,20,0,MG
+"(0018,9507)>(0018,11A2)",CompressionForce,Compression Force,DS,False,1,20,0,MG
+"(0018,9507)",XRay3DAcquisitionSequence,X-Ray 3D Acquisition Sequence,SQ,False,0,20,0,MG
+"(0018,9004)",ContentQualification,Content Qualification,CS,False,0,20,0,MG
+"(0018,9507)>(0018,11A4)",PaddleDescription,Paddle Description,LO,False,1,20,0,MG
+"(0018,9507)>(0018,7001)",DetectorTemperature,Detector Temperature,DS,False,1,20,0,MG
+"(0018,9507)>(0018,1114)",EstimatedRadiographicMagnificationFactor,Estimated Radiographic Magnification Factor,DS,False,1,20,0,MG
+"(0018,9507)>(0018,1111)",DistanceSourceToPatient,Distance Source to Patient,DS,False,1,20,0,MG
+"(0018,9507)>(0018,1110)",DistanceSourceToDetector,Distance Source to Detector,DS,False,1,20,0,MG
+"(0040,A504)>(0008,0105)",MappingResource,Mapping Resource,CS,False,1,20,0,SR
+"(5200,9230)>(0020,9116)",PlaneOrientationSequence,Plane Orientation Sequence,SQ,False,1,20,0,MG
+"(0018,9507)>(0018,1190)",FocalSpots,Focal Spot(s),DS,False,1,20,0,MG
+"(0018,9507)>(0018,1191)",AnodeTargetMaterial,Anode Target Material,CS,False,1,20,0,MG
+"(0018,9507)>(0018,1147)",FieldOfViewShape,Field of View Shape,CS,False,1,20,0,MG
+"(0018,9507)>(0018,1160)",FilterType,Filter Type,SH,False,1,20,0,MG
+"(0018,9507)>(0018,11A0)",BodyPartThickness,Body Part Thickness,DS,False,1,20,0,MG
+"(5200,9229)>(0028,9132)>(0028,1050)",WindowCenter,Window Center,DS,False,2,20,0,MG
+"(5200,9229)>(0028,9132)>(0028,1051)",WindowWidth,Window Width,DS,False,2,20,0,MG
+"(5200,9229)>(0020,9071)>(0020,9072)",FrameLaterality,Frame Laterality,CS,False,2,20,0,MG
+"(5200,9229)>(0028,9110)",PixelMeasuresSequence,Pixel Measures Sequence,SQ,False,1,20,0,MG
+"(5200,9229)>(0020,9071)>(0008,2218)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,3,20,0,MG
+"(5200,9230)",PerFrameFunctionalGroupsSequence,Per-Frame Functional Groups Sequence,SQ,False,0,20,0,MG
+"(5200,9230)>(0018,9504)",XRay3DFrameTypeSequence,X-Ray 3D Frame Type Sequence,SQ,False,1,20,0,MG
+"(5200,9230)>(0018,9504)>(0008,9007)",FrameType,Frame Type,CS,False,2,20,0,MG
+"(5200,9230)>(0018,9504)>(0008,9205)",PixelPresentation,Pixel Presentation,CS,False,2,20,0,MG
+"(5200,9229)>(0020,9071)>(0008,2218)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,3,20,0,MG
+"(5200,9229)>(0028,9145)",PixelValueTransformationSequence,Pixel Value Transformation Sequence,SQ,False,1,20,0,MG
+"(0040,A504)>(0040,DB00)",TemplateIdentifier,Template Identifier,CS,False,1,20,0,SR
+"(5200,9229)>(0028,9145)>(0028,1053)",RescaleSlope,Rescale Slope,DS,False,2,20,0,MG
+"(5200,9229)>(0028,9145)>(0028,1052)",RescaleIntercept,Rescale Intercept,DS,False,2,20,0,MG
+"(5200,9229)>(0028,9145)>(0028,1054)",RescaleType,Rescale Type,LO,False,2,20,0,MG
+"(5200,9230)>(0020,9113)",PlanePositionSequence,Plane Position Sequence,SQ,False,1,20,0,MG
+"(0040,A504)",ContentTemplateSequence,Content Template Sequence,SQ,False,0,20,0,SR
+"(0028,0121)",PixelPaddingRangeLimit,Pixel Padding Range Limit,US,False,0,20,0,MG
+"(5200,9230)>(0018,9504)>(0008,9206)",VolumetricProperties,Volumetric Properties,CS,False,2,20,0,MG
+"(0018,9507)>(0018,9538)>(0018,9332)",ExposureInmAs,Exposure in mAs,FD,False,2,20,0,MG
+"(5200,9230)>(0020,9111)>(0020,9156)",FrameAcquisitionNumber,Frame Acquisition Number,US,False,2,20,0,MG
+"(5200,9230)>(0018,9504)>(0008,9207)",VolumeBasedCalculationTechnique,Volume Based Calculation Technique,CS,False,2,20,0,MG
+"(0018,9507)>(0040,0316)",OrganDose,Organ Dose,DS,False,1,20,0,MG
+"(0018,9507)>(0040,0314)",HalfValueLayer,Half Value Layer,DS,False,1,20,0,MG
+"(0018,9507)>(0040,8302)",EntranceDoseInmGy,Entrance Dose in mGy,DS,False,1,20,0,MG
+"(5200,9230)>(0020,9111)",FrameContentSequence,Frame Content Sequence,SQ,False,1,20,0,MG
+"(0018,8151)",XRayTubeCurrentInuA,X-Ray Tube Current in uA,DS,False,0,19,0,DX
+"(0018,7060)",ExposureControlMode,Exposure Control Mode,CS,False,0,19,0,"CR,DX,MG"
+"(0018,1166)",Grid,Grid,CS,False,0,19,0,"CR,DX,MG"
+"(0040,0310)",CommentsOnRadiationDose,Comments on Radiation Dose,ST,False,0,18,0,"CR,DX"
+"(0040,2400)",ImagingServiceRequestComments,Imaging Service Request Comments,LT,False,0,18,7,"CR,DX"
+"(0018,7030)",FieldOfViewOrigin,Field of View Origin,DS,False,0,17,0,"CR,DX,MG"
+"(0018,7032)",FieldOfViewRotation,Field of View Rotation,DS,False,0,17,0,"CR,DX,MG"
+"(0018,7034)",FieldOfViewHorizontalFlip,Field of View Horizontal Flip,CS,False,0,17,0,"CR,DX,MG"
+"(0018,7022)",DetectorElementSpacing,Detector Element Spacing,DS,False,0,16,0,"CR,DX"
+"(0018,7020)",DetectorElementPhysicalSize,Detector Element Physical Size,DS,False,0,16,0,"CR,DX"
+"(0018,1702)",CollimatorLeftVerticalEdge,Collimator Left Vertical Edge,IS,False,0,16,0,DX
+"(0018,701A)",DetectorBinning,Detector Binning,DS,False,0,16,0,"CR,DX"
+"(0018,1706)",CollimatorUpperHorizontalEdge,Collimator Upper Horizontal Edge,IS,False,0,16,0,DX
+"(0018,1708)",CollimatorLowerHorizontalEdge,Collimator Lower Horizontal Edge,IS,False,0,16,0,DX
+"(0018,1704)",CollimatorRightVerticalEdge,Collimator Right Vertical Edge,IS,False,0,16,0,DX
+"(0018,7012)",DetectorTimeSinceLastExposure,Detector Time Since Last Exposure,DS,False,0,16,0,DX
+"(0018,702B)",DetectorManufacturerModelName,Detector Manufacturer's Model Name,LO,False,0,16,0,DX
+"(0018,702A)",DetectorManufacturerName,Detector Manufacturer Name,LO,False,0,16,0,DX
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,A30A)",NumericValue,Numeric Value,DS,False,5,16,0,SR
+"(0018,7008)",DetectorMode,Detector Mode,LT,False,0,16,0,DX
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0100)",CodeValue,Code Value,SH,False,6,16,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)",MeasuredValueSequence,Measured Value Sequence,SQ,False,4,16,0,SR
+"(0018,1400)",AcquisitionDeviceProcessingDescription,Acquisition Device Processing Description,LO,False,0,16,1,"CR,DX,MG"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,6,16,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,6,16,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)",MeasurementUnitsCodeSequence,Measurement Units Code Sequence,SQ,False,5,16,0,SR
+"(0028,3010)>(0028,3002)",LUTDescriptor,LUT Descriptor,US,False,1,15,0,"CR,DX"
+"(0028,3010)>(0028,3006)",LUTData,LUT Data,US,False,1,15,0,"CR,DX"
+"(0028,3010)",VOILUTSequence,VOI LUT Sequence,SQ,False,0,15,0,"CR,DX"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,5,13,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)",MeasuredValueSequence,Measured Value Sequence,SQ,False,3,13,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A124)",UID,UID,UI,False,3,13,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)",MeasurementUnitsCodeSequence,Measurement Units Code Sequence,SQ,False,4,13,0,SR
+"(0018,9332)",ExposureInmAs,Exposure in mAs,FD,False,0,13,0,"CR,DX"
+"(0018,6000)",Sensitivity,Sensitivity,DS,False,0,13,0,"CR,DX,MG"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,5,13,0,SR
+"(0018,1401)",AcquisitionDeviceProcessingCode,Acquisition Device Processing Code,LO,False,0,13,1,"DX,MG"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,A30A)",NumericValue,Numeric Value,DS,False,4,13,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0100)",CodeValue,Code Value,SH,False,5,13,0,SR
+"(0010,2203)",PatientSexNeutered,Patient's Sex Neutered,CS,False,0,12,12,CR
+"(0018,1260)",PlateType,Plate Type,SH,False,0,12,0,CR
+"(0018,1402)",CassetteOrientation,Cassette Orientation,CS,False,0,12,0,CR
+"(0040,A730)>(0040,A730)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,2,12,0,SR
+"(0040,A730)>(0040,A123)",PersonName,Person Name,PN,False,1,12,0,SR
+"(0040,A730)>(0040,A730)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,3,12,0,SR
+"(0040,A730)>(0040,A730)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,3,12,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,5,12,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,4,12,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,5,12,0,SR
+"(0040,A730)>(0040,A730)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,3,12,0,SR
+"(0018,1403)",CassetteSize,Cassette Size,CS,False,0,12,0,CR
+"(0018,7050)",FilterMaterial,Filter Material,CS,False,0,12,4,"CR,DX,MG"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,5,12,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,5,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,5,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,6,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,6,11,0,SR
+"(0032,1021)",ScheduledStudyLocationAETitle,Scheduled Study Location AE Title,AE,False,0,11,1,CR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,6,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,6,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,6,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,6,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A160)",TextValue,Text Value,UT,False,4,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)",ContentSequence,Content Sequence,SQ,False,4,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A050)",ContinuityOfContent,Continuity Of Content,CS,False,4,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,5,11,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,5,11,0,SR
+"(0040,A073)>(0040,A075)",VerifyingObserverName,Verifying Observer Name,PN,False,1,10,0,SR
+"(0040,A073)>(0040,A027)",VerifyingOrganization,Verifying Organization,LO,False,1,10,0,SR
+"(0040,A073)",VerifyingObserverSequence,Verifying Observer Sequence,SQ,False,0,10,0,SR
+"(0040,A375)>(0008,1115)>(0020,000E)",SeriesInstanceUID,Series Instance UID,UI,False,2,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0062,000B)",ReferencedSegmentNumber,Referenced Segment Number,US,False,4,10,0,SR
+"(0040,A073)>(0040,A088)",VerifyingObserverIdentificationCodeSequence,Verifying Observer Identification Code Sequence,SQ,False,1,10,0,SR
+"(0018,7062)",ExposureControlModeDescription,Exposure Control Mode Description,LT,False,0,10,0,"CR,DX,MG"
+"(0040,A073)>(0040,A030)",VerificationDateTime,Verification DateTime,DT,False,1,10,0,SR
+"(0040,A375)>(0008,1115)",ReferencedSeriesSequence,Referenced Series Sequence,SQ,False,1,10,0,SR
+"(0038,0020)",AdmittingDate,Admitting Date,DA,False,0,10,1,"CR,DX,MG"
+"(0040,A375)",CurrentRequestedProcedureEvidenceSequence,Current Requested Procedure Evidence Sequence,SQ,False,0,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A504)>(0008,0105)",MappingResource,Mapping Resource,CS,False,3,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A504)>(0008,0118)",MappingResourceUID,Mapping Resource UID,UI,False,3,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)",ReferencedSOPSequence,Referenced SOP Sequence,SQ,False,3,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,4,10,0,SR
+"(0040,A730)>(0040,A504)>(0008,0118)",MappingResourceUID,Mapping Resource UID,UI,False,2,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,4,10,0,SR
+"(0040,A730)>(0040,A504)>(0008,0105)",MappingResource,Mapping Resource,CS,False,2,10,0,SR
+"(0040,A730)>(0040,A504)>(0040,DB00)",TemplateIdentifier,Template Identifier,CS,False,2,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A504)",ContentTemplateSequence,Content Template Sequence,SQ,False,2,10,0,SR
+"(0040,A375)>(0008,1115)>(0008,1199)",ReferencedSOPSequence,Referenced SOP Sequence,SQ,False,2,10,0,SR
+"(0040,A730)>(0040,A504)",ContentTemplateSequence,Content Template Sequence,SQ,False,1,10,0,SR
+"(0040,A375)>(0008,1115)>(0008,1199)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,3,10,0,SR
+"(0040,A375)>(0008,1115)>(0008,1199)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,3,10,0,SR
+"(0040,A375)>(0020,000D)",StudyInstanceUID,Study Instance UID,UI,False,1,10,0,SR
+"(0040,A504)>(0008,0118)",MappingResourceUID,Mapping Resource UID,UI,False,1,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A504)>(0040,DB00)",TemplateIdentifier,Template Identifier,CS,False,3,10,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)",ContentSequence,Content Sequence,SQ,False,5,9,0,SR
+"(0018,7026)",DetectorActiveDimensions,Detector Active Dimension(s),DS,False,0,9,0,"CR,DX,MG"
+"(0010,21D0)",LastMenstrualDate,Last Menstrual Date,DA,False,0,9,0,"CR,DX"
+"(0040,0004)",ScheduledProcedureStepEndDate,Scheduled Procedure Step End Date,DA,False,0,9,0,"CR,DX"
+"(0040,0002)",ScheduledProcedureStepStartDate,Scheduled Procedure Step Start Date,DA,False,0,9,0,"CR,DX"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,6,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,7,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,7,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,7,9,0,SR
+"(0018,7024)",DetectorActiveShape,Detector Active Shape,CS,False,0,9,0,"CR,DX,MG"
+"(0008,0025)",CurveDate,Curve Date,DA,False,0,9,0,"CR,DX"
+"(0008,0024)",OverlayDate,Overlay Date,DA,False,0,9,0,"CR,DX"
+"(0028,3010)>(0028,3003)",LUTExplanation,LUT Explanation,LO,False,1,9,5,CR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,6,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,6,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,6,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,7,9,0,SR
+"(0018,7006)",DetectorDescription,Detector Description,LT,False,0,9,0,"DX,MG"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,7,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,7,9,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,4,8,0,SR
+"(0018,7014)",DetectorActiveTime,Detector Active Time,DS,False,0,8,0,DX
+"(0018,1191)",AnodeTargetMaterial,Anode Target Material,CS,False,0,8,0,"DX,MG"
+"(0018,1720)",VerticesOfThePolygonalCollimator,Vertices of the Polygonal Collimator,IS,False,0,8,0,"CR,DX"
+"(1129,""EIGEN, INC"",27)",,Private tag data,DS,True,0,8,0,US
+"(0018,1156)",RectificationType,Rectification Type,CS,False,0,8,0,DX
+"(0040,1003)",RequestedProcedurePriority,Requested Procedure Priority,SH,False,0,8,6,"CR,DX,MG"
+"(0018,7011)",ExposuresOnDetectorSinceManufactured,Exposures on Detector Since Manufactured,IS,False,0,8,0,DX
+"(200B,0072)",,Private Creator,LO,True,0,7,0,"CR,DX"
+"(0040,0301)",TotalNumberOfExposures,Total Number of Exposures,US,False,0,7,0,"CR,DX"
+"(2001,0090)",,Private Creator,LO,True,0,7,0,"CR,DX"
+"(0040,0320)",BillingProcedureStepSequence,Billing Procedure Step Sequence,SQ,False,0,7,0,"CR,DX"
+"(200B,0010)",,Private Creator,LO,True,0,7,0,"CR,DX"
+"(200B,0070)",,Private Creator,LO,True,0,7,0,"CR,DX"
+"(0040,A730)>(0040,A300)>(0040,A30A)",NumericValue,Numeric Value,DS,False,2,7,0,SR
+"(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,3,7,0,SR
+"(0040,0252)",PerformedProcedureStepStatus,Performed Procedure Step Status,CS,False,0,7,7,"CR,DX"
+"(0018,7054)",FilterThicknessMaximum,Filter Thickness Maximum,DS,False,0,7,0,"CR,DX,MG"
+"(0040,A730)>(0040,A300)",MeasuredValueSequence,Measured Value Sequence,SQ,False,1,7,0,SR
+"(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0100)",CodeValue,Code Value,SH,False,3,7,0,SR
+"(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,3,7,0,SR
+"(0040,A730)>(0040,A300)>(0040,08EA)",MeasurementUnitsCodeSequence,Measurement Units Code Sequence,SQ,False,2,7,0,SR
+"(0018,7052)",FilterThicknessMinimum,Filter Thickness Minimum,DS,False,0,7,0,"CR,DX,MG"
+"(2001,0011)",,Private Creator,LO,True,0,7,0,"CR,DX"
+"(0040,2004)",IssueDateOfImagingServiceRequest,Issue Date of Imaging Service Request,DA,False,0,7,7,"CR,DX"
+"(0040,2001)",ReasonForTheImagingServiceRequest,Reason for the Imaging Service Request,LO,False,0,7,7,"CR,DX"
+"(0040,1002)",ReasonForTheRequestedProcedure,Reason for the Requested Procedure,LO,False,0,7,5,"CR,DX"
+"(0040,030E)",ExposureDoseSequence,Exposure Dose Sequence,SQ,False,0,7,0,"CR,DX"
+"(0018,7010)",ExposuresOnDetectorSinceLastCalibration,Exposures on Detector Since Last Calibration,IS,False,0,7,0,DX
+"(0018,1600)",ShutterShape,Shutter Shape,CS,False,0,6,0,DX
+"(4453,0010)",,Private Creator,LO,True,0,6,0,CR
+"(0018,1620)",VerticesOfThePolygonalShutter,Vertices of the Polygonal Shutter,IS,False,0,6,0,DX
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A122)",Time,Time,TM,False,3,6,0,SR
+"(0018,1511)",PositionerSecondaryAngle,Positioner Secondary Angle,DS,False,0,5,0,"DX,MG"
+"(0040,8302)",EntranceDoseInmGy,Entrance Dose in mGy,DS,False,0,5,0,"CR,MG"
+"(0054,0220)>(0054,0222)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,2,5,0,"DX,MG"
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A122)",Time,Time,TM,False,4,4,0,SR
+"(0045,""GEMS_SENO_02"",2B)",,[2DLocY],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",57)",,[Noise Reduction Threshold],DS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",50)",,[SC Instance UID],UI,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",26)",,[MAO Buffer],OB,True,0,4,0,DX
+"(0018,704C)",GridFocalDistance,Grid Focal Distance,DS,False,0,4,0,CR
+"(0045,""GEMS_SENO_02"",71)",,[STX buffer],DS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",65)",,[Detector Entrance Dose],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",66)",,[Asymmetrical Collimation Information],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",20)",,[Estimated Anat mean],DS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",1B)",,[Clinical View],CS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",51)",,[SC series UID],UI,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",53)",,[Raw Diagnostic High],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",52)",,[Raw Diagnostic Low],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",2A)",,[2DLocX],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",29)",,[Windowing parameters],DS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",54)",,[Exponent],DS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",72)",,[Image Crop point],DS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",63)",,[User Window Width],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",62)",,[User Window Center],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",55)",,[A Coefficients],IS,True,0,4,0,DX
+"(0045,""GEMS_SENO_02"",56)",,[Noise Reduction Sensitivity],DS,True,0,4,0,DX
+"(0018,1114)",EstimatedRadiographicMagnificationFactor,Estimated Radiographic Magnification Factor,DS,False,0,3,0,"DX,MG"
+"(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)",MeasurementUnitsCodeSequence,Measurement Units Code Sequence,SQ,False,3,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A300)",MeasuredValueSequence,Measured Value Sequence,SQ,False,2,3,0,SR
+"(0040,A730)>(0040,A160)",TextValue,Text Value,UT,False,1,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A160)",TextValue,Text Value,UT,False,2,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,4,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A300)>(0040,A30A)",NumericValue,Numeric Value,DS,False,3,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0100)",CodeValue,Code Value,SH,False,4,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A050)",ContinuityOfContent,Continuity Of Content,CS,False,3,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,4,3,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1199)",ReferencedSOPSequence,Referenced SOP Sequence,SQ,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1199)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1199)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,8,2,0,SR
+"(0043,""GEMS_PARM_01"",64)",,[Image Filter],CS,True,0,2,2,CT
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1160)",ReferencedFrameNumber,Referenced Frame Number,IS,False,9,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)",ReferencedSOPSequence,Referenced SOP Sequence,SQ,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,9,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,9,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)",ReferencedSOPSequence,Referenced SOP Sequence,SQ,False,6,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)",ContentSequence,Content Sequence,SQ,False,7,2,0,SR
+"(0008,0110)>(0008,0116)",CodingSchemeResponsibleOrganization,Coding Scheme Responsible Organization,ST,False,1,2,0,SR
+"(0040,A730)>(0040,A730)>(0008,1199)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,3,2,0,SR
+"(0008,0110)",CodingSchemeIdentificationSequence,Coding Scheme Identification Sequence,SQ,False,0,2,0,SR
+"(0008,0110)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,1,2,0,SR
+"(0008,0201)",TimezoneOffsetFromUTC,Timezone Offset From UTC,SH,False,0,2,0,SR
+"(0012,0060)",ClinicalTrialCoordinatingCenterName,Clinical Trial Coordinating Center Name,LO,False,0,2,2,SR
+"(0040,A730)>(0040,A730)>(0008,1199)",ReferencedSOPSequence,Referenced SOP Sequence,SQ,False,2,2,0,SR
+"(0040,A730)>(0040,A730)>(0008,1199)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,3,2,0,SR
+"(0040,A730)>(0040,A730)>(0008,1199)>(0008,1160)",ReferencedFrameNumber,Referenced Frame Number,IS,False,3,2,0,SR
+"(0008,0110)>(0008,010C)",CodingSchemeUID,Coding Scheme UID,UI,False,1,2,0,SR
+"(0008,0110)>(0008,0115)",CodingSchemeName,Coding Scheme Name,ST,False,1,2,0,SR
+"(0018,1180)",CollimatorGridName,Collimator/grid Name,SH,False,0,2,0,CR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)>(0008,0100)",CodeValue,Code Value,SH,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A043)",ConceptNameCodeSequence,Concept Name Code Sequence,SQ,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)>(0008,0100)",CodeValue,Code Value,SH,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A168)",ConceptCodeSequence,Concept Code Sequence,SQ,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,A30A)",NumericValue,Numeric Value,DS,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0102)",CodingSchemeDesignator,Coding Scheme Designator,SH,False,8,2,0,SR
+"(0008,0110)>(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,1,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,5,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A124)",UID,UID,UI,False,4,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A120)",DateTime,DateTime,DT,False,4,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0103)",CodingSchemeVersion,Coding Scheme Version,SH,False,4,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A050)",ContinuityOfContent,Continuity Of Content,CS,False,5,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)",ContentSequence,Content Sequence,SQ,False,6,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)>(0008,0100)",CodeValue,Code Value,SH,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)",MeasuredValueSequence,Measured Value Sequence,SQ,False,6,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A300)>(0040,08EA)",MeasurementUnitsCodeSequence,Measurement Units Code Sequence,SQ,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A160)",TextValue,Text Value,UT,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A040)",ValueType,Value Type,CS,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1199)>(0008,1155)",ReferencedSOPInstanceUID,Referenced SOP Instance UID,UI,False,10,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1199)>(0008,1150)",ReferencedSOPClassUID,Referenced SOP Class UID,UI,False,10,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0008,1199)>(0008,1199)",ReferencedSOPSequence,Referenced SOP Sequence,SQ,False,9,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A010)",RelationshipType,Relationship Type,CS,False,8,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0070,0023)",GraphicType,Graphic Type,CS,False,7,2,0,SR
+"(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0040,A730)>(0070,0022)",GraphicData,Graphic Data,FL,False,7,2,0,SR
+"(0018,11A2)",CompressionForce,Compression Force,DS,False,0,1,0,MG
+"(0018,1510)",PositionerPrimaryAngle,Positioner Primary Angle,DS,False,0,1,0,MG
+"(0018,7048)",GridPeriod,Grid Period,DS,False,0,1,0,MG
+"(0018,7064)",ExposureStatus,Exposure Status,CS,False,0,1,0,MG
+"(0020,1070)",OtherStudyNumbers,Other Study Numbers,IS,False,0,1,0,MG
+"(0028,1350)",PartialView,Partial View,CS,False,0,1,1,MG
+"(0028,1351)",PartialViewDescription,Partial View Description,ST,False,0,1,1,MG
+"(0038,0016)",RouteOfAdmissions,Route of Admissions,LO,False,0,1,1,MG
+"(0038,0021)",AdmittingTime,Admitting Time,TM,False,0,1,1,MG
+"(0040,0314)",HalfValueLayer,Half Value Layer,DS,False,0,1,0,MG
+"(0040,0316)",OrganDose,Organ Dose,DS,False,0,1,0,MG
+"(0039,0010)",,Private Creator,LO,True,0,1,0,SR
+"(0040,A032)",ObservationDateTime,Observation DateTime,DT,False,0,1,0,SR
+"(0040,A492)",CompletionFlagDescription,Completion Flag Description,LO,False,0,1,1,SR
+"(0040,A730)>(0040,A124)",UID,UID,UI,False,1,1,0,SR
+"(0040,A730)>(0040,A120)",DateTime,DateTime,DT,False,1,1,0,SR
+"(0040,A730)>(0040,A730)>(0040,A124)",UID,UID,UI,False,2,1,0,SR
+"(0050,0004)",CalibrationImage,Calibration Image,CS,False,0,1,0,MG
+"(0054,0220)>(0054,0222)>(0008,0100)",CodeValue,Code Value,SH,False,2,1,0,MG
+"(0018,11A0)",BodyPartThickness,Body Part Thickness,DS,False,0,1,0,MG
+"(0054,0220)>(0054,0222)>(0008,0104)",CodeMeaning,Code Meaning,LO,False,2,1,0,MG
+"(0029,0012)",,Private Creator,LO,True,0,1,0,MR
+"(0018,1008)",GantryID,Gantry ID,LO,False,0,1,0,MG
+"(0029,0013)",,Private Creator,LO,True,0,1,0,MR
