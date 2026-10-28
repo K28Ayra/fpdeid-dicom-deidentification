@@ -1,6 +1,6 @@
 # FP-DeID: fingerprint-guided, closed-loop DICOM de-identification
 
-*Erasmus Mundus EMIA, Project 2: Making hospital scans safe to share*
+
 
 FP-DeID removes everything that can identify a patient from DICOM files (headers, free text, private tags, text burned into
 the pixels, and optionally the face in head scans), keeps what researchers need, and measures both on the public MIDI-B
